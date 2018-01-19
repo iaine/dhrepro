@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><title>DHQ: Digital Humanities Quarterly: The Data Sprint Approach: Exploring the field of Digital
+                    Humanities through Amazon’s Application Programming Interface</title><link rel="stylesheet" type="text/css" href="/dhq/common/css/dhq.css"/><link rel="stylesheet" type="text/css" media="screen" href="/dhq/common/css/dhq_screen.css"/><link rel="stylesheet" type="text/css" media="print" href="/dhq/common/css/dhq_print.css"/><link rel="alternate" type="application/atom+xml" href="/dhq/feed/news.xml"/><link rel="shortcut icon" href="/dhq/common/images/favicon.ico"/><script type="text/javascript" src="/dhq/common/js/javascriptLibrary.js">
+                &lt;!-- Javascript functions --&gt;
+            </script><script type="text/javascript">
+
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-15812721-1']);
+ _gaq.push(['_trackPageview']);
+
+ (function() {
+   var ga = document.createElement('script'); ga.type =
+'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+ })();
+
+        </script></head><body><div id="top"><div id="backgroundpic"><script type="text/javascript" src="/dhq/common/js/pics.js"><!--displays banner image--></script></div><div id="banner"><div id="dhqlogo"><img src="/dhq/common/images/dhqlogo.png" alt="DHQ Logo"/></div><div id="longdhqlogo"><img src="/dhq/common/images/dhqlogolonger.png" alt="Digital Humanities Quarterly Logo"/></div></div><div id="topNavigation"><div id="topnavlinks"><span><a href="/dhq/" class="topnav">home</a></span><span><a href="/dhq/submissions/index.html" class="topnav">submissions</a></span><span><a href="/dhq/about/about.html" class="topnav">about dhq</a></span><span><a href="/dhq/people/people.html" class="topnav">dhq people</a></span><span id="rightmost"><a href="/dhq/contact/contact.html" class="topnav">contact</a></span></div><div id="search"><form action="/dhq/findIt" method="get" onsubmit="javascript:document.location.href=cleanSearch(this.queryString.value); return false;"><div><input type="text" name="queryString" size="18"/> <input type="submit" value="Search"/></div></form></div></div></div><div id="main"><div id="leftsidebar"><div id="leftsidenav"><span>Current Issue<br/></span><ul><li><a href="/dhq/vol/11/3/index.html">2017: 11.3</a></li></ul><span>Preview Issue<br/></span><ul><li><a href="/dhq/preview/index.html">2017: 11.4</a></li></ul><span>Previous Issues<br/></span><ul><li><a href="/dhq/vol/11/2/index.html">2017: 11.2</a></li><li><a href="/dhq/vol/11/1/index.html">2017: 11.1</a></li><li><a href="/dhq/vol/10/4/index.html">2016: 10.4</a></li><li><a href="/dhq/vol/10/3/index.html">2016: 10.3</a></li><li><a href="/dhq/vol/10/2/index.html">2016: 10.2</a></li><li><a href="/dhq/vol/10/1/index.html">2016: 10.1</a></li><li><a href="/dhq/vol/9/4/index.html">2015: 9.4</a></li><li><a href="/dhq/vol/9/3/index.html">2015: 9.3</a></li><li><a href="/dhq/vol/9/2/index.html">2015: 9.2</a></li><li><a href="/dhq/vol/9/1/index.html">2015: 9.1</a></li><li><a href="/dhq/vol/8/4/index.html">2014: 8.4</a></li><li><a href="/dhq/vol/8/3/index.html">2014: 8.3</a></li><li><a href="/dhq/vol/8/2/index.html">2014: 8.2</a></li><li><a href="/dhq/vol/8/1/index.html">2014: 8.1</a></li><li><a href="/dhq/vol/7/3/index.html">2013: 7.3</a></li><li><a href="/dhq/vol/7/2/index.html">2013: 7.2</a></li><li><a href="/dhq/vol/7/1/index.html">2013: 7.1</a></li><li><a href="/dhq/vol/6/3/index.html">2012: 6.3</a></li><li><a href="/dhq/vol/6/2/index.html">2012: 6.2</a></li><li><a href="/dhq/vol/6/1/index.html">2012: 6.1</a></li><li><a href="/dhq/vol/5/3/index.html">2011: 5.3</a></li><li><a href="/dhq/vol/5/2/index.html">2011: 5.2</a></li><li><a href="/dhq/vol/5/1/index.html">2011: 5.1</a></li><li><a href="/dhq/vol/4/2/index.html">2010: 4.2</a></li><li><a href="/dhq/vol/4/1/index.html">2010: 4.1</a></li><li><a href="/dhq/vol/3/4/index.html">2009: 3.4</a></li><li><a href="/dhq/vol/3/3/index.html">2009: 3.3</a></li><li><a href="/dhq/vol/3/2/index.html">2009: 3.2</a></li><li><a href="/dhq/vol/3/1/index.html">2009: 3.1</a></li><li><a href="/dhq/vol/2/1/index.html">2008: 2.1</a></li><li><a href="/dhq/vol/1/2/index.html">2007: 1.2</a></li><li><a href="/dhq/vol/1/1/index.html">2007: 1.1</a></li></ul><span>Indexes<br/></span><ul><li><a href="/dhq/index/title.html"> Title</a></li><li><a href="/dhq/index/author.html"> Author</a></li></ul></div><img src="/dhq/common/images/lbarrev.png" style="margin-left : 7px;" alt="sidenavbarimg"/><div id="leftsideID"><b>ISSN 1938-4122</b><br/></div><div class="leftsidecontent"><h3>Announcements</h3><ul><li><a href="/dhq/announcements/index.html#reviewers">Call for Reviewers</a></li><li><a href="/dhq/announcements/index.html#submissions">Call for Submissions</a></li></ul></div><div class="leftsidecontent"><script type="text/javascript">addthis_pub  = 'dhq';</script><a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-addthis.gif" width="125" height="16" alt="button1-addthis.gif"/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js">&lt;!-- Javascript functions --&gt;</script></div></div><div id="mainContent"><div id="printSiteTitle">DHQ: Digital Humanities Quarterly</div><div xmlns:dhqBiblio="http://digitalhumanities.org/dhq/ns/biblio" class="DHQarticle"><div id="pubInfo">2015<br/>Volume 9 Number 3</div><div class="toolbar"><form id="taporware" action="get"><div><a href="/dhq/vol/9/3/index.html">2015 9.3</a>
+                     | 
+                    <a rel="external" href="/dhq/vol/9/3/000222.xml">XML</a>
+
+| 
+		   Discuss
+			(<a href="/dhq/vol/9/3/000222/000222.html#disqus_thread" data-disqus-identifier="000222">
+				Comments
+			</a>)
+                </div></form></div>
+    <div class="DHQheader">
+        
+            
+                
+                <h1 class="articleTitle lang en">The Data Sprint Approach: Exploring the field of Digital
+                    Humanities through Amazon’s Application Programming Interface</h1>
+                <div class="author"><a rel="external" href="../bios.html#berry_david_m.">David M. Berry</a> &lt;<a href="mailto:d_dot_m_dot_berry_at_sussex_dot_ac_dot_uk" onclick="javascript:window.location.href='mailto:'+deobfuscate('d_dot_m_dot_berry_at_sussex_dot_ac_dot_uk'); return false;" onkeypress="javascript:window.location.href='mailto:'+deobfuscate('d_dot_m_dot_berry_at_sussex_dot_ac_dot_uk'); return false;">d_dot_m_dot_berry_at_sussex_dot_ac_dot_uk</a>&gt;, University of Sussex</div>
+                <div class="author"><a rel="external" href="../bios.html#borra_erik">Erik Borra</a> &lt;<a href="mailto:erik_at_erikborra_dot_net" onclick="javascript:window.location.href='mailto:'+deobfuscate('erik_at_erikborra_dot_net'); return false;" onkeypress="javascript:window.location.href='mailto:'+deobfuscate('erik_at_erikborra_dot_net'); return false;">erik_at_erikborra_dot_net</a>&gt;, University of Amsterdam</div>
+                <div class="author"><a rel="external" href="../bios.html#helmond_anne">Anne Helmond</a> &lt;<a href="mailto:a_dot_helmond_at_uva_dot_nl" onclick="javascript:window.location.href='mailto:'+deobfuscate('a_dot_helmond_at_uva_dot_nl'); return false;" onkeypress="javascript:window.location.href='mailto:'+deobfuscate('a_dot_helmond_at_uva_dot_nl'); return false;">a_dot_helmond_at_uva_dot_nl</a>&gt;, University of Amsterdam</div>
+                <div class="author"><a rel="external" href="../bios.html#plantin_jean-christophe">Jean-Christophe
+                        Plantin</a> &lt;<a href="mailto:j_dot_plantin1_at_lse_dot_ac_dot_uk" onclick="javascript:window.location.href='mailto:'+deobfuscate('j_dot_plantin1_at_lse_dot_ac_dot_uk'); return false;" onkeypress="javascript:window.location.href='mailto:'+deobfuscate('j_dot_plantin1_at_lse_dot_ac_dot_uk'); return false;">j_dot_plantin1_at_lse_dot_ac_dot_uk</a>&gt;, London School of Economics and Political
+                        Science</div>
+                <div class="author"><a rel="external" href="../bios.html#walkerrettberg_jill">Jill Walker Rettberg</a> &lt;<a href="mailto:Jill_dot_Walker_dot_Rettberg_at_lle_dot_uib_dot_no" onclick="javascript:window.location.href='mailto:'+deobfuscate('Jill_dot_Walker_dot_Rettberg_at_lle_dot_uib_dot_no'); return false;" onkeypress="javascript:window.location.href='mailto:'+deobfuscate('Jill_dot_Walker_dot_Rettberg_at_lle_dot_uib_dot_no'); return false;">Jill_dot_Walker_dot_Rettberg_at_lle_dot_uib_dot_no</a>&gt;, University of Bergen</div>
+            
+            
+
+            
+        
+        
+        
+        
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft.genre=article&amp;rft.atitle=The%20Data%20Sprint%20Approach%3A%20Exploring%20the%20field%20of%20Digital%20Humanities%20through%20Amazon%E2%80%99s%20Application%20Programming%20Interface&amp;rft.jtitle=Digital%20Humanities%20Quarterly&amp;rft.stitle=DHQ&amp;rft.issn=1938-4122&amp;rft.date=2015-12-23&amp;rft.volume=009&amp;rft.issue=3&amp;rft.aulast=Berry&amp;rft.aufirst=David M.&amp;rft.au=David M.%20Berry&amp;rft.au=Erik%20Borra&amp;rft.au=Anne%20Helmond&amp;rft.au=Jean-Christophe%20Plantin&amp;rft.au=Jill%20Walker Rettberg"> </span></div>
+
+    <div id="DHQtext">
+        
+            <div id="abstract"><h2>Abstract</h2>
+                
+                <p>This paper documents the results of an intensive "data sprint" method for
+                    undertaking data and algorithmic work using application programming interfaces
+                    (APIs), which took place during the Digital Method Initiative 2013 Winter School
+                    at the University of Amsterdam. During this data sprint, we developed a method
+                    to map the fields of Digital Humanities and Electronic Literature based on title
+                    recommendations from the largest online bookseller, Amazon, by retrieving
+                    similar purchased items from the Amazon API. A first step shows the overall
+                    Amazon recommendation network for Digital Humanities and allows us to detect
+                    clusters, aligned fields and bridging books. In a second step we looked into
+                    four country-specific Amazon stores (Amazon.com, Amazon.co.uk, Amazon.fr and
+                    Amazon.de) to investigate the specificities of the Digital Humanities in these
+                    four countries. The third step is a network of all books suggested for the
+                    Electronic Literature field in the four Amazon stores we searched, which offers
+                    a comparison to the field of Digital Humanities.</p>
+            </div>
+            
+        
+        
+            <div class="div div0">
+                <h1 class="head">INTRODUCTION</h1>
+                <div class="counter"><a href="#p1">1</a></div><div class="ptext" id="p1">In this article we seek to tentatively explore the field of digital humanities
+                    (DH) through the production of particular outputs of knowledge rather than the
+                    tools that are used. In this we are, perhaps, acting counter to the often
+                    remarked processual aspect of DH, that is, that digital humanities focuses not
+                    just on the outputs but also on the processes involved in producing those
+                    outputs, by, for example, creating data sets, digital tools, archives, etc. [<a class="ref" href="#berry2012">Berry 2012</a>]. However, as part of a rapid
+                        "Data Sprint", research outputs, in this case books and
+                    monographs, offer a means of producing quick datasets amenable to analysis under
+                    the tight restrictions on time that the Data Sprint form imposed upon us. We
+                    undertook this analysis to examine the epistemic connections represented through
+                    a network analysis of key texts in the field and we also aimed to explore the
+                    extent to which the digital humanities differ in comparable countries. By
+                    including an analysis of the field of electronic literature we sought to compare
+                    DH writ large to a possibly more specific discourse field. Electronic literature
+                    includes genres such as kinetic poetry, hypertext fiction, social media fiction
+                    and generative narratives, where the "the computer (or the
+                        network context) is in some way <em class="emph">essential</em> to the performance or
+                        carrying out of the literary activity in question"
+                     [<a class="ref" href="#rettbergs2014">S. Rettberg 2014</a>], and is a strong subfield or related field to the
+                    digital humanities, depending on one's perspective.</div>
+                <div class="counter"><a href="#p2">2</a></div><div class="ptext" id="p2">This article brings two contributions to the field of DH. Firstly, we show the
+                    relevance of the "data sprint" method for DH inquiry, during which data are
+                    collected and analyzed over a short period of time, offering a mezzo-level of
+                    analysis between small and large datasets (or "big data").
+                    Secondly, we show how web-based digital platforms can be repurposed to offer
+                    insightful data sources to investigate the field of digital humanities itself,
+                    therefore contributing to reflexivity in the community. Concerning the first
+                    point: the data sprint was part of a Winter School held at the University of
+                    Amsterdam in 2013<a class="noteRef" href="#d36968e312">[1]</a> and was designed to facilitate
+                    short-form data analysis work in a rapid prototyping format, rather similar to
+                    hacklabs and hackathons. The term data sprint itself is drawn from the notion of
+                    a Book Sprint which is a "genre of the ‘flash’ book, written
+                        under a short timeframe, to emerge as a contributor to debates, ideas and
+                        practices in contemporary culture... interventions that go well beyond a
+                        well-written blog-post or tweet, and give some substantive weight to a
+                        discussion or issue...within a range of 20-40,000 words"
+                     [<a class="ref" href="#berry2012">Berry 2012</a>]. This rapid and collaborative means of writing is
+                    very creative and intensified, and tends towards the creation of
+                    texts that are appropriately geared to a specific subject or topic [<a class="ref" href="#hyde2013">Hyde 2013</a>]. Indeed, participants in a Book Sprint, who are not
+                    always necessarily professional writers, are usually experts in a field but from
+                    a range of professions, backgrounds and interests. Book Sprints themselves are
+                    usually formed from 4-8 people actively involved in the writing process, and
+                     are facilitated by another non-writing member. However in the data sprint,
+                    which created this paper, the team was made up of five members with varying
+                    degrees of competence in data analysis and programming. Nonetheless, the basic
+                    tenets of the Book Sprint were observed, in as much as the data sprint was
+                    carried out over a period of three days aiming towards final presentation of the
+                    results at a workshop organised at the University of Amsterdam. This compression
+                    of time naturally results in rapid prototyping and scoping aggressively in order
+                    to produce the work within the timeframe available, nonetheless it creates an
+                    extremely creative space for the use and reuse of data and algorithms in digital
+                    humanities-type work. </div>
+                <div class="counter"><a href="#p3">3</a></div><div class="ptext" id="p3">Due to the "data sprint" format of this project, several members were
+                    involved in multiple projects at the same time, or were not working
+                    co-locatedly. As a consequence, we heavily relied on online collaborative
+                    applications in order to work remotely together. A specific Skype channel was
+                    used for multiple purposes: after the tasks were divided between the various
+                    members, it served as a means to let the others know which step was done. It was
+                    also used to ask questions on a specific task. Furthermore, it served to quickly
+                    transfer lists of ASIN numbers from the seed books, or to transfer .zip files
+                    containing Gephi files resulting from requests to the Amazon API. Collaborative
+                    spreadsheets on Google Drive were a means to collaboratively write descriptive
+                    tables of seed books, but also to share first results from the graph (e.g. in a
+                    spreadsheets showing Eigenvector Centrality, indegree or outdegree - see below).
+                    Finally, a Dropbox was used to share .gexf (Gephi) files resulting from the
+                    crawling, and to share the graphs after working on the visualisation. Data
+                    sprints are based on reproducibility: the work done needs to be documented and
+                    shared online in order to foster similar work and further developments. In
+                    parallel to the collaborative online applications used to work together, we set
+                    up a website<a class="noteRef" href="#d36968e335">[2]</a>
+                    from the beginning that served to document the methods, process, and results of
+                    our work. Similarly, crawl results and graphs were instantly uploaded on a
+                    specific Github page<a class="noteRef" href="#d36968e340">[3]</a>, as was the code accompanying the project<a class="noteRef" href="#d36968e346">[4]</a>.</div>
+                <div class="counter"><a href="#p4">4</a></div><div class="ptext" id="p4">Secondly, this article demonstrates how digital methods [<a class="ref" href="#rogers2013">Rogers 2013</a>] can be useful to reach a reflexive account of the field of DH. By doing so,
+                    we rely on both traditional social network analysis and digital methods. One way
+                    of mapping a field, and the approach we take here, is by locating the books that
+                    are read by its scholars. Traditionally this has been done by citation analysis
+                        [<a class="ref" href="#desollaprice1965">De Solla Price 1965</a>] for example by using Web of Science or,
+                    more recently, Google Scholar. There are also examples of network analysis of
+                    citations, for instance as in Dan Wang’s analysis of key texts in sociology
+                    where two texts being taught in the same week of a syllabus is interpreted as a
+                    link between the texts [<a class="ref" href="#wang2012">Wang 2012</a>]. In this paper, we instead use
+                    a similar approach to Krebs, who used Amazon recommendations to uncover "emergent communities of interest on the WWW by examining
+                        purchasing patterns"
+                     [<a class="ref" href="#krebs1999">Krebs 1999</a>]. We used data from Amazon’s online bookstores in the
+                    US, UK, France and Germany to analyse buying patterns for the digital humanities
+                    and electronic literature, revealing a network of books connected by frequently
+                    being purchased together. This research aims to apply a form of algorithmic
+                        <em class="emph">distant reading</em>
+                    [<a class="ref" href="#moretti2005">Moretti 2005</a>] of the books, in as much as we rely on the readings
+                    and purchasing patterns of others to inform the selections that are returned by
+                    the API. We have undertaken this extraction of data by retrieving it from the
+                    Amazon Product Advertising API.</div>
+                <div class="counter"><a href="#p5">5</a></div><div class="ptext" id="p5">Kaplan’s typology of data sources in digital humanities scholarship [<a class="ref" href="#kaplan2015">Kaplan 2015</a>] is useful to describe the data used in our work: it
+                    falls in the category of "digital culture", as
+                    opposed to works based on "big cultural datasets"
+                    (such as the Google Ngram project mentioned above) or offering "digital experiences" (such as 3D virtual worlds). To
+                    this extend, we follow Borgman [<a class="ref" href="#borgman2015">Borgman 2015</a>] who recently
+                    highlighted that more data is not necessarily more insightful than smaller data,
+                    as well as Schöch [<a class="ref" href="#schoch2013">Schöch 2013</a>] who calls for a preference towards
+                    smaller yet more structured "smart data" instead of
+                    large and messy "big data." In order to fetch data,
+                    we use here a digital methods approach by repurposing an online device, the
+                    Amazon recommendation system, to see how we can make use of web-native objects
+                    such as recommendations for social and cultural research [<a class="ref" href="#rogers2013">Rogers 2013</a>][<a class="ref" href="#marres2013">Marres and Weltevrede 2013</a>]. In other words, we seek
+                        "to deploy the logic of recommendation cultures"
+                     [<a class="ref" href="#gerlitz2013">Gerlitz and Helmond 2013</a>] as put forward by Amazon’s recommendations based on
+                    similar purchased items as an alternative consumer-based approach based on
+                    buying patterns to map a field. By moving beyond the traditional "editorial logic" which "depends on
+                        the subjective choices of experts"
+                     [<a class="ref" href="#gillespie2012">Gillespie 2012</a>] we explore the possibilities and boundaries
+                    presented by the rise of the "algorithmic logic"
+                    (idem) to retrieve, organize and present relevant information. Our research
+                    explores the "algorithmic structure of today’s informatic
+                        culture"
+                     [<a class="ref" href="#galloway2006">Galloway 2006</a>, 17] through the Amazon recommendation
+                    algorithm by combining both the editorial logic and algorithmic logic to provide
+                    an alternative way to map a field. </div>
+                <div class="counter"><a href="#p6">6</a></div><div class="ptext" id="p6">In this paper we call the Amazon API for different countries to show the
+                    relationships between different titles using the SimilarityLookup feature<a class="noteRef" href="#d36968e430">[5]</a>, an API operation that "returns up to ten products
+                        per page that are similar to one or more items specified in the
+                        request" to map the fields digital humanities and electronic
+                    literature. By focusing on country-specific versions of Amazon we can visualise
+                    national networks of book purchases and analyse differences and similarities for
+                    the fields per country or linguistic area. The introduction of geo-location
+                    technology on the web [<a class="ref" href="#goldsmith2006">Goldsmith and Wu 2006</a>] has brought into being the
+                    notion of "national webs" which are demarcated by
+                    devices such as search engines that "go local"
+                     [<a class="ref" href="#rogers2013">Rogers 2013</a>], as for example Google’s country-specific websites
+                    like Google.ca, Google.za, Google.jp or Google.com.mx. Amazon's recommendation engine
+                    also comes with ten country-specific websites: United States
+                    (amazon.com), United Kingdom (amazon.co.uk), Canada (amazon.ca), Austria
+                        (amazon.at),<a class="noteRef" href="#d36968e451">[6]</a> Germany (amazon.de), Spain (amazon.es), France (amazon.fr),
+                    Italy (.it), Japan (.jp) and China (amazon.cn)<a class="noteRef" href="#d36968e454">[7]</a> that we can use to compare the fields per country. This analysis across
+                    national webs allows us to see whether recommendations for the field of digital
+                    humanities would be different in different countries. </div>
+                <div class="counter"><a href="#p7">7</a></div><div class="ptext" id="p7">This paper is presented as a partial and tentative means of mapping a field, but
+                    also as a moment in the developing field of digital humanities [<a class="ref" href="#jameson2006">Jameson 2006</a>]. As such we are fully appreciative of its
+                    limitations as a study: indeed this is a crucial part of the approach which
+                    stresses the "hermeneutics of screwing around," as
+                    Ramsay [<a class="ref" href="#ramsay2010">Ramsay 2010</a>] called it, as our research is the result of
+                    a "data sprint". Thus, we
+                    present this work as suggestive of the formation of a discursive network
+                    crystallising around the notion of "digital humanities" and
+                    the possibilities of further research in this vein. To this extent, we follow
+                    the critical tradition of DH towards "tools, data, and
+                        metadata"
+                     [<a class="ref" href="#liu2013">Liu 2013</a>] used and analyzed in this study. To put it in other
+                    words, our work "extend[s] reflection on core instrumental
+                        technologies in cultural and historical directions"
+                     [<a class="ref" href="#liu2012">Liu 2012</a>, 501], by mixing new media studies resources with
+                    DH. </div>
+            </div>
+            <div class="div div0">
+                <h1 class="head">METHOD</h1>
+                <div class="counter"><a href="#p8">8</a></div><div class="ptext" id="p8">In this paper we use a form of social-network analysis that visualises the
+                    relationships between the different entities, in this case books, in our
+                    networks. As Alan Liu explains,</div>
+                <blockquote><p class="ptext">the premise of social-network analysis is that it is not individuals or groups
+                    but the pattern of relations between individuals or groups that is socially
+                    significant. Such an approach commonly produces analyses in the form of
+                    social-network graphs composed of nodes and connecting edges (also called ties)
+                    accompanied by metrics of degree, distance, density, betweenness, centrality,
+                    clustering, and so on. The goal is to describe a topology of social relations
+                    that allows researchers to understand, for instance, which nodes are pivotal to
+                    connections within communities [<a class="ref" href="#liu2013">Liu 2013</a>]. </p></blockquote>
+                <div class="counter"><a href="#p9">9</a></div><div class="ptext" id="p9">One of the interesting outcomes of the practices involved in undertaking this
+                    form of digital method is the "hermeneutics of
+                    screwing around" [<a class="ref" href="#ramsay2010">Ramsay 2010</a>]. Interpreting the data of a network
+                    visualisation is an iterative process of adapting the viewing perspective,
+                    changing the data filters, editing colours, layout, depth, degree, and relative
+                    "importance" of particular nodes. In other words, adapting the way the data is
+                    presented to view it from different perspectives is a method that lets us
+                    surface patterns and interesting features of the graph.</div>
+                <div class="counter"><a href="#p10">10</a></div><div class="ptext" id="p10">In our case study we used ten seed books<a class="noteRef" href="#d36968e514">[8]</a> for each of
+                    the fields of digital humanities and electronic literature (see Table 1 and 2)
+                    as a starting point to request up to ten similar books per book using the
+                    SimilarityLookup operation in the Amazon.co.uk Product Advertising API.
+                    According to the API documentation, "Similarity is a
+                        measurement of similar items purchased, that is, customers who bought X also
+                        bought Y and Z. It is not a measure, for example, of items viewed, that is,
+                        customers who viewed X also viewed Y and Z.<a class="noteRef" href="#d36968e522">[9]</a>" Initially we repeated the request to reach a depth of three,
+                    which includes the results, the subsequent results and subsequent result to
+                    create a broad overview over the Digital Humanities (see Figure 1). However, for
+                    subsequent analysis we decided to limit our request to the results and the
+                    subsequent results (a depth of two) in order to limit the scope of our dataset
+                    and complexity of analysis.</div>
+                <div class="counter"><a href="#p11">11</a></div><div class="ptext" id="p11">In other words, we fetched a maximum of ten recommendations per book to a depth
+                    of two degrees. This generated a maximum of one hundred book titles for each of
+                    the subject areas of digital humanities and electronic literature<a class="noteRef" href="#d36968e532">[10]</a>. This data set then
+                    allowed us to do a first analysis with the Gephi software [<a class="ref" href="#bastian2009">Bastian et al. 2009</a>], which allows sophisticated data analysis and
+                    visualisation, and based upon this we constructed the next data phase which we
+                    could scope in relation to the first data set. </div>
+                <div class="counter"><a href="#p12">12</a></div><div class="ptext" id="p12">The second data phase was organised around a comparative approach in relation to
+                    data requests to the Amazon API for recommendations for the digital humanities
+                    books in each of the following countries: "ca",
+                        "cn", "de", "es", "fr", "it", "jp", "co.uk", "com". We requested
+                    our data for all ten countries via the Amazon API, but only retained the four
+                    (US, UK, FR, DE) that returned results for our requests. </div>
+                <div class="div div1">
+                    <h2 class="head">Seeds</h2>
+                    <div class="counter"><a href="#p13">13</a></div><div class="ptext" id="p13">These are the subject domain expert "seeds" that were used
+                        to generate the initial data output. The word "seed" here
+                        refers to a computational notion of a piece of data that is used to generate
+                        other data, such as in the snowball technique described by Issuecrawler.net
+                            [<a class="ref" href="#rogers2010">Rogers 2010</a>]. A seed is an expert-determined
+                            value<a class="noteRef" href="#d36968e584">[11]</a>, in this case the Amazon Standard
+                        Identification Number (ASINs) for a specific book on digital humanities or
+                        electronic literature, which is fed into the Amazon Related Product Graph,
+                        created by Erik Borra, calling the Amazon API<a class="noteRef" href="#d36968e587">[12]</a>. We
+                        used ten seeds per subject area that returned up to ten "similar" books per
+                        item, and then for each of these results the process was repeated. Using
+                        Gephi, the ten data sets were then "appended" into one master data set that
+                        was used for the generation of the subject area visualisations. </div>
+                    <div class="counter"><a href="#p14">14</a></div><div class="ptext" id="p14">The selection of seeds was somewhat heuristic, and based on discussion
+                        between subject domain experts on the most important books in each field.
+                        For the field of electronic literature, the selection took into account
+                        frequently referenced books as documented in the "ELMCIP Knowledge Base of
+                        Electronic Literature". </div>
+                    <div class="counter"><a href="#p15">15</a></div><div class="ptext" id="p15">Below are the initial seeds for the subject areas.</div>
+                    <div class="table"><table class="table unbordered"><tr class="row label">
+                            <td valign="top" class="cell">ASIN</td>
+                            <td valign="top" class="cell">Title</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">262018470</td>
+                            <td valign="top" class="cell">Digital_Humanities</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">230292658</td>
+                            <td valign="top" class="cell">Understanding Digital Humanities</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">1405168064</td>
+                            <td valign="top" class="cell">A Companion to Digital Humanities</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">816677956</td>
+                            <td valign="top" class="cell">Debates in the Digital Humanities</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">1856047660</td>
+                            <td valign="top" class="cell">Digital Humanities in Practice</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">472051989</td>
+                            <td valign="top" class="cell">Hacking the Academy: New Approaches to Scholarship and
+                                Teaching</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">226321428</td>
+                            <td valign="top" class="cell">How We Think: Digital Media and Contemporary Technogenesis</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">252078209</td>
+                            <td valign="top" class="cell">Reading Machines: Toward an Algorithmic Criticism</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">26251740<a class="noteRef" href="#d36968e700">[13]</a></td>
+                            <td valign="top" class="cell">Mechanisms: New Media and the Forensic Imagination</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">26212176<a class="noteRef" href="#d36968e712">[14]</a></td>
+                            <td valign="top" class="cell">The Digital Word: Text-based Computing in the Humanities</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">1409410684</td>
+                            <td valign="top" class="cell">Collaborative Research in the Digital Humanities</td>
+                        </tr></table><div class="caption"><div class="label">Table 1. </div>Digital Humanities Seeds</div></div>
+                    
+                    <div class="table"><table class="table unbordered"><tr class="row label">
+                            <td valign="top" class="cell">ASIN</td>
+                            <td valign="top" class="cell">Title</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">801842816</td>
+                            <td valign="top" class="cell">Hypertext</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">801855853</td>
+                            <td valign="top" class="cell">Hypertext 2.0</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">801882575</td>
+                            <td valign="top" class="cell">Hypertext 3.0</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">801855799</td>
+                            <td valign="top" class="cell">Cybertext: Perspectives on Ergodic Literature</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">816667381</td>
+                            <td valign="top" class="cell">Digital Art and Meaning</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">268030855</td>
+                            <td valign="top" class="cell">Electronic Literature: New Horizons for the Literary</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">262517531</td>
+                            <td valign="top" class="cell">Expressive Processing: Digital Fictions, Computer Games, &amp;
+                                Software Studies</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">262631873</td>
+                            <td valign="top" class="cell">Hamlet on the Holodeck: The Future of Narrative in
+                                Cyberspace</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">262633183</td>
+                            <td valign="top" class="cell">Twisty Little Passages: An Approach to Interactive Fiction</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">1441115919</td>
+                            <td valign="top" class="cell">New Directions in Digital Poetry</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">1441107452</td>
+                            <td valign="top" class="cell">Cybertext Poetics: The Critical Landscape of New Media Literary
+                                Theory</td>
+                        </tr></table><div class="caption"><div class="label">Table 2. </div>Electronic literature Seeds</div></div>
+                    
+                </div>
+                <div class="div div1">
+                    <h2 class="head">Gephi Procedure</h2>
+                    <div class="counter"><a href="#p16">16</a></div><div class="ptext" id="p16">The following section describes the steps taken in creating network
+                        visualisations using Gephi from the GEXF result files as output of
+                        requesting the recommendations for the seed books with a depth of two. These
+                        steps describe how a "master set" was created from ten individual files
+                        (corresponding with the seeds) for each of the queried local Amazons.
+                        Described here is the process for creating the Digital Humanities .co.uk
+                        "master set". Any deviations from these settings for creating the other
+                        master sets are noted below.</div>
+                    <div class="ptext"><ol class="list"><li class="item">For each seed book we have 10 .gexf files, each containing the
+                            recommendations for one ASIN with a depth of two.</li><li class="item">Combine those ten .gexf files to create one graph by appending them in
+                                Gephi<div class="ptext"><ol class="list"><li class="item">Open the first file as a New Graph. Graph Type:
+                                    Directed</li><li class="item">Open the next file and choose "Append Graph" to add it to the
+                                    first.</li><li class="item">Repeat until done</li><li class="item">We now have one graph with 155 nodes and 257 edges.</li></ol></div></li><li class="item">Run spatialization algorithm Force Atlas 2 [<a class="ref" href="#jacomy2011">Jacomy et al. 2011</a>].<a class="noteRef" href="#d36968e890">[15]</a><div class="ptext"><ol class="list"><li class="item">Settings: Scaling 100, Gravity 5<br/>These settings are not
+                                    fixed settings, rather, they are adjusted per graph to increase
+                                    readability and are adjusted during the process in an iterative
+                                    process to produce the best readability. Scaling represents
+                                    repulsion and increasing gravity prevents islands from drifting
+                                    away.</li></ol></div></li><li class="item">Rank nodes according to InDegree to relatively scale node size
+                            according to the number of recommendations it receives from other
+                                books.<div class="ptext"><ol class="list"><li class="item">Settings linear scaling: Min size: 4, Max size: 40.</li></ol></div></li><li class="item">Color code clusters to algorithmically detect communities in the graph
+                            using modularity statistics<a class="noteRef" href="#d36968e912">[16]</a>:<div class="ptext"><ol class="list"><li class="item">Statistics: Run Modularity with the following settings:
+                                    randomize 1, use weights 1, resolution 1.0</li><li class="item">Partition nodes with Modularity Class partition
+                                        parameter<a class="noteRef" href="#d36968e925">[17]</a>.</li></ol></div></li><li class="item">In the Data Laboratory copy data from "title" to Label to only
+                            show the book title as the node’s label.</li><li class="item">Show labels (in our case book titles) of the nodes scaled to node
+                            sizes in overview and run the "Label Adjust" layout algorithm to
+                            prevent overlap for readability</li><li class="item">Preview: Default Straight presets<div class="ptext"><ol class="list"><li class="item">in order to improve readability, shorten labels if they are
+                                    longer than thirty-four characters</li><li class="item">custom label color (#333333) </li><li class="item">custom edge color (#BDBDBD) to further increase readability of
+                                    the graph.</li></ol></div></li><li class="item">Save graph as PDF</li><li class="item">Calculate network statistics for tables 1 and 2. In the "statistics"
+                                panel<div class="ptext"><ol class="list"><li class="item">Click "Average Degree" and note the resulting
+                                    number</li><li class="item">Click "Graph Density", check "Directed", and note
+                                    the resulting number</li><li class="item">Click "Network Diameter", check "Directed", leave
+                                    other options empty, and note the diameter, average path length,
+                                    and number of shortest paths (rounded to three decimals)</li></ol></div></li><li class="item">Design graph further in Adobe Illustrator:<div class="ptext"><ol class="list"><li class="item">Adjusted community cluster colors using the tool "I want Hue" <a class="noteRef" href="#d36968e1003">[18]</a>
+                                    a tool for data scientists which generates palettes of optimally
+                                    distinct colours. These are the colours we generated and used in
+                                    our graphs: <div class="ptext"><ul class="list"><li class="item">#7CD5B0</li><li class="item">#CA52CC</li><li class="item">#C44639</li><li class="item">#CAC943</li><li class="item">#503A60</li><li class="item">#50733C</li><li class="item">#CB99A2</li><li class="item">#C0477D</li><li class="item">#70D151</li><li class="item">#8675CB</li><li class="item">#C1823A</li><li class="item">#533B2E</li><li class="item">#7BA7BD</li><li class="item">#C4C488</li></ul></div>
+                                </li></ol></div></li><li class="item">Highlight seed URLs</li><li class="item">Put graph in pre-cooked country template</li></ol></div>
+                    <div class="counter"><a href="#p17">17</a></div><div class="ptext" id="p17">Digital humanities Amazon.de same but Force Atlas 2 Settings: Scaling 300,
+                        Gravity 1</div>
+                    <div class="counter"><a href="#p18">18</a></div><div class="ptext" id="p18">Digital humanities Amazon.fr same but Force Atlas 2 Settings: Scaling 300,
+                        Gravity 5</div>
+                    <div class="counter"><a href="#p19">19</a></div><div class="ptext" id="p19">Electronic literature Amazon combined same but Force Atlas 2 Settings:
+                        Scaling 300, Gravity 5</div>
+                    <div class="counter"><a href="#p20">20</a></div><div class="ptext" id="p20">Electronic literature Amazon.com same but Force Atlas 2 Settings: Scaling
+                        300, Gravity 5</div>
+                </div>
+            </div>
+            <div class="div div0">
+                <h1 class="head">VISUALIZATIONS OF DIGITAL HUMANITIES</h1>
+                <div class="counter"><a href="#p21">21</a></div><div class="ptext" id="p21">This first graph was created by combining the ten master data sets from the ten
+                    digital humanities seeds (see Table 1) for Amazon.com with a depth of three and
+                    shows the overall Amazon recommendation network for Digital Humanities.</div>
+
+                <div class="figure">
+                    
+                    <div class="ptext"><a href="resources/images/figure01.jpg" rel="external"><img src="resources/images/figure01.jpg" alt=""/></a></div>
+
+                <div class="caption"><div class="label">Figure 1. </div>Part of the full Digital Humanities Amazon.com similar items purchased
+                        graph with 853 book titles with color-coded communities: Game Studies,
+                        Electronic Literature, Internet &amp; Technology, New Materialism, Digital
+                        Humanities, Book Studies, Deleuze Studies and OOO/Speculative Realism. Node size
+                        scaled according to InDegree. Seeds indicated in yellow. Full image: <a class="ref" href="https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/DH_Full_ClusterColorCoded_A4.pdf" onclick="window.open('https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/DH_Full_ClusterColorCoded_A4.pdf'); return false">https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/DH_Full_ClusterColorCoded_A4.pdf</a></div></div>
+
+                <div class="counter"><a href="#p22">22</a></div><div class="ptext" id="p22">Within the graph visualisation (Figure 1) each node represents a book. It is a
+                    directed graph which means that the edges between the source (book A) and the
+                    target (book B) are directed (A points to B). In our case the edges represent
+                    recommendations so the source (book A) points to the target (recommended book B,
+                    C, D etc.). We retrieved recommendations to a depth of three, meaning that our
+                    data set includes the seed books (i.e. depth 0), books recommended in relation
+                    to the seeds (i.e. depth 1), books recommended in relation to the books in depth
+                    1 (i.e. depth 2), and books recommended in relation to the books in depth 2
+                    (i.e. depth 3). </div>
+                <div class="counter"><a href="#p23">23</a></div><div class="ptext" id="p23">What we see in Figure 1 is the clustering of particular books into more or less
+                    distinct genres or disciplinary groups. For example, we see that there are many
+                    connections between books on internet and technology, electronic literature and
+                    game studies, but fewer between game studies and book studies, or between book
+                    studies and speculative realism. A closer reading of this visualization by a
+                    topic expert on the Digital Humanities, David M. Berry, revealed that the books
+                    cluster around particular fields within the Humanities such as Digital
+                    Humanities, Media Studies, Literary Studies and related areas. We identified the
+                    following clusters from the visualisations produced: Game Studies, Electronic
+                    Literature, Internet and Technology, New Materialism, Digital Humanities, Book
+                    Studies, Deleuze Studies and OOO/Speculative Realism. Some books appeared to
+                    form bridges between the fairly distinct clusters, such as Hayles’ <cite class="title italic">How We Think.</cite></div>
+                <div class="counter"><a href="#p24">24</a></div><div class="ptext" id="p24">We also see here how, while some books are densely interconnected leading to the
+                    clustering in the graph, others simply lead away from the initial seeds. An
+                    example is Bate’s <cite class="title italic">The Public Value of the
+                        Humanities</cite> (2011), which is bought by many Amazon customers who
+                    bought Gold’s <cite class="title italic">Debates in the Digital Humanities</cite>
+                    (2012). However, as you see from Figure 2, people who bought Bates’ book don’t
+                    tend to buy many other digital humanities books. Instead they are more likely to
+                    buy other books about universities and the current crisis in academia. This
+                    suggests that digitial humanists are interested in the crisis in academia, but
+                    those interested primarily in the crisis in academia are not, on average,
+                    particularly interested in the digital humanities. </div>
+                <div class="counter"><a href="#p25">25</a></div><div class="ptext" id="p25">We also see many connections between the seed books, which suggests that our
+                    initial choice of seeds was reasonably representative of the field.</div>
+
+
+                <div class="figure">
+                    
+                    <div class="ptext"><a href="resources/images/figure02.jpg" rel="external"><img src="resources/images/figure02.jpg" alt=""/></a></div>
+                <div class="caption"><div class="label">Figure 2. </div>Zoom into the full Digital Humanities similar items purchased graph
+                        with 853 book titles with one visible color-coded community: Digital Humanities
+                        and a related cluster around “The Humanities/The University in crisis” on the
+                        right (circled in blue).</div></div>
+
+                <div class="counter"><a href="#p26">26</a></div><div class="ptext" id="p26">Figure 1 and 2 show the network as generated from Amazon.com with a depth of
+                    three. If we look at the networks generated from individual country Amazon stores, we
+                    find important differences between the countries. In order to be able to compare
+                    the US, UK, French, and German Amazon we limited the crawl depth for
+                    recommendations to two. This means that we only looked at similar items
+                    suggested for our seed books as well what was recommended for those similar
+                    items.</div>
+                <div class="counter"><a href="#p27">27</a></div><div class="ptext" id="p27">Feeding the seed books for the digital humanities into the US Amazon (.com)
+                    generated a densely interlinked graph showing ninety-five individual books (Figure 3)
+                    with all seed books clustered in the middle. We also see that all the books
+                    bought by people who bought the seed books are connected to more than one seed
+                    book. </div>
+                <div class="figure">
+                    
+                    <div class="ptext"><a href="resources/images/figure03.jpg" rel="external"><img src="resources/images/figure03.jpg" alt=""/></a></div>
+
+                <div class="caption"><div class="label">Figure 3. </div>The Digital Humanities Amazon.com similar items purchased graph with 95
+                        book titles. Node size scaled according to InDegree. Clusters are color-coded
+                        using modularity. Seeds indicated in yellow. Full image: <a class="ref" href="https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/DH_COM_FA2_ScaledIndegree_ModularityColorCoding_ColoredSeeds.pdf" onclick="window.open('https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/DH_COM_FA2_ScaledIndegree_ModularityColorCoding_ColoredSeeds.pdf'); return false">https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/DH_COM_FA2_ScaledIndegree_ModularityColorCoding_ColoredSeeds.pdf</a></div></div>
+
+                <div class="counter"><a href="#p28">28</a></div><div class="ptext" id="p28">Here a group of central digital humanities books have clustered in the center of
+                    the graph. Eight of the seed books are visible here<a class="noteRef" href="#d36968e1145">[19]</a>, but we also prominently see four new books not on the list:
+                    Bartscherer and Coover’s anthology <cite class="title italic">Switching Codes</cite>,
+                    Fitzpatrick’s <cite class="title italic">Planned Obsolescence</cite>, Moretti’s
+                        <cite class="title italic">Graphs, Maps, Trees</cite> and McGann’s <cite class="title italic">Radiant Textuality</cite>. Their size, scaled according to
+                    InDegree, indicates that they are often bought together with other books that
+                    are recommended with the seeds. These additions can be found around the digital
+                    humanities cluster, suggesting more affinity (or more precisely, more links or
+                    edges) between these books than some of the other digital humanities books. We
+                    see adjacent fields beyond this central cluster. </div>
+                <div class="counter"><a href="#p29">29</a></div><div class="ptext" id="p29">The first related field is electronic literature on the right of the graph in
+                    Figure 3. McGann’s <cite class="title italic">Radiant Textuality</cite> connects to
+                    Hayles’ <cite class="title italic">Electronic Literature</cite>, which connects on to
+                    other books on electronic literature. In the bottom of the graph, circled in
+                    blue and green in Figure 4, we see a cluster on materiality, software and code
+                    studies, alongside books on speculative realism/object-oriented philosophy,
+                    which again lead to posthuman studies. </div>
+
+                <div class="figure">
+                    
+                    <div class="ptext"><a href="resources/images/figure04.jpg" rel="external"><img src="resources/images/figure04.jpg" alt=""/></a></div>
+                <div class="caption"><div class="label">Figure 4. </div>Detail of the Digital Humanities Amazon.com similar items purchased
+                        graph.</div></div>
+
+    
+                <div class="counter"><a href="#p30">30</a></div><div class="ptext" id="p30">Ian Bogost’s <cite class="title italic">Alien Phenomenology</cite> is notable for
+                    being a bridge to speculative realism, circled in green in Figure 4, and you can
+                    see books linked through Hayles’ <cite class="title italic">How We Became
+                        Posthuman</cite> are also part of this cluster, which on the Hayles' side
+                    includes cybertheory and posthumanist theory. At the lower left of the graph, in
+                    blue, we see Alex Galloway’s <cite class="title italic">The Interface Effect</cite>
+                    is an important hub, with a fairly disparate group of books surrounding it.</div>
+                <div class="counter"><a href="#p31">31</a></div><div class="ptext" id="p31">Hayles' <cite class="title italic">How We Think</cite> has the highest InDegree (that
+                    is, it is referenced by the most other nodes: it is recommended as a book
+                    frequently bought by purchasers of the highest number of other books in our
+                    sample) but is positioned on the edge of the main digital humanities cluster and
+                    not centrally within this digital humanities cluster. Instead, this book appears
+                    to function as a bridge or broker between different fields such as speculative
+                    realism/object oriented ontology and new materialism. Very interestingly, it has
+                    the same function in the electronic literature networks, as we will discuss
+                    later in this paper. </div>
+
+                <div class="figure">
+                    
+                    <div class="ptext"><a href="resources/images/figure05.jpg" rel="external"><img src="resources/images/figure05.jpg" alt=""/></a></div>
+
+                <div class="caption"><div class="label">Figure 5. </div>The Digital Humanities Amazon.co.uk similar items purchased graph with
+                        155 book titles. Node size scaled according to InDegree. Clusters are
+                        color-coded using modularity. Seeds indicated in yellow. Full image: <a class="ref" href="https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/DH_UK_FA2_ScaledIndegree_ModularityColorCoding_ColoredSeeds.pdf" onclick="window.open('https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/DH_UK_FA2_ScaledIndegree_ModularityColorCoding_ColoredSeeds.pdf'); return false">https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/DH_UK_FA2_ScaledIndegree_ModularityColorCoding_ColoredSeeds.pdf</a></div></div>
+
+
+
+                <div class="counter"><a href="#p32">32</a></div><div class="ptext" id="p32">The UK Amazon graph shows 155 book titles with seven seeds clustered in the
+                        middle<a class="noteRef" href="#d36968e1215">[20]</a>. Similarly to the US Amazon, Hayles' <cite class="title italic">How
+                        We Think</cite> functions as a bridge to the fields of object oriented
+                    ontology and new materialism and Bogost’s <cite class="title italic">Alien
+                        Phenomenology</cite> functions as a bridge to speculative realism on the
+                    top. However, there are three new clusters visible that distinguish it from the
+                    US Amazon graph. First, we see a cluster of (popular) new media theory books on
+                    the left with Geert Lovink’s<cite class="title italic"> Networks without a
+                        Cause</cite>, Nancy Baym’s <cite class="title italic">Personal Connections in the
+                        Digital Age</cite> and Sherry Turkle’s <cite class="title italic">Alone
+                        Together</cite> forming bridges. Second, a cluster on digital history in
+                    the bottom middle and third, a cluster on book history and book publishing on
+                    the bottom right.</div>
+                <div class="counter"><a href="#p33">33</a></div><div class="ptext" id="p33">Figures 6 and 7 show the networks generated by feeding our English-language seed
+                    books into the French and German Amazon stores. In both cases, the seed books almost
+                    all disappear.</div>
+
+                <div class="figure">
+                    
+                    <div class="ptext"><a href="resources/images/figure06.jpg" rel="external"><img src="resources/images/figure06.jpg" alt=""/></a></div>
+                    
+                <div class="caption"><div class="label">Figure 6. </div>The Digital Humanities Amazon.fr similar items purchased graph with 62
+                        book titles. Node size scaled according to InDegree. Clusters are color-coded
+                        using modularity. Seeds indicated in yellow. Full image: <a class="ref" href="https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/DH_FR_FA2_ScaledIndegree_ModularityColorCoding_ColoredSeeds.pdf" onclick="window.open('https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/DH_FR_FA2_ScaledIndegree_ModularityColorCoding_ColoredSeeds.pdf'); return false">https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/DH_FR_FA2_ScaledIndegree_ModularityColorCoding_ColoredSeeds.pdf</a>
+                    </div></div>
+
+            
+                <div class="counter"><a href="#p34">34</a></div><div class="ptext" id="p34">On the graph for Amazon.fr, only two books from the seeds remain: <cite class="title italic">Debates in the Digital Humanities</cite> and <cite class="title italic">Understanding Digital Humanities</cite>. It immediately
+                    becomes apparent that besides these two seeds there are only two other English
+                    language books in the graph: <cite class="title italic">Planned Obsolescence</cite>
+                    and <cite class="title italic">Switching Codes</cite>. The seed <cite class="title italic">Debates in the Digital Humanities</cite> acts as a bridge to four
+                    clusters, which, unlike the other graphs, solely consist of French-language
+                    books. These books are both original French books and translations. A possible
+                    explanation for this lack of English books in the French-speaking DH network is
+                    the current trend in translating DH into French terms, either "<span class="foreign i">Humanités
+                        numériques</span>"<a class="noteRef" href="#d36968e1282">[21]</a> or "<span class="foreign i">Humanités
+                        digitales</span>"<a class="noteRef" href="#d36968e1290">[22]</a>.</div>
+                <div class="counter"><a href="#p35">35</a></div><div class="ptext" id="p35">The first cluster with the largest number of nodes (in pink/purple), is
+                    constituted by French sociology and media studies books, mostly written by
+                    academics but published by mainstream publishing houses which aims to foster
+                    general public debates about technology in society. On the right side, the
+                    cluster with blue nodes revolves around two books written by Milad Doueihi, a
+                    French-speaking classical historian: <cite class="title italic">Pour un humanisme
+                        numérique</cite> and <cite class="title italic">La grande conversion
+                        numérique</cite>. These books on "numerical humanism" deal with the
+                    "numerical turn" and the future of books and education after digitalization,
+                    which echoes the general purpose of the previous cluster. Books about philosophy
+                    of technique constitute the cluster on the top left side and all these books are
+                    connected to a French edition (<cite class="title italic">La raison graphique</cite>)
+                    of Jack Goody’s <cite class="title italic">The Domestication of the Savage
+                        Mind,</cite> which acts as a bridge to the digital humanities. Books about
+                    sociology, philosophy of risk society, and citizen science constitute the last
+                    cluster, with green nodes on the top right side, and they are all connected by
+                    the French edition of Ulrich Beck’s <cite class="title italic">Risk Society: Towards a
+                        New Modernity</cite>.</div>
+                <div class="figure">
+                    
+                    <div class="ptext"><a href="resources/images/figure07.jpg" rel="external"><img src="resources/images/figure07.jpg" alt=""/></a></div>
+                    
+                <div class="caption"><div class="label">Figure 7. </div>The Digital Humanities Amazon.de similar items purchased graph with 92
+                        book titles. Node size scaled according to InDegree. Clusters are color-coded
+                        using modularity. Seeds indicated in yellow. Full image: <a class="ref" href="https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/DH_DE_FA2_ScaledIndegree_ModularityColorCoding.pdf" onclick="window.open('https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/DH_DE_FA2_ScaledIndegree_ModularityColorCoding.pdf'); return false">https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/DH_DE_FA2_ScaledIndegree_ModularityColorCoding.pdf</a>
+                    </div></div>
+               
+                <div class="counter"><a href="#p36">36</a></div><div class="ptext" id="p36">On the graph for Amazon.de, five books from the seeds remain. The various
+                    clusters are less thematized than the other countries, and topical drifting
+                    appears. The cluster in the center, in green, contains digital humanities
+                    literature, and media studies books. The cluster in purple, in the bottom center,
+                    goes from media studies to philosophy and French theory, which echoes the close
+                    cluster on the right (in brown nodes) on posthuman theories. The two clusters on
+                    the top are related to information science (red nodes on the top left side) and
+                    to computer science books, mainly about Turing (green nodes, top right). The
+                    last cluster, at the bottom left with blue nodes, contains literary theory and
+                    novels.</div>
+                <div class="counter"><a href="#p37">37</a></div><div class="ptext" id="p37">Unlike the French graph, there are many English language books in the German graph,
+                    but interestingly enough the graph introduces German books on digital humanities
+                    such as <cite class="title italic">Digitale Arbeitstechniken: für die Geistes- und
+                        Kulturwissenschaften</cite>, <cite class="title italic">Digitale
+                        Geschichtswissenschaft</cite>, and <cite class="title italic">Digital Past:
+                        Geschichtswissenschaft im digitalen Zeitalter</cite> on the topics of
+                    digital history and digital tools for the humanities and cultural studies. It
+                    also includes <cite class="title italic">Die technologische Bedingung: Beiträge zur
+                        Beschreibung der technischen Welt</cite>, a compilation of translated
+                    essays including Galloway, Hansen, and Hayles translated into German. As an
+                    introduction into the topic of "the technological condition" in German it
+                    acts as a bridge to related books in English.</div>
+                <div class="counter"><a href="#p38">38</a></div><div class="ptext" id="p38">Further comparing the various local Amazon domains under study we can see that
+                    .com has the most densely interlinked recommendations (see density and average
+                    degree in Table 3) while .fr is the sparsest. This of course also reflects how
+                    quickly other books are recommended (average path length).</div>
+                <div class="table"><table class="table"><tr class="row label">
+                        <td valign="top" class="cell">data set</td>
+                        <td valign="top" class="cell">nodes</td>
+                        <td valign="top" class="cell">edges</td>
+                        <td valign="top" class="cell">density</td>
+                        <td valign="top" class="cell">avg degree</td>
+                        <td valign="top" class="cell">diameter</td>
+                        <td valign="top" class="cell">avg path length</td>
+                        <td valign="top" class="cell">number of shortest paths</td>
+                    </tr><tr class="row">
+                        <td valign="top" class="cell label">.co.uk</td>
+                        <td valign="top" class="cell">155</td>
+                        <td valign="top" class="cell">257</td>
+                        <td valign="top" class="cell">0.011</td>
+                        <td valign="top" class="cell">1.658</td>
+                        <td valign="top" class="cell">5</td>
+                        <td valign="top" class="cell">3.139</td>
+                        <td valign="top" class="cell">3808</td>
+                    </tr><tr class="row">
+                        <td valign="top" class="cell label">.fr</td>
+                        <td valign="top" class="cell">62</td>
+                        <td valign="top" class="cell">70</td>
+                        <td valign="top" class="cell">0.019</td>
+                        <td valign="top" class="cell">1.129</td>
+                        <td valign="top" class="cell">3</td>
+                        <td valign="top" class="cell">1.884</td>
+                        <td valign="top" class="cell">207</td>
+                    </tr><tr class="row">
+                        <td valign="top" class="cell label">.de</td>
+                        <td valign="top" class="cell">92</td>
+                        <td valign="top" class="cell">118</td>
+                        <td valign="top" class="cell">0.014</td>
+                        <td valign="top" class="cell">1.283</td>
+                        <td valign="top" class="cell">5</td>
+                        <td valign="top" class="cell">2.910</td>
+                        <td valign="top" class="cell">1052</td>
+                    </tr><tr class="row">
+                        <td valign="top" class="cell label">.com</td>
+                        <td valign="top" class="cell">95</td>
+                        <td valign="top" class="cell">206</td>
+                        <td valign="top" class="cell">0.023</td>
+                        <td valign="top" class="cell">2.168</td>
+                        <td valign="top" class="cell">5</td>
+                        <td valign="top" class="cell">2.716</td>
+                        <td valign="top" class="cell">1870</td>
+                    </tr></table><div class="caption"><div class="label">Table 3. </div>Network statistics for the networks of each of the local Amazon domains
+                    under study.</div></div>
+     
+
+            </div>
+            <div class="div div0">
+                <h1 class="head">VISUALIZATIONS OF ELECTRONIC LITERATURE</h1>
+                <div class="counter"><a href="#p39">39</a></div><div class="ptext" id="p39">Our analysis suggests that electronic literature is a far less cohesive field
+                    than digital humanities is in the USA, at least in so far as printed books can
+                    be said to represent the field. Figure 8 shows the network of all books returned
+                    for our electronic literature seed books in the four Amazon stores we searched,
+                    and you can see that a large number of books were returned for the seed books.
+                    The seed nodes, which are marked in yellow, are scattered around the graph
+                    rather than clustered in the center as in the US digital humanities graph in
+                    Figure 3, and they are not heavily recommended, as is indicated by the small
+                    size of most of the seed nodes. The two seed books within electronic literature
+                    that Amazon.com notes readers of other books buy are Hayles’ <cite class="title italic">Electronic Literature</cite> and Aarseth’s <cite class="title italic">Cybertext</cite>, but as Figure 8 shows, the Force Atlas 2
+                    algorithm in Gephi does not pull them close together, although they are directly
+                    linked to each other. This is because people who buy these two books also buy
+                    books in distinctly different fields: <cite class="title italic">Electronic
+                        Literature</cite> connects to DH, book culture, and disucssions of
+                    materiality, and <cite class="title italic">Cybertext</cite> to game studies. There
+                    are very few links directly between game studies and DH or game studies and book
+                    culture. Between <cite class="title italic">Electronic Literature</cite> and <cite class="title italic">Cybertext</cite> we see a range of key texts in new media
+                    studies that are also important in electronic literature, such as Manovich’s
+                        <cite class="title italic">The Language of New Media</cite>, Bolter and Grusin’s
+                        <cite class="title italic">Remediation</cite>, and Jenkins’ <cite class="title italic">Convergence Culture</cite> as well as core media studies texts such as
+                    McLuhan. </div>
+                <div class="counter"><a href="#p40">40</a></div><div class="ptext" id="p40">Further comparing the DH and electronic literature graphs from a more numerical
+                    point of view (see Table 4), we can see that although the electronic literature
+                    graph has fewer nodes, it is actually more densely connected than the DH one
+                    (see density and average degree). Looking at the average path length, one can
+                    see that it is easier to reach other books given a book related to EL according
+                    to Amazon.</div>
+                <div class="table"><table class="table"><tr class="row label">
+                        <td valign="top" class="cell">data set</td>
+                        <td valign="top" class="cell">nodes</td>
+                        <td valign="top" class="cell">edges</td>
+                        <td valign="top" class="cell">density</td>
+                        <td valign="top" class="cell">avg degree</td>
+                        <td valign="top" class="cell">diameter</td>
+                        <td valign="top" class="cell">avg path length</td>
+                        <td valign="top" class="cell">number of shortest paths</td>
+                    </tr><tr class="row">
+                        <td valign="top" class="cell label">DH full</td>
+                        <td valign="top" class="cell">853</td>
+                        <td valign="top" class="cell">1402</td>
+                        <td valign="top" class="cell">0.002</td>
+                        <td valign="top" class="cell">1.644</td>
+                        <td valign="top" class="cell">13</td>
+                        <td valign="top" class="cell">5.807</td>
+                        <td valign="top" class="cell">58965</td>
+                    </tr><tr class="row">
+                        <td valign="top" class="cell label">EL full</td>
+                        <td valign="top" class="cell">464</td>
+                        <td valign="top" class="cell">977</td>
+                        <td valign="top" class="cell">0.005</td>
+                        <td valign="top" class="cell">2.106</td>
+                        <td valign="top" class="cell">9</td>
+                        <td valign="top" class="cell">4.111</td>
+                        <td valign="top" class="cell">33944</td>
+                    </tr></table><div class="caption"><div class="label">Table 4. </div>Network statistics for the full Digital Humanities (DH full) and
+                        Electronic Literature (EL full) networks.</div></div>
+          
+
+                <div class="figure">
+                    
+                    <div class="ptext"><a href="resources/images/figure08.jpg" rel="external"><img src="resources/images/figure08.jpg" alt=""/></a></div>
+                    
+                <div class="caption"><div class="label">Figure 8. </div>The Electronic Literature Amazon (.com, .fr, .de, .co.uk combined)
+                        similar items purchased graph with 464 book titles. Node size scaled according
+                        to InDegree. Clusters are color-coded using modularity. Seeds indicated in
+                        yellow. Full image: <a class="ref" href="https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/EL_FULL_FA2_ScaledIndegree_ModularityColorCoding.pdf" onclick="window.open('https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/EL_FULL_FA2_ScaledIndegree_ModularityColorCoding.pdf'); return false">https://wiki.digitalmethods.net/pub/Dmi/Winter13AmazonRecommendations/EL_FULL_FA2_ScaledIndegree_ModularityColorCoding.pdf</a>
+                    </div></div>
+
+             
+                <div class="counter"><a href="#p41">41</a></div><div class="ptext" id="p41">The games studies cluster below <cite class="title italic">Cybertext</cite> is far
+                    more cohesive and interlinked than the rest of the network, suggesting that this
+                    is a more clearly defined field than electronic literature, at least in terms of
+                    having an established set of printed books that are frequently bought
+                    together.</div>
+
+                <div class="figure">
+                    
+                    <div class="ptext"><a href="resources/images/figure09.jpg" rel="external"><img src="resources/images/figure09.jpg" alt=""/></a></div>
+                    
+                <div class="caption"><div class="label">Figure 9. </div>Detail of the electronic literature graph in Figure 8, showing the game
+                        studies cluster.</div></div>
+
+             
+                <div class="counter"><a href="#p42">42</a></div><div class="ptext" id="p42">At the top of Figure 8, we see links leading away from electronic literature into
+                    discussions of the role of the book in a networked society and further away into
+                    book history and general discussions of bookmaking and the book business. This
+                    shows how one field drifts towards another, but we also see that this section of
+                    the graph is not interlinked and that there are few or no connections back into
+                    the more centrally placed books that are more closely related to electronic
+                    literature.</div>
+                <div class="counter"><a href="#p43">43</a></div><div class="ptext" id="p43">The upper right of Figure 8 shows a digital humanities cluster very similar to
+                    that generated by our digital humanities seeds, while the lower right hand side
+                    shows an interesting loosely connected cluster of works on conceptual poetry and
+                    writing and on digital poetics. We see Perloff’s <cite class="title italic">Unoriginal
+                        Genius: Poetry by Others</cite> is a hub here, and while Perloff’s book is
+                    not specifically about electronic literature, its focus on remixing and
+                    cut-and-paste as literary techniques is clearly relevant to electronic
+                    literature. Another hub, seen towards the bottom right of Figure 10, is Montfort
+                    et.al.’s <cite class="title italic">10 Print Chr (205.5+Rnd(1))</cite>, a book about
+                    a one line BASIC program that generates a simple graphic maze consisting of two
+                    randomly repeated characters in the Commodore 64 computer’s character set. This
+                    is again not exactly electronic literature, but it is closely related to
+                    electronic literature, and in the book the short program is analysed as closely
+                    as literature ever was by several important critics in the field of electronic
+                    literature. Perhaps we must conclude that some of the most important books for
+                    the study of electronic literature are not about electronic literature per se? </div>
+                <div class="figure">
+                    
+                    <div class="ptext"><a href="resources/images/figure10.png" rel="external"><img src="resources/images/figure10.png" alt=""/></a></div>
+                    
+                <div class="caption"><div class="label">Figure 10. </div>Detail of the electronic literature graph in Figure 8 showing a
+                        cluster of books on conceptual writing and digital poetics. </div></div>
+                
+                <div class="counter"><a href="#p44">44</a></div><div class="ptext" id="p44">Far out to the right in Figure 8, we see a cluster of books about generative art
+                    and code art (Figure 11).</div>
+
+                <div class="figure">
+                    
+                    <div class="ptext"><a href="resources/images/figure11.png" rel="external"><img src="resources/images/figure11.png" alt=""/></a></div>
+                    
+                <div class="caption"><div class="label">Figure 11. </div>Detail of the electronic literature graph in Figure 8 showing a
+                        cluster of books on code and art.</div></div>
+             
+                <div class="counter"><a href="#p45">45</a></div><div class="ptext" id="p45">As you can see in Figure 8, this cluster is quite distant from the rest of the
+                    network, and is connected to it by a few clear brokers: Bartscherer and Coover’s
+                    recent anthology <cite class="title italic">Switching Codes</cite>, Simanowski’s
+                        <cite class="title italic">Digital Art and Meaning: Reading Kinetic Poetry, Text
+                        Machines, Mapping Art, and Interactive Installations</cite>, and Montfort
+                    et.al.’s <cite class="title italic">10 Print</cite>. <cite class="title italic">Switching
+                        Codes</cite> also shows up as a very central book in the US digital
+                    humanities network as shown in Figure 3, and appears to function as a bridge
+                    between different communities related to digital humanities, electronic
+                    literature and digital art. </div>
+                <div class="counter"><a href="#p46">46</a></div><div class="ptext" id="p46">Despite the fact that electronic literature research is scholarship about
+                    creative works of electronic literature, only three works of electronic
+                    literature show up in the graph, and these are works published on CD-ROM by
+                    Eastgate systems in the early 1990s. Most electronic literature is published
+                    online and is not part of Amazon’s database. We see in Figure 12 that Joyce’s
+                    seminal hypertext fiction <cite class="title italic">afternoon, a story</cite>, shows
+                    up and is connected to the seed books Hayles’ <cite class="title italic">Electronic
+                        Literature</cite> and Landow’s <cite class="title italic">Hypertext 3.0</cite>
+                    as well as Murray’s <cite class="title italic">Hamlet on the Holodeck</cite>, and
+                    also to a relatively unrelated book, Shirky’s <cite class="title italic">Here Comes
+                        Everybody</cite>.</div>
+                <div class="figure">
+                    
+                    <div class="ptext"><a href="resources/images/figure12.png" rel="external"><img src="resources/images/figure12.png" alt=""/></a></div>
+
+                <div class="caption"><div class="label">Figure 12. </div>Detail of the electronic literature graph in Figure 8 showing
+                        hypertext fictions <cite class="title italic">afternoon</cite>, <cite class="title italic">Patchwork Girl</cite> and <cite class="title italic">Victory Garden</cite>.</div></div>
+                
+                <div class="counter"><a href="#p47">47</a></div><div class="ptext" id="p47">We see that people who bought <cite class="title italic">afternoon</cite> also bought
+                    two other frequently cited hypertext fictions from the early 1990s: Jackson’s
+                        <cite class="title italic">Patchwork Girl</cite> and Moulthrop’s <cite class="title italic">Victory Garden</cite>. Research in the field of electronic
+                    literature tends to reference a broad range of creative works in the field [<a class="ref" href="#rettbergjw2014">J. W. Rettberg 2014</a>] and while using our methodology on a traditional
+                    field of literary studies might capture literary works as well as scholarly
+                    books, literary works of electronic literature are not sold on Amazon. This may
+                    be one reason why the field of electronic literature appears less cohesive than
+                    that of the digital humanities.</div>
+            </div>
+            <div class="div div0">
+                <h1 class="head">LIMITATIONS</h1>
+                <div class="counter"><a href="#p48">48</a></div><div class="ptext" id="p48">Studying a field only from the point of view of Amazon book recommendations is
+                    clearly not going to tell the whole story about digital humanities or electronic
+                    literature. This type of study of the field excludes other book sellers and
+                    traditional scholarly resources such as journals and journal articles and also
+                    excludes the outputs of digital humanities projects such as archives, TEI
+                    projects, websites, tools and code archives, and also works of art and
+                    literature which are central to the field of electronic literature. Also, it
+                    bears the temporal limitations imposed by the time constraint of the three-day
+                    data sprint format. Finally, there are also technical limitations using the
+                    Amazon API in our survey of the fields of electronic literature and digital
+                    humanities, such as a limit of ten recommendations per book and a maximum of
+                    3600 requests to the API per hour. </div>
+                <div class="counter"><a href="#p49">49</a></div><div class="ptext" id="p49">Nonetheless, it does provide a new way of looking at the field. The sheer size of
+                    the Amazon database allows us to see interesting connections between the digital
+                    humanities and adjacent fields. Also, even with these caveats it is notable that
+                    the results, broadly speaking, do reflect clusters of what we might think of as
+                    fields of study, and the connection between them. </div>
+                <div class="counter"><a href="#p50">50</a></div><div class="ptext" id="p50">It is also important to realise that while the data does, according to Amazon,
+                    give information about what other books are bought by customers who buy book X,
+                    book sales don’t necessarily mean that the books are read, cited, used, or
+                    influential. In addition, customers who buy digital humanities books also buy
+                    other books on Amazon and if books are frequently bought together they will be
+                    marked as "similar" by Amazon as recommendation engine. This
+                    leads to the inclusion of <cite class="title italic">The Portrait of Dorian
+                        Gray</cite> in the German digital humanities graph and, as a classic novel,
+                    it is the most sold item in the graph. </div>
+                <div class="counter"><a href="#p51">51</a></div><div class="ptext" id="p51">Our data from the French and German Amazon stores differed slightly from the
+                    English-language Amazon stores with fewer results. One reason is that we use the same,
+                    English-language books as seeds in all the national Amazon stores. While we could have
+                    chosen French and German language books, we thought the results yielded were
+                    still interesting, and many non-English titles rapidly appeared in these graphs.
+                    The seeds introduced similar language-specific items on the topic of digital
+                    humanities. This may point us to French and German-specific subfields of the
+                    digital humanities in their native language.</div>
+            </div>
+            <div class="div div0">
+                <h1 class="head">CONCLUSIONS AND FURTHER RESEARCH</h1>
+                <div class="counter"><a href="#p52">52</a></div><div class="ptext" id="p52">Based on these network graphs of different disciplines, we would conclude that
+                    they appear to have different styles of communication, at least in terms of the
+                    importance of printed books in the field. The field of digital humanities in the
+                    USA as viewed through Amazon’s SimilarityLookup is cohesive, with a relatively
+                    small number of books that are bought together. In France and Germany, on the
+                    other hand, we see that the field is far less well defined, and based on the
+                    books that are bought together, it is hard to say clearly what the digital
+                    humanities are or are not in these countries. Britain offers an intermediate
+                    position, where the digital humanities are understood in a less precise or
+                    perhaps broader manner than in the US, and where we see relationships to many
+                    more fields. </div>
+                <div class="counter"><a href="#p53">53</a></div><div class="ptext" id="p53">Electronic literature, as viewed through print books and Amazon’s
+                    SimilarityLookup, is a field that is far less cohesive than the digital
+                    humanities in the USA, and we see instead that books on electronic literature
+                    intermingle with books in related disciplines: new media studies, game studies
+                    and the digital humanities chief among them. Game studies in fact comes to the
+                    fore in the graph drawn from our electronic literature seeds, and appears to be
+                    a field almost as cohesive as the digital humanities in the US. </div>
+                <div class="counter"><a href="#p54">54</a></div><div class="ptext" id="p54">We mentioned earlier that there is some irony to analysing the digital humanities
+                    by looking at the books published in the field rather than at the digital
+                    projects and tools developed. But at least in the US, it appears that the field
+                    of digital humanities is very clearly defined by its books. Our diagrams would
+                    be an excellent starting point for a reading list for a newcomer to the digital
+                    humanities. Electronic literature, on the other hand, is not as easily described
+                    by this method. Perhaps more of the publications on electronic literature are
+                    entirely digital, whether as creative works or as shorter articles in online
+                    journals and other online publications, and thus they are not visible to Amazon.
+                    Or perhaps electronic literature is more interdisciplinary by nature, and thus
+                    people who read books about electronic literature read more broadly rather than
+                    focusing on that topic alone. </div>
+                <div class="counter"><a href="#p55">55</a></div><div class="ptext" id="p55">This research raises further questions that we think could be explored in
+                    relation to the research questions.</div>
+                <div class="counter"><a href="#p56">56</a></div><div class="ptext" id="p56">How can a more formal and defensible seeding strategy be developed? In the
+                    project, in common with other digital methods projects, a domain subject expert
+                    is used to generate initial data sources, seeds, and links. It would be
+                    interesting and useful to reduce or eliminate the seeding process such that once
+                    the general thematic area is identified, a standard seed generation methodology
+                    can be followed. This may still use knowledge elicitation from the subject
+                    domain expert, but would be formalised.</div>
+                <div class="counter"><a href="#p57">57</a></div><div class="ptext" id="p57">How can validation of the API results be implemented so that the API does not
+                    always return identical data for search queries? This is a result of how Amazon
+                    handles data fields that contain a super-set in relation to the capacity of the
+                    API return values. One method might be multiple requests and a smoothing
+                    algorithm to average the results from the API.</div>
+                <div class="counter"><a href="#p58">58</a></div><div class="ptext" id="p58">The ability to create the graphs from the API is extremely powerful and although
+                    we undertook some limited secondary data generation, such as querying the Kindle
+                    Highlights database<a class="noteRef" href="#d36968e1808">[23]</a>, it would be useful to
+                    formalise this method and generate sufficient data which when linked to the
+                    primary graph data enables interactive exploration of the graph output.</div>
+                <div class="counter"><a href="#p59">59</a></div><div class="ptext" id="p59">As an example of further research we ran some preliminary data requests to the
+                    Kindle Highlights database, however, the number of highlights in our texts was
+                    very low. Most digital humanists either do not read the digital (or at least,
+                    the Kindle) versions of the texts, or they do not highlight their digital
+                    versions. Nonetheless, with the growth in e-readers, iPads, tablets, and the
+                    like, we can expect this database to be of increasing interest to researchers
+                    undertaking similar projects to this in the future. For example, these are the
+                    most popular highlights in Kirschenbaum’s <cite class="title italic">Mechanisms: New
+                        Media and the Forensic Imagination,</cite> which is important to both the
+                    digital humanist and electronic literature subject areas. </div>
+                <blockquote><p class="ptext">forensic materiality rests upon the principle of
+                    individualization (basic to modern forensic science and criminalistics), the
+                    idea that no two things in the physical world are ever exactly alike.</p></blockquote>
+                <blockquote><p class="ptext">The point is to address the fundamentally social, rather than
+                    the solely technical mechanisms of electronic textual transmission, and the role
+                    of social networks and network culture as active agents of preservation.</p></blockquote>
+                <blockquote><p class="ptext">a digital environment is an abstract projection supported and
+                    sustained by its capacity to propagate the illusion (or call it a working model)
+                    of immaterial behavior:</p></blockquote>
+                <div class="counter"><a href="#p60">60</a></div><div class="ptext" id="p60">Each of these sections has limited information associated with it, although it is
+                    noticeable that no page number is given – Kindles do not have page numbers as
+                    part of the product.</div>
+                <div class="counter"><a href="#p61">61</a></div><div class="ptext" id="p61">As an exploratory approach to mapping a field or disciplinary area of research,
+                    this approach has much to recommend it. It provides a useful entry point for
+                    drawing up an initial map of the field and for developing understanding of the
+                    way in which books provide a structure for a field's development. Whilst we wish
+                    to reiterate the limitations of this approach, particularly in view of the
+                    digital nature of the two fields we chose for comparison, digital humanities and
+                    electronic literature, and the resultant absences in the data and visualisations
+                    that are created, we nonetheless think that used appropriately it is a method
+                    that is very amenable to an exploratory method of field-mapping. </div>
+            </div>
+        
+        
+            
+        
+    </div>
+<div id="notes"><h2>Notes</h2><div class="endnote" id="d36968e312"><span class="noteRef">[1]</span>This paper is the result of a data sprint at the Digital
+                        Methods Winter School, "Data Sprint: The New Logistics
+                            of Short-form Method", 22-24 January 2013, Amsterdam, the
+                        Netherlands. See <a class="ref" href="https://wiki.digitalmethods.net/Dmi/WinterSchool2013" onclick="window.open('https://wiki.digitalmethods.net/Dmi/WinterSchool2013'); return false">https://wiki.digitalmethods.net/Dmi/WinterSchool2013</a> for more
+                        info. Thanks to Richard Rogers and other participants at the Winter School
+                        for helpful comments and suggestions.</div><div class="endnote" id="d36968e335"><span class="noteRef">[2]</span>
+                        <a class="ref" href="https://sites.google.com/site/whatisdigitalhumanities/results" onclick="window.open('https://sites.google.com/site/whatisdigitalhumanities/results'); return false">https://sites.google.com/site/whatisdigitalhumanities/</a></div><div class="endnote" id="d36968e340"><span class="noteRef">[3]</span>
+                        <a class="ref" href="https://github.com/dmberry/Digital-Humanities-and-Electronic-Literature" onclick="window.open('https://github.com/dmberry/Digital-Humanities-and-Electronic-Literature'); return false">https://github.com/dmberry/Digital-Humanities-and-Electronic-Literature</a>
+                    </div><div class="endnote" id="d36968e346"><span class="noteRef">[4]</span>
+                        <a class="ref" href="https://github.com/digitalmethodsinitiative/arpg" onclick="window.open('https://github.com/digitalmethodsinitiative/arpg'); return false">https://github.com/digitalmethodsinitiative/arpg</a>
+                    </div><div class="endnote" id="d36968e430"><span class="noteRef">[5]</span>
+                        <a class="ref" href="http://docs.aws.amazon.com/AWSECommerceService/latest/DG/SimilarityLookup.html" onclick="window.open('http://docs.aws.amazon.com/AWSECommerceService/latest/DG/SimilarityLookup.html'); return false">http://docs.aws.amazon.com/AWSECommerceService/latest/DG/SimilarityLookup.html</a>
+                    </div><div class="endnote" id="d36968e451"><span class="noteRef">[6]</span>Amazon Austria (.at) redirects to Amazon Germany
+                        (.de)</div><div class="endnote" id="d36968e454"><span class="noteRef">[7]</span>
+                        <a class="ref" href="http://www.amazon.com/gp/feature.html?ie=UTF8&amp;docId=487250" onclick="window.open('http://www.amazon.com/gp/feature.html?ie=UTF8&amp;docId=487250'); return false">http://www.amazon.com/gp/feature.html?ie=UTF8&amp;docId=487250</a>
+                    </div><div class="endnote" id="d36968e514"><span class="noteRef">[8]</span>These ten seed books were selected
+                        by two topic experts: David M. Berry selected ten key books in the field of
+                        digital humanities and Jill Walker Rettberg selected ten key books in the
+                        field of electronic literature. The concept of seed used here is drawn from
+                        the computational use of pseudo-random numbers to begin a computational
+                        process, it is a term also used in "Minecraft" to indicate a starting number
+                        to generate a procedural world in the game. A seed in the context of this
+                        paper is a set of values, in this case book ASINs, which can be used to
+                        bootstrap the API call process. Using 10 seeds rather than just one
+                        increased the space of results which could be produced from the Amazon API
+                        and the rapidity of the data set collection, which, due to the compressed
+                        time available in the data sprint, was extremely useful.</div><div class="endnote" id="d36968e522"><span class="noteRef">[9]</span>
+                            <a class="ref" href="http://docs.aws.amazon.com/AWSECommerceService/latest/DG/SimilarityLookup.html" onclick="window.open('http://docs.aws.amazon.com/AWSECommerceService/latest/DG/SimilarityLookup.html'); return false">http://docs.aws.amazon.com/AWSECommerceService/latest/DG/SimilarityLookup.html</a>
+                        </div><div class="endnote" id="d36968e532"><span class="noteRef">[10]</span>As some
+                        books may have the same recommendations and some books have less than 10
+                        recommendations, the actual number is much lower.</div><div class="endnote" id="d36968e584"><span class="noteRef">[11]</span>In determining the seeds we relied on the editorial logic of
+                            subject experts David M. Berry for choosing the Digital Humanities seed
+                            set and of Jill Walker Rettberg for the Electronic literature seed set
+                            (see previous footnote).</div><div class="endnote" id="d36968e587"><span class="noteRef">[12]</span>The source code for this
+                            tool is available at <a class="ref" href="https://github.com/digitalmethodsinitiative/arpg" onclick="window.open('https://github.com/digitalmethodsinitiative/arpg'); return false">https://github.com/digitalmethodsinitiative/arpg</a></div><div class="endnote" id="d36968e700"><span class="noteRef">[13]</span>The lookup of these books failed because the actual
+                                    ASIN ends with an X (26251740X and 26212176X). This does not
+                                    mean that the book is automatically excluded from the analysis
+                                    because if it is recommended by one of the other seed books it
+                                    will once again be included in the data set.</div><div class="endnote" id="d36968e712"><span class="noteRef">[14]</span> Ibid.</div><div class="endnote" id="d36968e890"><span class="noteRef">[15]</span>It is scaled for small to medium-size graphs, and is
+                                adapted to qualitative interpretation of graphs [<a class="ref" href="#jacomy2011">Jacomy et al. 2011</a>].</div><div class="endnote" id="d36968e912"><span class="noteRef">[16]</span>
+                                <span class="error"><a href="#blondel2008">see: Blondel et
+                                al.</a></span>.</div><div class="endnote" id="d36968e925"><span class="noteRef">[17]</span>"This structure, often called a community
+                                        structure, describes how the the network is
+                                        compartmentalized into sub-networks. These sub-networks (or
+                                        communities) have been shown to have significant real-world
+                                        meaning." <a class="ref" href="http://wiki.gephi.org/index.php/Modularity" onclick="window.open('http://wiki.gephi.org/index.php/Modularity'); return false">http://wiki.gephi.org/index.php/Modularity</a></div><div class="endnote" id="d36968e1003"><span class="noteRef">[18]</span><a class="ref" href="http://tools.medialab.sciences-po.fr/iwanthue/" onclick="window.open('http://tools.medialab.sciences-po.fr/iwanthue/'); return false">http://tools.medialab.sciences-po.fr/iwanthue/</a></div><div class="endnote" id="d36968e1145"><span class="noteRef">[19]</span>Two seeds are not
+                        visible on the map because they are not connected to the graph: <cite class="title italic">The
+                            Digital Word</cite> and <cite class="title italic">Collaborative Research in the Digital
+                            Humanities</cite>. There were no similar items suggested for these
+                        books.</div><div class="endnote" id="d36968e1215"><span class="noteRef">[20]</span>Three seeds are not visible on the map because they are not
+                        connected to the graph: <cite class="title italic">The Digital Word</cite>,
+                            <cite class="title italic">Collaborative Research in the Digital
+                            Humanities</cite>, and <cite class="title italic">Mechanisms: New Media and
+                            the Forensic Imagination</cite>. For the first two books there were no
+                        similar items suggested. <cite class="title italic">Mechanism</cite> is included
+                        in the graph because lookup of the incorrect ASIN failed. It did show up in
+                        the previous graph because it was a similar item to one of the other
+                        books.</div><div class="endnote" id="d36968e1282"><span class="noteRef">[21]</span> cf. example here: <a class="ref" href="http://books.openedition.org/oep/238" onclick="window.open('http://books.openedition.org/oep/238'); return false">http://books.openedition.org/oep/238</a></div><div class="endnote" id="d36968e1290"><span class="noteRef">[22]</span> cf. example here: <a class="ref" href="http://cdh.epfl.ch/digital" onclick="window.open('http://cdh.epfl.ch/digital'); return false">http://cdh.epfl.ch/digital</a></div><div class="endnote" id="d36968e1808"><span class="noteRef">[23]</span><a class="ref" href="https://kindle.amazon.com/search" onclick="window.open('https://kindle.amazon.com/search'); return false">https://kindle.amazon.com/search</a></div></div><div id="worksCited"><h2>Works Cited</h2><div class="bibl"><span class="ref" id="bastian2009"><!-- close -->Bastian et al. 2009</span> Bastian, Mathieu, Sebastien
+                    Heymann, and Mathieu Jacomy. "Gephi: an open source software
+                        for exploring and manipulating networks." <cite class="title italic">ICWSM</cite>: 361-362.</div><div class="bibl"><span class="ref" id="berry2012"><!-- close -->Berry 2012</span> Berry, D. M. <cite class="title italic">Understanding Digital Humanities</cite>, Basingstoke: Palgrave Macmillan,
+                    2012. </div><div class="bibl"><span class="ref" id="berrydieter2012"><!-- close -->Berry and Dieter 2012</span> Berry, D. M. and
+                    Dieter, M. "Book Sprinting", accessed 14/08/2013,
+                        <a class="ref" href="http://www.booksprints.net/2012/09/everything-you-wanted-to-know/" onclick="window.open('http://www.booksprints.net/2012/09/everything-you-wanted-to-know/'); return false">
+                        http://www.booksprints.net/2012/09/everything-you-wanted-to-know/</a>,
+                    2012</div><div class="bibl"><span class="ref" id="borgman2015"><!-- close -->Borgman 2015</span> Borgman, C. L. <cite class="title italic">Big Data, Little Data, No Data: Scholarship in the Networked World</cite>.
+                    Cambridge, MA: MIT Press, 2015.</div><div class="bibl"><span class="ref" id="desollaprice1965"><!-- close -->De Solla Price 1965</span> De Solla Price, Derek J.
+                        "Networks of Scientific Papers."
+                    <cite class="title italic">Science</cite>149, no. 3683: 510–15, 1965. </div><div class="bibl"><span class="ref" id="galloway2006"><!-- close -->Galloway 2006</span> Galloway, Alexander R. <cite class="title italic">Gaming: Essays on Algorithmic Culture</cite>. Minneapolis,
+                    MN: University of Minnesota Press, 2006.</div><div class="bibl"><span class="ref" id="gerlitz2013"><!-- close -->Gerlitz and Helmond 2013</span> Gerlitz, Carolin and
+                    Helmond, Anne. "The Like Economy: Social Buttons and the
+                        Data-intensive Web". <cite class="title italic">New Media &amp; Society,
+                    </cite>2013</div><div class="bibl"><span class="ref" id="gillespie2012"><!-- close -->Gillespie 2012</span> Gillespie, T. "The Relevance of Algorithms." In <cite class="title italic">Media Technologies</cite>, edited by T Gillespie, Pablo Boczkowski, and
+                    Kirsten A Foot, 2012.</div><div class="bibl"><span class="ref" id="gold2012"><!-- close -->Gold 2012</span> Gold, M. K. <cite class="title italic">Debates
+                        in the Digital Humanities</cite>, University of Minnesota, 2012.</div><div class="bibl"><span class="ref" id="goldsmith2006"><!-- close -->Goldsmith and Wu 2006</span> Goldsmith, J.L. &amp; Wu,
+                    T. <cite class="title italic">Who controls the Internet?: illusions of a borderless
+                        world</cite>, Oxford [u.a.: Oxford Univ. Press], 2006.</div><div class="bibl"><span class="ref" id="hyde2013"><!-- close -->Hyde 2013</span> Hyde, A. "Book
+                        Sprints", accessed 14/08/2013, <a class="ref" href="http://www.booksprints.net" onclick="window.open('http://www.booksprints.net'); return false">http://www.booksprints.net</a>,
+                    2013.</div><div class="bibl"><span class="ref" id="issuecrawler"><!-- close -->Issuecrawler n.d.</span> Issuecrawler (n.d.)
+                    Issuecrawler.net, accessed 08/07/2013, <a class="ref" href="http://www.govcom.org/Issuecrawler_instructions.htm" onclick="window.open('http://www.govcom.org/Issuecrawler_instructions.htm'); return false">http://www.govcom.org/Issuecrawler_instructions.htm</a></div><div class="bibl"><span class="ref" id="rettbergjw2014"><!-- close -->J. W. Rettberg 2014</span> Rettberg, J. W. "Visualising Networks of Electronic Literature: Dissertations
+                        and the Creative Works They Cite."
+                    <cite class="title italic">Electronic Book Review</cite>. 2014-07-06. <a class="ref" href="http://www.electronicbookreview.com/thread/electropoetics/analyzing" onclick="window.open('http://www.electronicbookreview.com/thread/electropoetics/analyzing'); return false">http://www.electronicbookreview.com/thread/electropoetics/analyzing</a></div><div class="bibl"><span class="ref" id="jacomy2011"><!-- close -->Jacomy et al. 2011</span> Jacomy, Mathieu, Tommaso
+                    Venturini, Sebastien Heymann, and Mathieu Bastian. "ForceAtlas2, a Continuous Graph Layout Algorithm for Handy Network
+                        Visualization Designed for the Gephi Software."
+                    <cite class="title italic">PLoS ONE</cite>, 2011, 9 (6): e98679.
+                    doi:10.1371/journal.pone.0098679.</div><div class="bibl"><span class="ref" id="jameson2006"><!-- close -->Jameson 2006</span> Jameson, F. "Postmodernism or the Cultural Logic of Late Capitalism", in Kellner,
+                    D. Durham, M. G. (eds.) <cite class="title italic">Media and Cultural Studies
+                        Keyworks</cite>, London: Blackwell, 2006.</div><div class="bibl"><span class="ref" id="kaplan2015"><!-- close -->Kaplan 2015</span> Kaplan, F. "A Map
+                        for Big Data Research in Digital Humanities."
+                    <cite class="title italic">Frontiers in Digital Humanities</cite>, 2015, 1. </div><div class="bibl"><span class="ref" id="kirschenbaum2011"><!-- close -->Kirschenbaum 2011</span> Kirschenbaum, M. "Digital Humanities As/Is a Tactical Term", in Gold, M.
+                    K. (ed.) <cite class="title italic">Debates in the Digital Humanities</cite>,
+                    University of Minnesota, 2011.</div><div class="bibl"><span class="ref" id="krebs1999"><!-- close -->Krebs 1999</span> Krebs, V. "The
+                        Social Life of Books. Visualizing Communities of Interest via Purchase
+                        Patterns on the WWW." Orgnet.com, 1999, accessed 14/08/2013, <a class="ref" href="http://www.orgnet.com/booknet.html" onclick="window.open('http://www.orgnet.com/booknet.html'); return false">http://www.orgnet.com/booknet.html</a></div><div class="bibl"><span class="ref" id="liu2012"><!-- close -->Liu 2012</span> Liu, A. "Where Is
+                        Cultural Criticism in the Digital Humanities?" In M. K. Gold (ed.),
+                        <cite class="title italic">Debates in the Digital Humanities</cite>. Minneapolis:
+                    U of Minnesota P, 2012, pp. 490-509.</div><div class="bibl"><span class="ref" id="liu2013"><!-- close -->Liu 2013</span> Liu, A. "From Reading to
+                        Social Computing," in Price, K. and Siemens, R. (eds.) <cite class="title italic">Literary Studies in the Digital Age: An Evolving
+                        Anthology</cite>, 2013, New York: MLA P / MLA Commons, accessed 11/02/2013,
+                        <a class="ref" href="http://dlsanthology.commons.mla.org" onclick="window.open('http://dlsanthology.commons.mla.org'); return false">http://DLSAnthology.commons.mla.org</a></div><div class="bibl"><span class="ref" id="marres2013"><!-- close -->Marres and Weltevrede 2013</span> Marres, Noortje and
+                    Weltevrede, Esther "Scraping the Social?"
+                    <cite class="title italic">Journal of Cultural Economy</cite>, 2013, 6, no. 3:
+                    313–335. </div><div class="bibl"><span class="ref" id="moretti2005"><!-- close -->Moretti 2005</span> Moretti, Franco. <cite class="title italic">Graphs, Maps, Tree: Abstract Models for Literary History.
+                    </cite>London: Verso, 2005. </div><div class="bibl"><span class="ref" id="ramsay2010"><!-- close -->Ramsay 2010</span> Ramsay, Stephen. "The Hermeneutics of Screwing Around; or What You Do with a Million
+                        Books." Presented at Brown University, April 17 2010. <a class="ref" href="http://www.playingwithhistory.com/wp-content/uploads/2010/04/hermeneutics.pdf" onclick="window.open('http://www.playingwithhistory.com/wp-content/uploads/2010/04/hermeneutics.pdf'); return false">http://www.playingwithhistory.com/wp-content/uploads/2010/04/hermeneutics.pdf</a></div><div class="bibl"><span class="ref" id="rogers2010"><!-- close -->Rogers 2010</span> Rogers, Richard. "Mapping public Web space with the Issuecrawler." <cite class="title italic">Digital cognitive technologies: Epistemology and the knowledge
+                        economy</cite>: 89-99, 2010.</div><div class="bibl"><span class="ref" id="rogers2013"><!-- close -->Rogers 2013</span> Rogers, Richard. <cite class="title italic">Digital Methods</cite>. Cambridge, MA: MIT Press, 2013.</div><div class="bibl"><span class="ref" id="rogersetal2013"><!-- close -->Rogers et al. 2013</span> Rogers, Richard, Esther
+                    Weltevrede, Erik Borra, and Sabine Niederer. "National Web
+                        Studies: The Case of Iran online." In <cite class="title italic">A
+                        Companian to New Media Dynamics</cite>, edited by J. Hartley, J. Burgess,
+                    and A. Bruns, 2013.</div><div class="bibl"><span class="ref" id="rettbergs2014"><!-- close -->S. Rettberg 2014</span> Rettberg, S. "Electronic Literature." In Ryan, Marie-Laure, Lori
+                    Emerson and Benjamin J. Robertson. <cite class="title italic">The Johns Hopkins Guide
+                        to Digital Media</cite>. Baltimore: Johns Hopkins UP, p 169-172, 2014. </div><div class="bibl"><span class="ref" id="schoch2013"><!-- close -->Schöch 2013</span> Schöch, C. "Big?
+                        Smart? Clean? Messy? Data in the Humanities."
+                    <cite class="title italic">Journal of Digital Humanities, </cite>November 22, 2013.
+                        <a class="ref" href="http://journalofdigitalhumanities.org/2-3/big-smart-clean-messy-data-in-the-humanities/" onclick="window.open('http://journalofdigitalhumanities.org/2-3/big-smart-clean-messy-data-in-the-humanities/'); return false">http://journalofdigitalhumanities.org/2-3/big-smart-clean-messy-data-in-the-humanities/</a>.</div><div class="bibl"><span class="ref" id="wang2012"><!-- close -->Wang 2012</span> Wang, Dan. "Is there a
+                        Canon in Economic Sociology?" in <cite class="title italic">ASA Economic
+                        Sociology Newsletter </cite>11(2), May 2012. </div></div><div class="toolbar"><a href="/dhq/vol/9/3/index.html">2015 9.3</a>
+             | 
+            <a rel="external" href="/dhq/vol/9/3/000222.xml">XML</a>
+            | 
+            <a href="#" onclick="javascript:window.print();" title="Click for print friendly version">Print Article</a></div></div><script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dhquarterly'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script><div id="comments"><div id="disqus_thread"/><script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dhquarterly'; // required: replace example with your forum shortname
+
+    // The following are highly recommended additional parameters. Remove the slashes in front to use.
+    var disqus_identifier = '000222';
+    var disqus_url = 'http://www.digitalhumanities.org/dhq/vol/9/3/000222/000222.html';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><div id="footer"> 
+            URL: http://www.digitalhumanities.org/dhq/vol/9/3/000222/000222.html<br/>Last updated:
+            <script type="text/javascript">
+                var monthArray = new initArray("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                var lastModifiedDate = new Date(document.lastModified);
+                var currentDate = new Date();
+                document.write(" ",monthArray[(lastModifiedDate.getMonth()+1)]," ");
+                document.write(lastModifiedDate.getDate(),", ",(lastModifiedDate.getFullYear()));
+            </script><br/> Comments: <a href="mailto:dhqinfo@digitalhumanities.org" class="footer">dhqinfo@digitalhumanities.org</a><br/> Published by:
+            <a href="http://www.digitalhumanities.org" class="footer">The Alliance of Digital Humanities Organizations</a><br/>Affiliated with: <a href="http://llc.oxfordjournals.org/">Literary and Linguistic Computing</a><br/> Copyright 2005 - <script type="text/javascript">
+                document.write(currentDate.getFullYear());</script><br/><a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png"/></a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.
+        </div></div></div></body></html>
