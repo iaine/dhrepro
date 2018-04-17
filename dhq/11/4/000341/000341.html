@@ -1,0 +1,1437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><title>DHQ: Digital Humanities Quarterly: In a test bed with Kafka. Introducing a
+                    mixed-method approach to digital
+                    stylistics</title><link rel="stylesheet" type="text/css" href="/dhq/common/css/dhq.css"/><link rel="stylesheet" type="text/css" media="screen" href="/dhq/common/css/dhq_screen.css"/><link rel="stylesheet" type="text/css" media="print" href="/dhq/common/css/dhq_print.css"/><link rel="alternate" type="application/atom+xml" href="/dhq/feed/news.xml"/><link rel="shortcut icon" href="/dhq/common/images/favicon.ico"/><script type="text/javascript" src="/dhq/common/js/javascriptLibrary.js">
+                &lt;!-- Javascript functions --&gt;
+            </script><script type="text/javascript">
+
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-15812721-1']);
+ _gaq.push(['_trackPageview']);
+
+ (function() {
+   var ga = document.createElement('script'); ga.type =
+'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+ })();
+
+        </script></head><body><div id="top"><div id="backgroundpic"><script type="text/javascript" src="/dhq/common/js/pics.js"><!--displays banner image--></script></div><div id="banner"><div id="dhqlogo"><img src="/dhq/common/images/dhqlogo.png" alt="DHQ Logo"/></div><div id="longdhqlogo"><img src="/dhq/common/images/dhqlogolonger.png" alt="Digital Humanities Quarterly Logo"/></div></div><div id="topNavigation"><div id="topnavlinks"><span><a href="/dhq/" class="topnav">home</a></span><span><a href="/dhq/submissions/index.html" class="topnav">submissions</a></span><span><a href="/dhq/about/about.html" class="topnav">about dhq</a></span><span><a href="/dhq/people/people.html" class="topnav">dhq people</a></span><span id="rightmost"><a href="/dhq/contact/contact.html" class="topnav">contact</a></span></div><div id="search"><form action="/dhq/findIt" method="get" onsubmit="javascript:document.location.href=cleanSearch(this.queryString.value); return false;"><div><input type="text" name="queryString" size="18"/> <input type="submit" value="Search"/></div></form></div></div></div><div id="main"><div id="leftsidebar"><div id="leftsidenav"><span>Current Issue<br/></span><ul><li><a href="/dhq/vol/11/3/index.html">2017: 11.3</a></li></ul><span>Preview Issue<br/></span><ul><li><a href="/dhq/preview/index.html">2017: 11.4</a></li></ul><span>Previous Issues<br/></span><ul><li><a href="/dhq/vol/11/2/index.html">2017: 11.2</a></li><li><a href="/dhq/vol/11/1/index.html">2017: 11.1</a></li><li><a href="/dhq/vol/10/4/index.html">2016: 10.4</a></li><li><a href="/dhq/vol/10/3/index.html">2016: 10.3</a></li><li><a href="/dhq/vol/10/2/index.html">2016: 10.2</a></li><li><a href="/dhq/vol/10/1/index.html">2016: 10.1</a></li><li><a href="/dhq/vol/9/4/index.html">2015: 9.4</a></li><li><a href="/dhq/vol/9/3/index.html">2015: 9.3</a></li><li><a href="/dhq/vol/9/2/index.html">2015: 9.2</a></li><li><a href="/dhq/vol/9/1/index.html">2015: 9.1</a></li><li><a href="/dhq/vol/8/4/index.html">2014: 8.4</a></li><li><a href="/dhq/vol/8/3/index.html">2014: 8.3</a></li><li><a href="/dhq/vol/8/2/index.html">2014: 8.2</a></li><li><a href="/dhq/vol/8/1/index.html">2014: 8.1</a></li><li><a href="/dhq/vol/7/3/index.html">2013: 7.3</a></li><li><a href="/dhq/vol/7/2/index.html">2013: 7.2</a></li><li><a href="/dhq/vol/7/1/index.html">2013: 7.1</a></li><li><a href="/dhq/vol/6/3/index.html">2012: 6.3</a></li><li><a href="/dhq/vol/6/2/index.html">2012: 6.2</a></li><li><a href="/dhq/vol/6/1/index.html">2012: 6.1</a></li><li><a href="/dhq/vol/5/3/index.html">2011: 5.3</a></li><li><a href="/dhq/vol/5/2/index.html">2011: 5.2</a></li><li><a href="/dhq/vol/5/1/index.html">2011: 5.1</a></li><li><a href="/dhq/vol/4/2/index.html">2010: 4.2</a></li><li><a href="/dhq/vol/4/1/index.html">2010: 4.1</a></li><li><a href="/dhq/vol/3/4/index.html">2009: 3.4</a></li><li><a href="/dhq/vol/3/3/index.html">2009: 3.3</a></li><li><a href="/dhq/vol/3/2/index.html">2009: 3.2</a></li><li><a href="/dhq/vol/3/1/index.html">2009: 3.1</a></li><li><a href="/dhq/vol/2/1/index.html">2008: 2.1</a></li><li><a href="/dhq/vol/1/2/index.html">2007: 1.2</a></li><li><a href="/dhq/vol/1/1/index.html">2007: 1.1</a></li></ul><span>Indexes<br/></span><ul><li><a href="/dhq/index/title.html"> Title</a></li><li><a href="/dhq/index/author.html"> Author</a></li></ul></div><img src="/dhq/common/images/lbarrev.png" style="margin-left : 7px;" alt="sidenavbarimg"/><div id="leftsideID"><b>ISSN 1938-4122</b><br/></div><div class="leftsidecontent"><h3>Announcements</h3><ul><li><a href="/dhq/announcements/index.html#reviewers">Call for Reviewers</a></li><li><a href="/dhq/announcements/index.html#submissions">Call for Submissions</a></li></ul></div><div class="leftsidecontent"><script type="text/javascript">addthis_pub  = 'dhq';</script><a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s9.addthis.com/button1-addthis.gif" width="125" height="16" alt="button1-addthis.gif"/></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js">&lt;!-- Javascript functions --&gt;</script></div></div><div id="mainContent"><div id="printSiteTitle">DHQ: Digital Humanities Quarterly</div><div xmlns:dhqBiblio="http://digitalhumanities.org/dhq/ns/biblio" class="DHQarticle"><div id="pubInfo">Preview<br/>2017<br/>Volume 11 Number 4</div><div class="toolbar"><form id="taporware" action="get"><div><a href="/dhq/preview/index.html">Preview</a>
+                     | 
+                    <a rel="external" href="/dhq/vol/11/4/000341.xml">XML</a>
+
+| 
+		   Discuss
+			(<a href="/dhq/vol/11/4/000341/000341.html#disqus_thread" data-disqus-identifier="000341">
+				Comments
+			</a>)
+                </div></form></div>
+    <div class="DHQheader">
+        
+            
+                
+                <h1 class="articleTitle lang en">In a test bed with Kafka. Introducing a
+                    mixed-method approach to digital
+                    stylistics</h1>
+                
+                <div class="author"><a rel="external" href="/dhq/preview/bios.html#herrmann_j._berenike">J. Berenike Herrmann</a> &lt;<a href="mailto:berenike_dot_herrmann_at_unibas_dot_ch" onclick="javascript:window.location.href='mailto:'+deobfuscate('berenike_dot_herrmann_at_unibas_dot_ch'); return false;" onkeypress="javascript:window.location.href='mailto:'+deobfuscate('berenike_dot_herrmann_at_unibas_dot_ch'); return false;">berenike_dot_herrmann_at_unibas_dot_ch</a>&gt;, Basel University</div>
+            
+            
+
+            
+        
+        
+        
+        
+    <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft.genre=article&amp;rft.atitle=In%20a%20test%20bed%20with%20Kafka.%20Introducing%20a%20mixed-method%20approach%20to%20digital%20stylistics&amp;rft.jtitle=Digital%20Humanities%20Quarterly&amp;rft.stitle=DHQ&amp;rft.issn=1938-4122&amp;rft.date=2018-01-08&amp;rft.volume=011&amp;rft.issue=4&amp;rft.aulast=Herrmann&amp;rft.aufirst=J. Berenike&amp;rft.au=J. Berenike%20Herrmann"> </span></div>
+    
+    <div id="DHQtext">
+        
+            <div id="abstract"><h2>Abstract</h2>
+                
+                <p>In the emerging field of digital style analysis, scholars have been dwelling on a
+                    perceived irreconcilability of "distant reading"
+                    [<a class="ref" href="#moretti2000">Moretti 2000</a>] and "close reading"
+                    [<a class="ref" href="#fish2012">Fish 2012</a>]
+                    [<a class="ref" href="#ransom1937">Ransom 1937</a>]. This situation is somewhat reminiscent of the
+                        "paradigm wars" in social science, where for years, one
+                    could either adhere to a quantitative or a qualitative mindset. Taking seriously
+                    both the hermeneutic and the empirical traditions of (digital) stylistic
+                    research, the present paper proposes "a mixed-methods"
+                    coalition of approaches. To establish links between the mixed-methods paradigm
+                    from Social Sciences [<a class="ref" href="#creswell2007">Creswell and Plano Clark 2007</a>] and stylistic practices
+                    within Digital Humanities (DH), the present article discusses common methods of
+                    distant, close, and ‘scalable reading’ as well as a flexibly adjustable
+                    definition of style [<a class="ref" href="#herrmann2015">Herrmann et al. 2015</a>]. In the practical part of the
+                    paper, I report a ‘mixed-methods digital stylistics’ study on Franz Kafka’s
+                    prose. Scaling the degree of abstraction and contextuality of the data according
+                    to particular research questions, I combine (1) "quantitative
+                        hypothesis testing" (examining Kafka’s stylistic
+                        "uniqueness" by means of a stylometric measure); (2)
+                        "quantitative exploration" (analyzing the first hundred
+                    statistically overrepresented words in Kafka); and (3) "qualitative
+                        text analysis" (KWIC and close reading to investigate the
+                    functions of a particular style marker in the context of Kafka’s <cite class="title italic">The Judgment</cite> [<cite class="title italic">Das
+                    Urteil</cite>]). Generally, for digital stylistics, I propose (a) raising
+                    epistemological and methodological awareness within the field, and (b) framing
+                    the research within the mixed-method paradigm that in fact seems very well
+                    suited to DH.</p>
+            </div>
+            
+        
+        
+            <div class="div div0">
+                <h1 class="head">Introduction</h1>
+                <div class="counter"><a href="#p1">1</a></div><div class="ptext" id="p1"> A whole new generation of scholars has recently been entering the world of
+                    digital stylistics, appreciating the availability of digital resources in the
+                    form of data, tools, and infrastructure. The recent proliferation is visible for
+                    example in monographs (e.g., [<a class="ref" href="#hoover2014">Hoover et al. 2014</a>]
+                    [<a class="ref" href="#jockers2013">Jockers 2013</a>]
+                    [<a class="ref" href="#mahlberg2013">Mahlberg 2013</a>]), easy-to-access analysis tools (e.g., [<a class="ref" href="#anthony2014">Anthony2014</a>]
+                    [<a class="ref" href="#sinclair2016">Sinclair and Rockwell 2016</a>]
+                    [<a class="ref" href="#eder2016">Eder et al. 2016</a>]) and guides to text analysis in programming languages
+                    such as <em class="term">R</em> and <em class="term">Python</em> ([<a class="ref" href="#bird2015">Bird et al. 2015</a>]
+                    [<a class="ref" href="#jockers2014">Jockers 2014</a>]), just to name a few. Contributions to the digital
+                    analysis of style abound in journals such as <cite class="title italic">DH
+                        Quarterly</cite>, <cite class="title italic">Digital Scholarship in the
+                        Humanities </cite>(formerly <cite class="title italic">Literary and Linguistic
+                        Computing</cite>), the newly founded <cite class="title italic">Digital Literary
+                        Studies and Cultural Analytics</cite>, the proceedings of the <cite class="title italic">Workshops on Computational Linguistics for Literature</cite>,
+                    as well as in <cite class="title italic">Language and Literature</cite> and the
+                        <cite class="title italic">International Journal of Corpus Linguistics</cite>.
+                    Last, but not least, the Alliance of Digital Humanities Organizations (ADHO) has
+                    formed the new special interested group (SIG) <cite class="title italic">Digital
+                        Literary Stylistics</cite> (<a class="ref" href="http://dls.hypotheses.org/" onclick="window.open('http://dls.hypotheses.org/'); return false">SIG-DLS</a>). This is an exciting time, with a discipline of digital
+                    stylistics in Digital Humanities emerging, expanding, and gradually maturing. </div>
+                <div class="counter"><a href="#p2">2</a></div><div class="ptext" id="p2">However, despite these recent developments, and despite a substantial tradition
+                    of digital analyses of literary style across fields (see [<a class="ref" href="#biber2011">Biber 2011</a>]
+                    [<a class="ref" href="#burrows1987">Burrows 1987</a>]
+                    [<a class="ref" href="#holmes1998">Holmes 1998</a>]
+                    [<a class="ref" href="#mahlberg2015">Mahlberg 2015</a>]
+                    [<a class="ref" href="#semino2004">Semino and Short 2004</a>]
+                    [<a class="ref" href="#steen2010">Steen et al. 2010</a>]), "digital stylistics" as a
+                    discipline is still in a nascent status. This can be directly linked to its
+                    interdisciplinary character, with a kaleidoscope of methods, research paradigms,
+                    and world views. This heterogeneity is as much a potential source of confusion
+                    as well as a great asset:</div>
+                <div class="counter"><a href="#p3">3</a></div><div class="ptext" id="p3">On the one hand, the diversity may pose disadvantages. Those digital
+                    stylisticians who are trained in hermeneutics see themselves confronted with
+                    handling the requirements of an empirical quantitative research paradigm, with
+                    issues such as standardized research designs, procedures of data sampling, and
+                    analytical strategies, including statistics. Others, who come from fields based
+                    around computing, such as natural language processing (NLP), computational
+                    linguistics, and corpus linguistics, may be unsure what to do with the
+                    deliberate open-endedness of qualitative, hermeneutic research and the important
+                    role ascribed to subjectivity and context (cf. [<a class="ref" href="#vanzundert2015">van Zundert 2015</a>]).
+                    Yet others may be very skeptical about the possibility of clearly defined
+                    ‘methods’ for digital stylistics in the first place, because of a perceived
+                    irreconcilability of numerical and hermeneutic approaches. Overall, a number of
+                    reasons accounts for a perceived lack of clear methodological standards,
+                    procedures and designs.</div>
+                <div class="counter"><a href="#p4">4</a></div><div class="ptext" id="p4">On the other hand, the juxtaposition of hermeneutic and scientific-empirical
+                    traditions provides a great potential for literary style research within DH.
+                    Qualitative approaches such as literary criticism and stylistics have developed
+                    a rich expertise in describing and understanding the aesthetic effects of
+                    literary artifacts. Quantitative approaches such as corpus linguistics,
+                    quantitative linguistics, computational linguistics, and data science generally,
+                    have concentrated on exploring and explaining large-scale and general language
+                    models by linguistic features. In digital stylistics, approaching aspects of
+                    style from different angles – be these probabilistically obtained feature
+                    patterns, predictive and descriptive accounts of quantitative style
+                    distributions, or in-depth interpretations of stylistic phenomena in particular
+                    textual contexts – opens up a truly multi-methodological research panorama.</div>
+                <div class="counter"><a href="#p5">5</a></div><div class="ptext" id="p5">In fact, digital stylistics, with its many branches and predecessors, has seen
+                    method-mixing for a long time (see, e.g., [<a class="ref" href="#biber1988">Biber 1988</a>]
+                    [<a class="ref" href="#burrows1987">Burrows 1987</a>]
+                    [<a class="ref" href="#craig1999">Craig 1999</a>]
+                    [<a class="ref" href="#leech2007">Leech and Short 2007</a>]
+                    [<a class="ref" href="#spitzer1961">Spitzer 1961</a>]). Yet, we are presently dwelling on a perceived
+                    irreconcilability of a form of "distant reading"
+                    [<a class="ref" href="#moretti2000">Moretti 2000</a>] on the one hand, and "close
+                        reading"
+                    [<a class="ref" href="#ransom1937">Ransom 1937</a>] in a more aesthetically oriented variety [<a class="ref" href="#fish2012">Fish 2012</a>] on the other. Where distant reading applies aggregating
+                    measures that are designed to produce quantitative evidence with statistical
+                    backup, hermeneutic reading maintains a more qualitative relationship with
+                    (whole) texts, explicitly calling for open-ended and subjective dimensions of
+                    interpretation. Between these two "paradigms", many see close
+                    reading as "old-fashioned" for being anecdotal, overly
+                    subjective, or uncontrolled, whereas to others, distant reading appears
+                        "perilous" for being reductionist, deterministic, or
+                    neo-/postpositivist. This situation is reminiscent of the "paradigm
+                        wars" in social science, where for years, one could either adhere
+                    to a quantitative or a qualitative mindset (cf. [<a class="ref" href="#creswell2014">Creswell 2014</a>]
+                    [<a class="ref" href="#punch2014">Punch 2014</a>]).</div>
+                <div class="counter"><a href="#p6">6</a></div><div class="ptext" id="p6">My suggestion for DH is not to fortify an "either-or"-mindset
+                    (possibly mistaking digital stylistics for a distant-reading only paradigm, cf.
+                        [<a class="ref" href="#gooding2013">Gooding 2013</a>]), but to work on a principled coalition of the
+                    two views, propelled by a simple and pragmatic view of selecting the best
+                    fitting method for any given research question (cf. [<a class="ref" href="#creswell2014">Creswell 2014</a>]
+                    [<a class="ref" href="#creswell2007">Creswell and Plano Clark 2007</a>]
+                    [<a class="ref" href="#symonds2010">Symonds and Gorard 2010</a>]). In line with the recently emerged mixed-method
+                    paradigm of the social sciences, I thus suggest that DH stylistics should move
+                    beyond the dichotomies of "close vs. distant",
+                        "qualitative vs. quantitative", "explanatory vs.
+                        exploratory", "inductive vs. deductive",
+                        "understanding vs. explaining" – and, possibly even
+                        "hermeneutic vs. empirical"<a class="noteRef" href="#d21014e421">[1]</a>. However, "moving beyond" here cannot possibly
+                    mean resorting to an "everything-goes" approach that
+                    defocuses the nitty-gritty details of difference, but an informed perspective
+                    that enables scholars to choose particular research designs by their particular
+                    objectives. Seen from the perspective of an emerging discipline of digital
+                    stylistics, the challenge is now to provide a common framework for the disparate
+                    approaches to stylistic inquiry. This includes a transparent and systematic
+                    overview of the different approaches and methods actually employed, as well as a
+                    sort of inventory for what kind of method is suitable for what kind of research
+                        aim.<a class="noteRef" href="#d21014e438">[2]</a></div>
+                <div class="counter"><a href="#p7">7</a></div><div class="ptext" id="p7">That quantitative style metrics may combine with in-depth studies of style
+                    patterns of individual texts has already been proposed from within DH and
+                    labeled as "middle-distance reading" ([<a class="ref" href="#craig2013">Craig 2013</a>], for a similar approach, see also [<a class="ref" href="#craig1999">Craig 1999</a>]), or "scalable reading" ([<a class="ref" href="#mueller2012">Mueller 2012</a>], see [<a class="ref" href="#jannidis2014">Jannidis and Lauer 2014</a>, 30–31], [<a class="ref" href="#weiten2017">Weiten 2017</a>]). These propositions, however, have just begun to
+                    receive broader attention. In fact, many may have mistaken them for the
+                    examination of "mid-sized data sets" that are neither
+                        "big data" (for a recent discussion of this term, see
+                        [<a class="ref" href="#borgman2015">Borgman 2015</a>]) nor individual texts, but something in
+                    between. In my view, this data-size-driven reading of the term is overly
+                    simplistic. Rather, the emphasis should lie not so much on the scale in terms of
+                    the <em class="emph">size</em> of the data volume examined, but on the <em class="emph">research
+                        process</em>. "Scaling" here means complementing one
+                    methodology with another, compensating for weaknesses of each approach, and
+                    building on the combined strengths. Mueller, in an analogy of using Google
+                    earth, describes the essence of scalable reading as to "zoom in and out of things and discover that different
+                            properties of phenomena are revealed by looking at them from different
+                            distances"
+                         [<a class="ref" href="#mueller2012">Mueller 2012</a>]. For his account of middle-distance reading, Craig suggests comparing "statistical results […] with fresh readings of the
+                            texts or parts of them, directed by the patterns that are highlighted by
+                            the tests"
+                         [<a class="ref" href="#craig2013">Craig 2013</a>]. Yet another approach is "rapid shuttling" between
+                    quantitatively attained information and hermeneutic close reading (Kirschenbaum
+                    2009), cited in [<a class="ref" href="#hayles2012">Hayles 2012</a>, 31]). Accordingly, Hayles
+                    states that the tension "between algorithmic analysis and hermeneutic close
+                        reading should not be overstated", since their relation is often "configured not so much as an opposition but as a
+                            synergistic interaction"
+                         [<a class="ref" href="#hayles2012">Hayles 2012</a>, 31].</div>
+                <div class="counter"><a href="#p8">8</a></div><div class="ptext" id="p8">Ideally, to provide "a better understanding of research problems than either
+                            approach alone"
+                         [<a class="ref" href="#creswell2007">Creswell and Plano Clark 2007</a>, 5], mixed-methods research is a process of combining discrete qualitative
+                    and quantitative steps, motivated by some degree of methodological and
+                    epistemological awareness. It thus needs to address the role of
+                        interpretation<a class="noteRef" href="#d21014e529">[3]</a> and the degree of open-endedness
+                    and subjectivity involved <em class="emph">in either form</em> of research – issues that
+                    have received some attention also from within DH (e.g., [<a class="ref" href="#gius2015">Gius and Jacke 2015</a>]
+                    [<a class="ref" href="#mccarty2005">McCarty 2005</a>]
+                    [<a class="ref" href="#ramsay2011">Ramsay 2011</a>]
+                    [<a class="ref" href="#vanzundert2015">van Zundert 2015</a>]). Mixed-method research highlights the
+                    hermeneutical dimension of quantitative approaches, not least by emphasizing
+                    that quantitative researchers are traditionally "in the background, and their own personal biases and
+                            interpretations are seldom discussed"
+                         [<a class="ref" href="#creswell2007">Creswell and Plano Clark 2007</a>, 9]. </div>
+                <div class="div div1">
+                    <h2 class="head">"Quantitative", "qualitative", and
+                            "mixed-methods"</h2>
+                    <div class="counter"><a href="#p9">9</a></div><div class="ptext" id="p9">The most basic distinction between qualitative and quantitative methods
+                        concerns the nature of the data examined, which is normally numerical vs.
+                        non-numerical data [<a class="ref" href="#creswell2014">Creswell 2014</a>]
+                        [<a class="ref" href="#punch2014">Punch 2014</a>]. For digital stylistics, this may be simplified
+                        as '<em class="emph">numbers derived from aggregations of words/texts</em>'
+                        (quantitative) vs. '<em class="emph">(elements of) meaningful textual
+                            configurations</em>' (qualitative). This discrimination relates to the
+                        more common distinction between big and small data sets. One of the most
+                        fruitful distinctions is that between <em class="term">variable-oriented</em> and
+                            <em class="term">case-oriented</em> analysis: variable-oriented analysis (e.g.,
+                            "style variation across author, genre, time in German Modernist
+                            literature") is more often quantitative, and well-suited for
+                        finding probabilistic relationships among variables in a large population,
+                        whereas case-oriented analysis (e.g., "paradoxical style of Franz
+                            Kafka’s <cite class="title italic">The Judgment</cite>") is more
+                        often qualitative, geared towards finding specific, concrete, historically
+                        grounded patterns common to small sets of cases [<a class="ref" href="#punch2014">Punch 2014</a>, 307]. "Variable-approaches" have difficulties
+                        with the complexities of causal relationships, while findings of
+                            "case-approaches" often remain particularistic, i.e.
+                        cannot be easily generalized. </div>
+                    <div class="counter"><a href="#p10">10</a></div><div class="ptext" id="p10">Quantitative, variable-driven research overall strives for a high degree of
+                        control, using standardization and tests of reliability to ensure
+                        replicability and generalizability. It takes care that its measures and
+                        results are not dependent on a particular researcher
+                            ("objectivity"). In combination with representative
+                        data sampling, it thus aims at overall descriptions of situations and
+                        phenomena in a systematic and comparable way. In its stereotypical form,
+                        quantitative research uses "close-ended" data collection
+                        tools to "settle the discussion", and to delimit the
+                        range of possible interpretation of its results. </div>
+                    <div class="counter"><a href="#p11">11</a></div><div class="ptext" id="p11">By contrast, qualitative research is more sensitive to context and process,
+                        and aims for in-depth and holistic understanding, in order to do justice to
+                        the complexity of a given phenomenon. Samples are usually small, and
+                        sampling is guided by theoretical rather than probabilistic considerations.
+                        Methods are less formalized than those in the quantitative approach, less
+                        replicable, and have greater flexibility [<a class="ref" href="#punch2014">Punch 2014</a>, 307]. In its stereotypical form, qualitative research uses
+                            "open-ended" data collection designed to
+                            "opening up the discussion", i.e. to generate new
+                        hypotheses and theories and widen the range of possible perspectives on a
+                        phenomenon.</div>
+                    <div class="counter"><a href="#p12">12</a></div><div class="ptext" id="p12">This (simplified) distinction between qualitative and quantitative approaches
+                        is enlightening when considering the actual practices in digital stylistics.
+                        For example, a prominent approach, <cite class="title italic">algorithmic
+                            criticism</cite> as proposed by Ramsay (2011), distinguishes between
+                            "scientific" approaches and what he calls algorithmic
+                        hermeneutics. In Ramsay’s view, the "scientific" approach
+                        is exceedingly closed-ended, aimed at providing "singular answers to the problem under
+                                discussion"
+                             [<a class="ref" href="#ramsay2011">Ramsay 2011</a>, 15], framing "the movement from data to interpretation as fraught
+                                with peril"
+                             [<a class="ref" href="#ramsay2011">Ramsay 2011</a>, 19]. By contrast, an algorithmic criticism approaches a (textual) problem "in order that the matter become richer, deeper, and
+                                ever more complicated"
+                             [<a class="ref" href="#ramsay2011">Ramsay 2011</a>, 16]. His suggestion is to apply "hermeneutical freedom"
+                             [<a class="ref" href="#ramsay2011">Ramsay 2011</a>, 2] to the (post-algorithmic) interpretation of quantitative results –
+                        while retaining "the commitment to methodological rigor demanded by
+                                its tools"
+                             [<a class="ref" href="#ramsay2011">Ramsay 2011</a>, 17]. However, to Ramsay, interpretation is <em class="emph">necessarily</em>
+                        "an insistently subjective manner of
+                                engagement"
+                             [<a class="ref" href="#ramsay2011">Ramsay 2011</a>, 8] – he thus appears to deny digital text analysis the epistemological
+                        potential that lies in iterative (quantitative) hypothesis-testing. What is
+                        more, by putting such a strong emphasis on the role of post-hoc
+                        interpretation, he perilously defocuses the implicit assumptions that feed
+                        into the algorithmic modeling itself [<a class="ref" href="#sculley2008">Sculley and Pasanek 2008</a>]. </div>
+                    <div class="counter"><a href="#p13">13</a></div><div class="ptext" id="p13">In my view, the scientific and humanistic paradigms as sketched by Ramsay
+                        should <em class="emph">both</em> contribute to our discipline’s multi-methodological
+                        setup, establishing a rich interconnected network of possible research
+                        questions and methods for answering them. This, of course, has implications
+                        for the "nature of discourse in which text analysis bids
+                                participation"
+                             [<a class="ref" href="#ramsay2011">Ramsay 2011</a>, 9] – in my view, this discourse should involve deep and open-ended
+                        discussions as well as clear-cut conclusions about stylistic facts.
+                        Eventually, people engaged in DH stylistics should "generate more
+                            concepts, more theoretical constructions", <em class="emph">and</em> be able
+                        to "test their points"
+                             [<a class="ref" href="#vanpeer2012">Van Peer et al. 2012</a>, 7]. </div>
+                    <div class="counter"><a href="#p14">14</a></div><div class="ptext" id="p14">The interesting point about mixed-method approaches is that they maintain the
+                        basic distinction between quantitative and qualitative methods, while
+                        simultaneously transcending it. Thus, they firstly acknowledge the two
+                        paradigms, noting their strength and weaknesses, and then propose to: <blockquote><p>
+                            [c]ombine the methods in a way that achieves
+                                complementary strengths and non-overlapping weaknesses.
+                             [<a class="ref" href="#johnson2004">Johnson and Onwuegbuzie 2004</a>, 18]
+                        </p></blockquote> With this general rationale at its core, mixed-methods research has
+                        been established as a third empirical paradigm<a class="noteRef" href="#d21014e744">[4]</a>, with its own range of
+                        research design types (cf. [<a class="ref" href="#creswell2014">Creswell 2014</a>]
+                        [<a class="ref" href="#creswell2007">Creswell and Plano Clark 2007</a>]
+                        [<a class="ref" href="#johnson2004">Johnson and Onwuegbuzie 2004</a>]
+                        [<a class="ref" href="#tashakkori2010">Tashakkori and Teddlie 2010</a>]. </div>
+                </div>
+                <div class="div div1">
+                    <h2 class="head">Mixed-methods Digital Style Analysis</h2>
+                    <div class="counter"><a href="#p15">15</a></div><div class="ptext" id="p15"> The strengths of mixed-methods can be directly applied to digital
+                        stylistics: close and distant reading complement each other when adding
+                        meaning to numbers, and precision to hermeneutically obtained insight. Also,
+                        the generalizability of qualitative findings can be increased, as
+                        quantitative findings can be grounded in context-driven analyses. Results
+                        from both approaches can be validated through corroboration and convergence.
+                        Another great asset of such a coalition of approaches is mutual methods
+                        critique [<a class="ref" href="#kelle2008">Kelle 2008</a>], which likely increases the validity of
+                        data and results as much as that of methods. And finally, a broader range of
+                        research questions can be asked, which leads to a varied and flexible
+                        generation of knowledge [<a class="ref" href="#johnson2004">Johnson and Onwuegbuzie 2004</a>].</div>
+                    <div class="counter"><a href="#p16">16</a></div><div class="ptext" id="p16">In digital stylistics, we are confronted with the fact that
+                            "style" is a heterogeneous category – already within
+                        literary studies, and ever more so when adopting interdisciplinary and
+                        international perspectives (for an overview of distinct philological
+                        definitions of style, see [<a class="ref" href="#herrmann2015">Herrmann et al. 2015</a>]). A definition that
+                        allows for a quantitative as well as for a qualitative perspective on style,
+                        and mixed approaches, is the following one: <blockquote><p>
+                            Style is a property of texts constituted by an
+                                ensemble of formal features which can be observed quantitatively or
+                                qualitatively.
+                             [<a class="ref" href="#herrmann2015">Herrmann et al. 2015</a>, 44]
+                        </p></blockquote> A quantitative, variable-driven approach may be interested in
+                        extracting formal features from a large data set devoid of context, for
+                        example gauging the "similarity" of authors by looking at
+                        the most frequently used words (the dominant stylometric measure), whereas a
+                            "case-driven" approach may be interested in aspects
+                        of the holistic gestalt of single texts, or the function of previously
+                        extracted featured within that context. A third kind of approach may use a
+                        quantitative measure for exploring possible new variables (and thus, as a
+                        quantitative-heuristic approach may not fit the simplified
+                        quantitative-qualitative dichotomy). </div>
+                    <div class="counter"><a href="#p17">17</a></div><div class="ptext" id="p17">The next section starts with a short (and by no means complete) overview of
+                        qualitative and quantitative methods relevant for digital stylistics,
+                        including a view on their respective strengths and limitations. It is
+                        followed by a sketch of my own mixed-method study, which will then be
+                        reported in more detail in section (3). Section (4) will subsequently draw
+                        conclusions for practices in digital stylistics as an emerging field within
+                        DH.</div>
+                </div>
+            </div>
+            <div class="div div0">
+                <h1 class="head">The Method of the Art </h1>
+                <div class="counter"><a href="#p18">18</a></div><div class="ptext" id="p18">In actual stylistic research, the "ensemble of formal
+                        features" is as a rule viewed either from a predominantly
+                    quantitative or from a predominantly qualitative angle. With their predominant
+                    qualitative perspective, literary criticism, (digital) stylistics, aesthetics,
+                    and (digital) narratology have traditionally relied on versions of close
+                    reading. This mode of scrutinizing analysis and synthesizing interpretation of
+                    literary artifacts exploits the kind of situated and intuitive knowledge that
+                    human evolution has produced in concert with scholarly expertise (for a
+                    discussion of hermeneutics in DH, see [<a class="ref" href="#vanzundert2015">van Zundert 2015</a>]. In
+                    stylistics, it has been most typically applied to: (a) explorations of the
+                    effect of certain stylistic features in textual interaction, and (b) determining
+                    the stylistic character of a piece of art as a coherent unit, including the
+                    contributing elements [<a class="ref" href="#herrmann2015">Herrmann et al. 2015</a>]. Goals of close reading are
+                        "linguistic observation" as much as "literary
+                        insight", in the sense of Spitzer’s hermeneutic circle [<a class="ref" href="#leech2007">Leech and Short 2007</a>, 11–12]. </div>
+                <div class="counter"><a href="#p19">19</a></div><div class="ptext" id="p19">Applications of close reading to stylistic analysis are documented by a vast
+                    literature, with its typical concentration on particular cases (and, alas,
+                    sometimes vague generalizations). Variants of close reading, as a form of
+                    qualitative research, are applied also in digital text analysis, including
+                    computational linguistics/natural language processing (NLP). For example,
+                    digital style research employs a range of visualization and manual annotation
+                        tools<a class="noteRef" href="#d21014e855">[5]</a>
+                    for close reading, such as KWIC (<em class="term">Keyword in Context</em>), which is a
+                    method typically applied in corpus stylistics. KWIC displays all instances of a
+                    search word vertically, with the words’ direct textual context to both sides
+                    (also called <em class="term">concordance</em>). Running KWIC lists (facilitated by tools
+                    such as AntConc and Voyant, as well as particular functions in R and Python)
+                    allows the discerning of meaning and possibly the lexico-grammatical function of
+                    a particular instance of a lemma in context (for an application in literary
+                    criticism, see e.g., [<a class="ref" href="#müller2013">Müller 2013</a>]). <em class="term">Annotation</em>,
+                    depending on the basic methodological approach,<a class="noteRef" href="#d21014e872">[6]</a> may also involve
+                    some form of close reading. For quantification-oriented annotation paradigms,
+                    this holds true especially for the stage in which annotation (or
+                        <em class="term">tagging</em>) schemata are developed, with a typical back- and
+                    forth-movement between textual context, frequency operations, and theoretical
+                    conceptualization. In much the same way, the stages of "close
+                        reading", or qualitative analysis are applied in the development
+                    of <em class="term">machine learning algorithms</em> and <em class="term">error analysis</em> in
+                    computational linguistics [<a class="ref" href="#dipper2008">Dipper 2008</a>, 86–87]. </div>
+                <div class="counter"><a href="#p20">20</a></div><div class="ptext" id="p20">In order to ensure some standard of compatibility and transparency also for close
+                    reading, stylisticians have established basic criteria for "the
+                        stylistic method" (e.g., [<a class="ref" href="#simpson2004">Simpson 2004</a>]), with
+                        <em class="emph">rigorous</em> ("based on an explicit framework of analysis"),
+                        <em class="emph">retrievable</em> ("organised through explicit terms and criteria,
+                        the meanings of which are agreed upon by other students of stylistics"),
+                    and <em class="emph">replicable</em> ("sufficiently transparent as to allow other
+                        stylisticians to verify them, either by testing them on the same text or by
+                        applying them beyond that text"
+                    [<a class="ref" href="#simpson2004">Simpson 2004</a>, 4]. Despite its vital role in humanistic
+                    inquiry, close reading, as any approach, has its limitations. Mentioned are the
+                    limited capacity in terms of data sets and time, the problems with
+                    generalization, the prominent role of the scholar’s introspection, and the fact
+                    that distinct features and factors are normally intermingled in complex gestalts
+                    and thus may be hard to isolate. Such issues may be discussed and compensated
+                    for in research that combines qualitative phases with quantitative ones.</div>
+                <div class="counter"><a href="#p21">21</a></div><div class="ptext" id="p21">For quantitative analysis, "style" needs to be formalized and
+                    reduced to one or few distinctive and machine-readable features (for a stylistic
+                    perspective on style markers, see [<a class="ref" href="#leech2007">Leech and Short 2007</a>]; for a stylometric
+                    one, see [<a class="ref" href="#stamatatos2009">Stamatatos 2009</a>]). This applies to a potentially open
+                    list of linguistic and literary features (e.g., word frequency, length of
+                    words/sentences, vocabulary density, but possibly also more
+                        "literary" features, such as metaphor, or speech and
+                    thought representation). Quantitative research applies a range of different
+                    methods brought in from the fields of computational linguistics/natural language
+                    processing (NLP) and corpus linguistics. Simple "counting
+                        operations" (e.g., word frequencies, type-token-ratios, word and
+                    sentence length) are often followed by statistics such as the chi-square test
+                    and t-score, with prominent measures being collocation and keyword analysis [<a class="ref" href="#biber2011">Biber 2011</a>]
+                    [<a class="ref" href="#gries2015">Gries 2015</a>]
+                    [<a class="ref" href="#hoover2014">Hoover et al. 2014</a>]. Statistically more advanced are multivariate
+                    methods that examine several variables at the same time (e.g., loglinear
+                    regression mainly used in corpus stylistics, as well as ANOVA, principal
+                    component analysis, cluster analysis, discriminant analysis, and factor
+                    analysis; (cf. [<a class="ref" href="#biber2015">Biber and Reppen 2015</a>]
+                    [<a class="ref" href="#diversy2014">Diversy et al. 2014</a>]
+                    [<a class="ref" href="#gries2015">Gries 2015</a>]
+                    [<a class="ref" href="#hoover2014">Hoover et al. 2014</a>]
+                    [<a class="ref" href="#jockers2013">Jockers 2013</a>]; see also [<a class="ref" href="#heyer2006">Heyer et al. 2006</a>]). One of the
+                    currently most popular techniques of quantitative stylistics is cluster analysis
+                    of stylistic similarity (e.g., using Burrows’s Delta; [<a class="ref" href="#burrows2002">Burrows 2002</a>]). This kind of analysis operates on the basis of (standardized) measures of
+                    the most common features within and across texts [<a class="ref" href="#eder2016">Eder et al. 2016</a>]
+                    [<a class="ref" href="#hoover2004">Hoover 2004</a>]
+                    [<a class="ref" href="#jockers2013">Jockers 2013</a>]. A typical objective is to quantitatively
+                    scrutinize a particular period for its style, disambiguating an "author
+                        effect" from other (hidden) kinds of effects, such as
+                        "genre", and "time." To this aim, a
+                    viable way is to pick this style indicator and generalize over large sets of
+                    literary data (see [<a class="ref" href="#eder2017">Eder 2017</a>]; also [<a class="ref" href="#jockers2013">Jockers 2013</a>, 70–77]). In stylometry, using supervised machine learning to identify
+                    the "strength of the stylistic signal" currently probably
+                    comes closest to the core of the prototypical quantitative paradigm, ruling out
+                    confounding factors and establishing clear cause-effect relationships (here, the
+                    cause would be one or more of the examined factors author, genre, time; the
+                    effect is the "stylistic signal" observed in most common
+                        words).<a class="noteRef" href="#d21014e985">[7]</a></div>
+                <div class="counter"><a href="#p22">22</a></div><div class="ptext" id="p22">However, quantitative methods (such as factor analysis, multi–dimensional
+                    scaling, principal component analysis, and so on) are in fact often used in a
+                    more open-ended and exploratory way, something traditionally ascribed to
+                    qualitative research. Quantitative stylistic exploration may find new features
+                    and relations between known factors, for example between canonicity and writing
+                    style. For example, Algee-Hewitt et al. compared what they call the
+                        "archive", that part of ever-published fiction that is
+                    now available in digitized form, to canonical sets of novels. Among their
+                    findings is that "archive texts" in comparison with canonical
+                    ones are stylistically more similar to a written mode of communication, even in
+                    their "spoken passages"
+                    [<a class="ref" href="#algeehewitt2016">Algee–Hewitt et al. 2016</a>, 2, 10]. This finding was not made in
+                    answer to a specific hypothesis, but is a valid one. Similarly, the growing
+                    number of NLP-adaptations to the literary domain (including neural networks,
+                    machine learning, and advanced modes of data mining, cf. [<a class="ref" href="#hoover2013">Hoover 2013</a>]; see also the proceedings of the workshops
+                    Computational Linguistics for Literature<a class="noteRef" href="#d21014e1032">[8]</a>) is typically
+                    used for exploration – hypothesis testing in the strict sense is (still) less
+                    common. NLP methods, as well as those of data science<a class="noteRef" href="#d21014e1037">[9]</a> that crunch "big data" to
+                    aggregated variables (e.g., [<a class="ref" href="#manovich2015">Manovich 2015</a>]), are able to observe
+                    new patterns and correlations, allowing for a multitude of possible factors to
+                    be examined.</div>
+                <div class="counter"><a href="#p23">23</a></div><div class="ptext" id="p23">However, regardless of being used exploratorily or explanatorily, with regard to
+                    the questions of literary stylistics, at the present point in time, the
+                    quantitative types of analysis often appear superficial. Features are
+                    necessarily restricted to those than can be reduced to a machine-readable format
+                    and used in automatic analysis. Quantitative stylistics, despite a tendency to
+                    adapt more complex models, is as a rule decontextualized, operates at the
+                    variable level, and is reduced to observing particular types of features. Under
+                    certain conditions, precisely these characteristics may foster progress.
+                    However, in order to attain a more complete degree of linguistic and literary
+                    insight for "style", quantitative examinations need to be
+                    complemented by qualitative ones.</div>
+                <div class="counter"><a href="#p24">24</a></div><div class="ptext" id="p24">To flesh out these thoughts, in the following I will report on my own
+                    mixed-methods study on Franz Kafka’s prose in Newer and Modern German Literature
+                    (corpus of about 5.9 million words). </div>
+            </div>
+            <div class="div div0">
+                <h1 class="head">Making the test bed</h1>
+                <div class="counter"><a href="#p25">25</a></div><div class="ptext" id="p25">From the reservoir of digital methods on the qualitative–quantitative scale, I
+                    selected three easy-to-access, yet established ones. With style operationalized
+                    as an ensemble of formal features (see above), I reconstructed a hypothesis
+                    about Kafka’s style from literary studies, which was then examined in a
+                    complementary successive analysis:</div>
+                <div class="ptext"><ul class="list"><li class="item"><em class="emph">Hypothesis Generation from Literary Criticism.</em> I distilled
+                        from literary criticism converging evidence for a relatively broad
+                        assumption about Kafka’s style, the
+                        "solitariness"-hypothesis (see below). Finding convincing
+                        observations and arguments from the existing literature is thus a necessary
+                        step in hypothesis generation. This view has been put forward on the basis
+                        of qualitative, hermeneutic interpretations of separate texts (involving the
+                        description of linguistic features and literary effects). The kind of
+                        evidence given so far offers no firm ground for generalization.</li><li class="item"><em class="emph">Quantitative Hypothesis Testing.</em> My first empirical step was
+                        quantitative hypothesis testing. Extending on prior research [<a class="ref" href="#herrmann2013a">Herrmann 2013a</a>], I examined the
+                            "solitariness"-hypothesis on a wider data basis
+                        (comparing Kafka’s texts to texts by more than 20 other German authors
+                        across time).<a class="noteRef" href="#d21014e1103">[10]</a> For the sake of quantitative
+                        breadth, I relinquished the rich complexity of case-driven analysis, using
+                        as an indicator of "style" a standardized aggregate
+                        measure of most frequent words, <em class="term">Delta</em> (see below) and cluster
+                        analysis. A problem with this type of analysis is that it does not provide
+                        insights into the particular features that may be responsible for Kafka’s
+                        (assumedly) distinctive style.</li><li class="item"><em class="emph">Quantitative Exploration.</em> The second analysis applied another
+                        frequency-based measure, <em class="term">keyness</em>, to explore the stylistic
+                        patterns possibly underlying the results from the cluster analysis. Keeping
+                        the time signal relatively constant, I compared Kafka’s word use to four
+                        authors belonging to the same literary epoch, Modernism. Style was here
+                        identified as a statistically defined "norm" (the
+                        numerical reference being the same corpus used in the first analysis),
+                        treating word forms that are significantly more frequent than that norm as
+                            "stylistically marked". Building on prior research
+                            [<a class="ref" href="#herrmann2013b">Herrmann 2013b</a>], I manually grouped the top 100
+                        overrepresented word forms into (potential) word classes. A category of word
+                        forms emerged as particular to the Kafka sample that may be used for subtly
+                        managing modality. However, even though this analysis tackles style at the
+                        feature level, it is still strongly decontextualized. More context was
+                        needed to add value and insight to my observations. </li><li class="item"><em class="emph">Qualitative Text Analysis.</em> In a qualitative close reading of
+                        one of Kafka’s stories (<cite class="title italic">The Judgment)</cite> taken
+                        from the same corpus as before, I focused on just two potential modal
+                        particles derived from the previous step. Using <em class="term">KWIC</em> (<cite class="title italic">Key Word in Context</cite>) to systematically analyze
+                        their local usage, taking into account the context of Kafka’s story
+                        (including the plot), I examined their use and potential functions
+                        throughout the unfolding story [<a class="ref" href="#herrmann2016">Herrmann 2016</a>]. From here,
+                        further analysis may take up several possible leads given by the results.
+                        These may involve a larger data set and increased statistical rigor – as
+                        well as the qualitative detail of other texts and features (modal particles,
+                        negations, and adverbs).</li></ul></div>
+                <div class="figure">
+                    
+                    <div class="ptext"><a href="resources/images/figure01.jpg" rel="external"><img src="resources/images/figure01.jpg" alt=""/></a></div>
+                <div class="caption"><div class="label">Figure 1. </div>Mixed-Methods Style Analysis of Kafka</div></div>
+            </div>
+            <div class="div div0">
+                <h1 class="head">Applying Mixed-Methods to Kafka</h1>
+                <div class="counter"><a href="#p26">26</a></div><div class="ptext" id="p26">As described above, a series of interlaced stylistic studies was conducted,
+                    applying different methods tailored to distinct questions on aspects of Franz
+                    Kafka’s writing style. </div>
+                <div class="div div1">
+                    <h2 class="head">Hypothesis Generation from Literary Criticism</h2>
+                    <div class="counter"><a href="#p27">27</a></div><div class="ptext" id="p27">In Kafka studies, the most basic tenet on Kafka’s style is that it is not
+                        only unique, but even "solitary": Scholars converge in
+                        finding that among his generation, nobody else writes like him (cf. e.g.,
+                            [<a class="ref" href="#dhaen2012">D'Haen et al. 2012</a>]
+                        [<a class="ref" href="#frenzel1990">Frenzel and Frenzel 1990</a>]
+                        [<a class="ref" href="#oschmann2010">Oschmann 2010</a>]
+                        [<a class="ref" href="#trost2008">Trost 2008</a>]). The proposed solitariness has been related to a
+                        special lexical precision and "scantiness", features of
+                            "elevated everyday language" and technical language,
+                        together with an accumulation of modal adverbs, a hypotactic sentence
+                        structure, and a frequent use of inner monologue and especially free
+                        indirect discourse. The narrative effect of his language use has been stated
+                        as the "objective" registration of <em class="emph">external</em>
+                        events, accompanied by a simultaneous limited <em class="emph">internal</em>
+                        perspective of literary characters (e.g., [<a class="ref" href="#engel2010">Engel 2010</a>]
+                        [<a class="ref" href="#oschmann2010">Oschmann 2010</a>]
+                        [<a class="ref" href="#scheffel2002">Scheffel 2002</a>]
+                        [<a class="ref" href="#trost2008">Trost 2008</a>]). The adjective <em class="term">kafkaesque</em> generally
+                        means "complicated, confusing, and threatening"
+                        [<a class="ref" href="#kafkaesque">kafkaesque</a>], and this label corresponds with a consensus on
+                        the irritation that Kafka’s prose instills in readers, be they naïve or
+                        professional: "Each sentence says 'interpret me', and none will
+                                permit it"
+                             [<a class="ref" href="#adorno1981">Adorno 1981</a>, 245].<a class="noteRef" href="#d21014e1223">[11]</a></div>
+                </div>
+                <div class="div div1">
+                    <h2 class="head">Study 1: Quantitative Hypothesis Testing</h2>
+                    <div class="counter"><a href="#p28">28</a></div><div class="ptext" id="p28">For my first study, I selected an indicator of style that is firmly
+                        established within stylometry: the most frequent words (mfw) of a text and
+                        text set. The (relative) frequencies of the most common words per text in a
+                        given text set are used to compute a distance measure, which determines the
+                        stylistic similarity/dissimilarity of each text from each other text. I used
+                        a version of Burrows’s Delta ([<a class="ref" href="#burrows2002">Burrows 2002</a>]
+                        [<a class="ref" href="#eder2016">Eder et al. 2016</a>]
+                        [<a class="ref" href="#hoover2004">Hoover 2004</a>]), which standardizes the mean word frequency (by
+                        calculating the <em class="emph">z</em>-score) for each text and then computes the "mean of the absolute differences between the
+                                    <em class="emph">z</em>-scores for a set of word-variables in a given
+                                text-group and the <em class="emph">z</em>-scores for the same set of
+                                word-variables in a target text"
+                             [<a class="ref" href="#burrows2002">Burrows 2002</a>, 271].<a class="noteRef" href="#d21014e1261">[12]</a> In a subsequent cluster-analysis, which employed the
+                        ward-linkage algorithm [<a class="ref" href="#eder2016">Eder et al. 2016</a>], the large matrix of
+                        distances scores between individual texts was reduced to hierarchically
+                        aligned groupings of texts that are visualized, the so-called clusters. I
+                        chose a distance measure with cluster analysis because it is a robust
+                        measure of text similarity and has been shown to reliably identify signals
+                        of author, genre, and time [<a class="ref" href="#eder2016">Eder et al. 2016</a>]
+                        [<a class="ref" href="#jockers2013">Jockers 2013</a>], also in German literary texts [<a class="ref" href="#jannidis2014">Jannidis and Lauer 2014</a>].<a class="noteRef" href="#d21014e1275">[13]</a></div>
+                    <div class="counter"><a href="#p29">29</a></div><div class="ptext" id="p29">My hypotheses were as follows: </div>
+                    <div class="ptext"><ul class="list"><li class="item">H1: Kafka’s texts are <em class="emph">more similar to each other</em> than
+                            they are to other texts, and, as a group, are by comparison more
+                                <em class="emph">dissimilar from other (groups of) texts</em>. For the
+                            cluster analysis, this means two things: (a) a similarity-cluster can be
+                            observed for Kafka’s texts; (b) the observed Kafka-cluster shows
+                            distances from other (potential) clusters that are greater than any
+                            other distances observed.</li><li class="item">H0: Kafka’s texts <em class="emph">do not show a greater similarity to each
+                                other</em> than to any other text. In the cluster analysis,
+                            Kafka’s texts do not cluster with each other. However, as authorship is
+                            a strong predictor of style, clustering by author is generally
+                                expected.<a class="noteRef" href="#d21014e1299">[14]</a> Therefore, H0 may be
+                            reformulated: Kafka’s texts as a potential group of texts related by
+                            similarity <em class="emph">do not show greater dissimilarity</em> to other
+                            groups of texts by comparison. In the cluster analysis, any
+                            Kafka-cluster of texts thus has a similar distance to other potentially
+                            observed author-clusters as these have from each other.</li></ul></div>
+                    <div class="counter"><a href="#p30">30</a></div><div class="ptext" id="p30">When considering these hypotheses before the background of the chosen method,
+                        a caveat is due: in this application, cluster analysis does <em class="emph">not allow
+                            statistical hypothesis testing in a strict sense.</em> In other words,
+                        there is no way of determining the probability of falsely rejecting the H0
+                        (type I error, <em class="emph">p</em>-value) or the probability of rejecting a true
+                        hypothesis as incorrect (type II error, the failure to reject a false null
+                        hypothesis, a "false negative", i.e., failing to detect
+                        an effect that is present). This means I cannot determine causal or even
+                        correlational relations between variables (authorship as influencing style
+                        as measured by mfw).</div>
+                    <div class="counter"><a href="#p31">31</a></div><div class="ptext" id="p31">I used <em class="term">cluster analysis</em> and its iterative version,
+                            <em class="term">bootstrap consensus trees</em>, applying Eder’s Delta as
+                        facilitated by the "stylo package" for R [<a class="ref" href="#eder2016">Eder et al. 2016</a>]. My corpus consisted of 64 German prose texts
+                        available for the stylo suite of tools<a class="noteRef" href="#d21014e1335">[15]</a>,
+                        three texts by Robert Walser (to whom Kafka has been traditionally
+                        compared), and 27 texts of different length written by Kafka<a class="noteRef" href="#d21014e1341">[16]</a> compiled to seven distinct text samples. The final corpus amounts to
+                        altogether 74 text samples (about 5.9 million words). In the analysis,
+                        pronouns were deleted to avoid bias for narrative perspective.</div>
+                    <div class="figure">
+                        
+                        <div class="ptext"><a href="resources/images/figure02.jpg" rel="external"><img src="resources/images/figure02.jpg" alt=""/></a></div>
+                    <div class="caption"><div class="label">Figure 2. </div>Cluster Analysis using Eder’s Delta. Bootstrap Consensus Tree</div></div>
+                    <div class="counter"><a href="#p32">32</a></div><div class="ptext" id="p32">Figure 2 shows a <em class="term">bootstrap consensus tree.</em> It is the result of
+                        an iterative cluster analysis, keeping constant all parameter settings but
+                        the number of features [<a class="ref" href="#eder2017">Eder 2017</a>]. Here the selected feature
+                        is mfw, the most frequent words shared by the included texts. For the
+                        consensus tree, the upper limit of the feature vector was set to 1,500 mfw,
+                        the lower one to 800 mfw.<a class="noteRef" href="#d21014e1363">[17]</a> Figure 2
+                        shows that Kafka’s texts indeed form a cluster (the light green cluster to
+                        the upper right). It also depicts a number of branches that join texts by
+                        distinct authors (thereby demonstrating style similarity), most pronouncedly
+                        the two main branches in the lower half (both with subbranches of more than
+                        seven authors), as well as two smaller branches each joining two authors
+                        (Keller/Goethe and May/Achleitner). Most of Kafka’s direct contemporaries
+                        are thus joined by the big branch at the lower left (Bonsels, Wassermann,
+                        Falke, Hesse, Mann, Schnitzler), while the branch at the lower right suggest
+                        similarities between older texts (Goethe, Brentano, Arnim, Hoffmann) and the
+                        Swiss (historical) realist Meyer. </div>
+                    <div class="counter"><a href="#p33">33</a></div><div class="ptext" id="p33">In opposition to authors in both these groups, Kafka’s cluster starts
+                        directly from the center, which means that Kafka’s texts are more similar to
+                        each other than to other authors’ texts. However, the same is true for
+                        Gerstäcker, Heiberg, Sapper, Fontane, and Spyri. Note that the consensus
+                        tree is not informative about the distance of any two branches starting from
+                        the root. Hence, the first cluster analysis does not falsify the assumption
+                        that Kafka writes in a solitary way. However, despite being a relatively
+                        robust measure of stylistic similarity (incorporating repeated runs), the
+                        consensus tree provides rather limited information.</div>
+                    <div class="figure">
+                        
+                        <div class="ptext"><a href="resources/images/figure03.jpg" rel="external"><img src="resources/images/figure03.jpg" alt=""/></a></div>
+                    <div class="caption"><div class="label">Figure 3. </div>Cluster Analysis using Eder's Delta. Dendrograms (1100 MFW)</div></div>
+                    <div class="figure">
+                        
+                        <div class="ptext"><a href="resources/images/figure04.jpg" rel="external"><img src="resources/images/figure04.jpg" alt=""/></a></div>
+                    <div class="caption"><div class="label">Figure 4. </div>Cluster Analysis using Eder's Delta. Dendrograms (1300 MFW)</div></div>
+                    <div class="counter"><a href="#p34">34</a></div><div class="ptext" id="p34"> Figures 3 and 4 are more informative with regard to the actual similarities
+                        between texts than Figure 2. These <em class="term">dendrograms</em> (two of the
+                        eight separate dendrograms underlying the consensus tree of Fig. 2) are
+                            "snapshots" that reflect the particular clustering of
+                        texts with feature-parameter set uniquely to 1,100 mfw and to 1,300 mfw,
+                        respectively. Both depict a situation in which Kafka’s texts indeed form a
+                        cluster, which means that they are more similar to each other than to any
+                        other text in the study. Also, Kafka’s texts (as a group) are at a
+                        relatively long distance from the nearest neighbors, Spyri, Fontane, Sapper,
+                        and Gerstäcker (Fig. 3), and Spyri, Fontane, and Sapper (Fig. 4).
+                        Additionally, forming a group with the four/three nearest neighbors, Kafka
+                        is removed from the rest of the corpus. </div>
+                    <div class="counter"><a href="#p35">35</a></div><div class="ptext" id="p35">Like Fig. 2, despite slight differences, Fig. 3 and Fig. 4 do not falsify the
+                        assumption that Kafka writes in a solitary manner. However, we need to take
+                        into account the company in this "outlier group", two
+                        children’s books authors (Johanna Spyri, author of <cite class="title italic">Heidi</cite>, and Agnes Sapper) as well as Germany’s chief proponent
+                        of poetic realism (Theodor Fontane), and an author of popular adventure and
+                        travel prose (Friedrich Gerstäcker). In opposition to Kafka, the other four
+                        were immensely popular during their own and Kafka’s lifetime. Without making
+                        too strong assumptions on the basis of the two particular dendrograms<a class="noteRef" href="#d21014e1416">[18]</a>, these results may be used as a heuristic for
+                        furthering the stylistic research into Kafka’s prose: It is common ground in
+                        literary studies that Kafka achieved the commonly attested "refusal
+                            of making sense" ("Sinnverweigerung"),"with the
+                            techniques of the European tradition of narration" ("mit den
+                            Mitteln der europäischen Erzähltradition"). In Fig. 3 and 4 this tradition appears to show itself in
+                        the form of the nearest neighbors, all of which allegedly use a
+                            "realistic" writing style (with a great amount of
+                        concrete detail and vividly rendered descriptions, as well as dialogue).
+                        Further study needs to establish whether there really is a stylistic
+                        similarity with these authors (and among them), and, if so, what features
+                        contribute. What is more, Kafka research has shown that he liked reading
+                        books for younger readers, as well as (popular) adventure literature and
+                        journey descriptions in general (e.g., [<a class="ref" href="#blank2001">Blank 2001</a>]). There is
+                        hence some reason to assume that the nearest neighbors may reflect some of
+                        Kafka’s own reading habits [<a class="ref" href="#herrmannlauer2016">Herrmann and Lauer 2016</a>]. This kind of
+                        speculation merits further pursuing.</div>
+                    <div class="counter"><a href="#p36">36</a></div><div class="ptext" id="p36">This is where the analysis of this particular quantitative measure stops,
+                        letting the aggregated data speak for itself. However, in the present
+                        context, it is not really much it can say, despite a relatively weak
+                        corroboration of the reported hypothesis, which originates from rich
+                        hermeneutic observations. One problem with the measure is here that we do
+                        not know which particular textual features are responsible for the
+                        dissimilarity (or similarity) of styles: it computes the relative stylistic
+                        differences between a whole range of texts, based on a ‘bag-of-words’
+                        approach that has to take <em class="term">a priori</em> decisions about the number
+                        of mfw, the linkage algorithms, and other parameters. This combination of
+                            "black box" and "cherry picking"
+                        problems (for a critical overview, see [<a class="ref" href="#eder2017">Eder 2017</a>]) is rather
+                        frustrating, especially to the philologist, who would like to pin down the
+                        specific textual features that make Kafka unique (for quantitative
+                        approaches to features, see for example [<a class="ref" href="#jockers2013">Jockers 2013</a>]
+                        [<a class="ref" href="#klaussner2015">Klaussner et al. 2015</a>]). The next step is applying a so-called
+                            <em class="term">keyness</em> analysis, which allows for an exploration of the
+                        features responsible for stylistic differences between distinct texts and
+                        text collections.</div>
+                </div>
+                <div class="div div1">
+                    <h2 class="head">Study 2: Quantitative Exploration</h2>
+                    <div class="counter"><a href="#p37">37</a></div><div class="ptext" id="p37">To pry open the black box of the Delta measure to examine the features that
+                        actually make a difference in an author’s style, I selected keyness analysis
+                            [<a class="ref" href="#herrmann2013b">Herrmann 2013b</a>]. This established measure of corpus
+                        stylistics compares the frequencies of single words (or part-of-speech tags,
+                        or semantic tags) included in some text (collection) with those obtained in
+                        a (normally larger) reference corpus. It outputs a long list of words that
+                        deviate statistically from that reference corpus [<a class="ref" href="#rayson2012">Rayson 2012</a>]
+                        [<a class="ref" href="#scott2006">Scott and Tribble 2006</a>]. Here, the reference corpus acts as a statistical
+                            "norm" against which the word use in the text(s)
+                        under scrutiny may be compared. The examined words, depending on whether
+                        they deviate positively or negatively, are thus "over-"
+                        or "under-represented" with regard to that norm. Keyness
+                        analysis traditionally applies a Log-likelihood (LL) measure of difference
+                        in word usage (which is here more reliable than chi-squared analysis, cf.
+                            [<a class="ref" href="#rayson2012">Rayson 2012</a>, 2]). </div>
+                    <div class="counter"><a href="#p38">38</a></div><div class="ptext" id="p38">In order to ensure internal validity across sub-studies, I used the same
+                        corpus as in the cluster analysis. The same Kafka samples included in the
+                        first study thus formed a "Kafka corpus", and the
+                        remaining 67 texts samples now worked as a reference corpus. In addition to
+                        the Kafka corpus, I compiled four new author corpora, extracted from
+                        TextGrid: Peter Altenberg, Gustav Meyrink, Arthur Schnitzler, and Georg
+                        Trakl (see Table 1 for a summary of the author and reference corpora). In
+                        order to control as many factors as possible, the time signal was kept
+                        relatively constant: authors were selected from the literary epoch Modernism
+                        (roughly 1880-1930). Also, all authors are male, and ideolect was
+                        controlled: the four authors share with Kafka a place at a
+                            "southern German language continuum"
+                        [<a class="ref" href="#becher2012">Becher et al. 2012</a>]
+                        [<a class="ref" href="#nekula2003">Nekula 2003</a>]. However, given the particularities of Kafka’s
+                        (many very short texts and his particular technique of rendering narrative
+                        perspective), I deliberately did not control genre, and included drama
+                        (Schnitzler’s dramatic work, with its high proportion of fictional
+                        dialogue), poetry (Trakl’s poems with their highly subjective and sensual
+                        perspective), and (short) experimental prose (Altenberg’s
+                            "narrative poems" with a
+                            "disengaged" perspective, impressionistic description
+                        of sensual perception, and usage of colloquialisms). Through this, I hoped
+                        to allow for emerging stylistic patterns particular to Kafka.</div>
+                    <div class="table"><table class="table"><tr class="row label">
+                            <td valign="top" class="cell">Epoch</td>
+                            <td valign="top" class="cell">Author</td>
+                            <td valign="top" class="cell">No. of words</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">Modernism</td>
+                            <td valign="top" class="cell">Kafka</td>
+                            <td valign="top" class="cell">~308,400</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell"/>
+                            <td valign="top" class="cell">Altenberg</td>
+                            <td valign="top" class="cell">~245,200</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell"/>
+                            <td valign="top" class="cell">Trakl</td>
+                            <td valign="top" class="cell">~21,300</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell"/>
+                            <td valign="top" class="cell">Meyrink</td>
+                            <td valign="top" class="cell">~156,500</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell"/>
+                            <td valign="top" class="cell">Schnitzler</td>
+                            <td valign="top" class="cell">~1,037,000</td>
+                        </tr><tr class="row">
+                            <td valign="top" class="cell">Newer German Literature</td>
+                            <td valign="top" class="cell">22 authors</td>
+                            <td valign="top" class="cell">~5,873,100</td>
+                        </tr></table><div class="caption-no-label"><div class="label">Table 1. </div></div></div>
+                    <div class="counter"><a href="#p39">39</a></div><div class="ptext" id="p39">Using the software tool AntConc [<a class="ref" href="#anthony2014">Anthony2014</a>] the analysis
+                        rendered word lists that are significantly more common in each of the
+                        respective target corpora than in the reference corpus "Newer
+                            German Literature" (about 5.9 million words).<a class="noteRef" href="#d21014e1611">[19]</a> I decided to examine these lists for word
+                        classes (part-of-speech, POS) in order to observe not content (as a tendency
+                        indicated by proper names and common nouns), but rather stylistic patterns.
+                        According to authorship attribution studies, the latter may be observed
+                        especially among functional word classes. My research questions were: </div>
+                    <div class="ptext"><ul class="list"><li class="item">What differences between the five authors are striking among the top
+                            100 keywords?</li><li class="item">Which word classes are particularly common in Kafka when compared to
+                            the other authors?</li></ul></div>
+                    <div class="counter"><a href="#p40">40</a></div><div class="ptext" id="p40">The distribution of word classes among the top 100 keywords in each
+                        author-corpus rendered a number of interesting findings (see also [<a class="ref" href="#herrmann2013b">Herrmann 2013b</a>]). For the current purpose, however, the most
+                        interesting one is this: Among the words most strongly overrepresented in
+                        Kafka’s prose, a variety falls into a category of potential "modal
+                            words", which I operationally defined as word forms that (a)
+                        possess few semantic features when decontextualized; and (b) are typically
+                        used as adverbs, negations, and modal particles (but may have functions as
+                        conjunctions or other types of particles). For reasons of focus, I excluded
+                        (modal) verbs from the analysis. The observed types (e.g., <span class="foreign i">aber, nicht, allerdings, vielleicht, schon, ja,
+                            auch</span>) are semantically very flexible, potentially exerting
+                        distinct functions across different co(n)texts, e.g., to manage
+                        doubt/certainty, limit/broaden scope of assertions, and for
+                        negative/positive evaluation. </div>
+                    <div class="figure">
+                        
+                        <div class="ptext"><a href="resources/images/figure05.jpg" rel="external"><img src="resources/images/figure05.jpg" alt=""/></a></div>
+                    <div class="caption"><div class="label">Figure 5. </div>Number of "modal words" identified in the keyness
+                            analysis (Kafka, Altenberg, Trakl, Schnitzler, Meyrink)</div></div>
+
+                    <div class="counter"><a href="#p41">41</a></div><div class="ptext" id="p41">Figure 5 shows the number of "modal words" identified in
+                        the keyness analysis for each of the five authors: The distinct types show
+                        up among the 100 statistically overrepresented word-forms (e.g., the types
+                            <span class="foreign i">ja, doch, schon</span> amounting to three
+                        counts). Fig. 5 reports that Kafka’s usage of this category is more
+                        substantial (N=27) than Altenberg’s (N=13)<a class="noteRef" href="#d21014e1660">[20]</a>, Schnitzler’s (N=12), Meyrink’s (N=7), and
+                        Trakl’s (N=1). Given the reference corpus, Kafka’s prose is hence marked by
+                        a more varied use of "modal words".<a class="noteRef" href="#d21014e1666">[21]</a> Specifically in their use as modal
+                        particles, words like <span class="foreign i">ja, schon, doch,</span> and
+                            <span class="foreign i">nur</span> may exert very subtle, but
+                        important, pragmatic functions of negotiating shared knowledge and beliefs.
+                        Note that they belong among the most frequent words of the German language
+                        generally, but are still overrepresented in Kafka’s prose – at least when
+                        compared with our reference corpus of literary texts. They may thus be a key
+                        to explaining (aspects of) Kafka’s subtly disconcerting style. However, more
+                        analysis is needed to further test this assumption.</div>
+                    <div class="counter"><a href="#p42">42</a></div><div class="ptext" id="p42">To sum up, the application of keyness analysis to Kafka and other Modernist
+                        authors has pointed to a quantitative style pattern in Kafka’s prose, a high
+                        frequency of lemmas that may perform "modal" functions in
+                        the discourse. While it is clear that more research is required – for
+                        example varying reference corpora with principled attention to the variable
+                            "genre" (the used corpora contain narrative texts as
+                        well as poems and dramatic texts), and using more author-corpora – the
+                        analysis has shown that an exploration of quantitative patterns in terms of
+                        single words is quite useful. Indeed, it provides a first take at answering
+                        the question of what underlies the clustering observed in the
+                            <em class="term">Quantitative Hypothesis Testing</em>. It could not falsify the
+                        philological finding that Kafka’s style is defined by a particular use of
+                            "modal adverbs" (e.g., [<a class="ref" href="#trost2008">Trost 2008</a>]).
+                        However, the identified category of lemmas needs disambiguation as to their
+                        grammatical categories and local functions in textual passages. We thus need
+                        more context.</div>
+                </div>
+                <div class="div div1">
+                    <h2 class="head">Study 3: Qualitative Text Analysis</h2>
+                    <div class="counter"><a href="#p43">43</a></div><div class="ptext" id="p43">The third step of my project breaks down the complexity of the broad list of
+                            "modal"-type words run up by the keyword list, by
+                        zooming in on just two lemmas, namely, <span class="foreign i">ja</span>
+                        and <span class="foreign i">doch</span>
+                        [<a class="ref" href="#herrmann2016">Herrmann 2016</a>]. As modal particles, both have been well
+                        described in the linguistic literature and belong to the most frequent
+                        German modal particles [<a class="ref" href="#hentschel1986">Hentschel 1986</a>]. Generally, modal
+                        particles cater to intentionally attaching an utterance to the
+                        conversational frame, structure the common knowledge base of the
+                        interlocutors by indicating common ground, give prompts as to the felicitous
+                        interpretation of utterances in the given context, indicate subjective
+                        stance of speakers, and establish anaphoric reference with prior
+                        discourse.</div>
+                    <div class="figure">
+                        
+                        <div class="ptext"><a href="resources/images/figure06.jpg" rel="external"><img src="resources/images/figure06.jpg" alt=""/></a></div>
+                    <div class="caption"><div class="label">Figure 6. </div>KWIC list of all instances of <span class="foreign i">ja</span> in
+                            Kafka’s <span class="foreign i">Das Urteil</span> (<span class="foreign i">The Judgment</span>)</div></div>
+                    <div class="counter"><a href="#p44">44</a></div><div class="ptext" id="p44">In answer to the research question "What functions do the modal particles
+                                <span class="foreign i">ja</span> and <span class="foreign i">doch</span> exert in Kafka’s short narration <cite class="title italic">The Judgment</cite> (1912)?", the method of choice
+                        was a digital type of close reading of the text. – I used a digital KWIC
+                            (<em class="term">Keyword in Context) </em>tool for a starting point.<a class="noteRef" href="#d21014e1759">[22]</a> Figure 6 shows that of the N=18
+                        instances of <span class="foreign i">ja</span>, n=12 may be identified as
+                        modal particles; and a similar picture can be observed for <span class="foreign i">doch</span>, where of N=19 retrieved instances, n=9 are
+                        clear modal particles. This frequency roughly equals the proportion of each
+                        word found in natural <span class="foreign i">spoken</span> discourse in
+                        German [<a class="ref" href="#hentschel1986">Hentschel 1986</a>]. </div>
+                    <div class="counter"><a href="#p45">45</a></div><div class="ptext" id="p45">The combined linguistic/narratological examination of the usage of <span class="foreign i">ja</span> and <span class="foreign i">doch</span>
+                        throughout the story revealed that the two lemmas mostly do not accord with
+                        the causality structure of the narrated world (for details, see [<a class="ref" href="#herrmann2016">Herrmann 2016</a>]: The two characters, a father and his son, do
+                        not communicate on the basis of a reliable common ground. Instead, there are
+                        constant shifts in basic beliefs, and thus, in part due to the use of modal
+                        particles (or accompanied by them as symptoms of underlying communicative
+                        shortcomings) the management of information fails epically, resulting in the
+                        death of the son. In particular, <span class="foreign i">ja</span> is
+                        normally used to signal that interlocutor A assumes that interlocutor B
+                        maintains a shared knowledge/belief at the present point in time; <span class="foreign i">doch</span> is normally used to signal that
+                        interlocutor A assumes that interlocutor B is presently not aware of an
+                        allegedly shared knowledge/belief. However, in <cite class="title italic">The
+                            Judgment</cite>, the characters often use them in an infelicitous way,
+                        not respecting conventional pragmatic principles. The fact that in terms of
+                        frequency, the modal particles in Kafka’s fictional narrative roughly equal
+                        the natural distribution in spoken language may explain the overuse
+                        identified in the keyness analysis, especially when assuming that modal
+                        particles are overall not as frequent in fictional writing. Speculatively,
+                        one may adopt the idea that the use of <span class="foreign i">ja</span>
+                        and <span class="foreign i">doch</span> in <cite class="title italic">The
+                            Judgment</cite> is typical for Kafka’s use of modal particles in
+                        general, especially taking into account that modal particles are indicators
+                        of free indirect discourse, which is one of the properties frequently
+                        assigned to Kafka’s prose. </div>
+                    <div class="counter"><a href="#p46">46</a></div><div class="ptext" id="p46">Yet, more (quantitative and qualitative) analysis is needed to further flesh
+                        out and test these hypotheses. For now, it may be stated that the use of two
+                        specific modal particles indeed seems to contribute to the "elevated
+                            everyday language" described as typical of Kafka’s style (in <cite class="title italic">Metamorphosis</cite>, cf. [<a class="ref" href="#trost2008">Trost 2008</a>]).
+                        The examination of two modal particles in one particular text used the local
+                        lexical/syntactical context as well as that of the story world with its
+                        complex social-communicative relations. Since modal particles are heavily
+                        dependent on contextual analysis, both levels are essential when striving to
+                        make well-informed statements about their function in Kafka’s style. </div>
+                    <div class="counter"><a href="#p47">47</a></div><div class="ptext" id="p47">To sum up, this article has presented new findings on Kafka’s prose (compared
+                        to other authors writing in German) gathered in complementary successive
+                        analysis. It tested philological findings by means of a method of data
+                        aggregation operating on a comparably large data set, explored author’s
+                        style by looking at the probabilities of word frequencies, and eventually
+                        zoomed into the possible functions of two modal particles within the text
+                        world of one story. To ensure compatibility, my study kept the reference
+                        corpus constant, and varied the style measure only subtly (both quantitative
+                        analyses work with raw quantities of inflected word forms, and two of these
+                        word forms were queried through KWIC in the particular story <cite class="title italic">The Judgment</cite>). </div>
+                    <div class="counter"><a href="#p48">48</a></div><div class="ptext" id="p48">Yet, my main objective was to raise awareness of the methodological issues of
+                        doing digital stylistics. The different steps varied in the way in which
+                        they approached Kafka’s style – quantitatively and qualitatively,
+                        explanatory and exploratory, deductively and inductively, and also in the
+                        degree of speculation and interpretative freedom licensed. With regard to
+                        quantitative analysis, I have highlighted that hypothesis testing in the
+                        strict sense of the term is still a desideratum in my work. The same holds
+                        for analysis of statistical correlations and interactions on a broader data
+                        basis. My future research will take care of this: We are currently building
+                        a "Corpus of Literary Modernism" (KOLIMO, see footnote
+                        above) for examining the possible relations between factors such as author,
+                        genre, time of publication etc. and style variables such as part of speech,
+                        lexical density, and readability, but also more traditionally literary
+                        features such as metaphor [<a class="ref" href="#herrmann2018">Herrmann2018</a>].</div>
+                </div>
+            </div>
+            <div class="div div0">
+                <h1 class="head">Conclusions </h1>
+                <div class="counter"><a href="#p49">49</a></div><div class="ptext" id="p49">Above, I first proposed that the interdisciplinary setup of DH stylistics has
+                    advantages and disadvantages, depending on how we handle the issue, and that in
+                    fact, DH style studies may be a natural environment for the mixed-methods
+                    paradigm. To contextualize this, I have reported on my own research, assuming
+                    that in terms of its general character, it may be quite representative of
+                    digital text analysis, even though the range of methods and questions found in
+                    DH stylistics is naturally much wider. For reasons of focus, further crucial
+                    dimensions of doing DH stylistics that relate to research design have not been
+                    mentioned, such as programming, sample selection, edition and publication. </div>
+                <div class="counter"><a href="#p50">50</a></div><div class="ptext" id="p50">I pointed out that in some moments, in line with a ‘quantitative paradigm’, we
+                    may strive for open questions to be settled, and possibilities for
+                    interpretation of results to be delimited in order to achieve significant and
+                    replicable results. At other points of the research process, we may tap into the
+                        "qualitative paradigm", in line with our hermeneutic
+                    tradition, allowing higher degrees of (aesthetic) subjectivity, generating
+                    ideas, and opening discussion of alleged securities. Pointing towards a
+                        "mixed-methods paradigm", I would now like to conclude by
+                    considering Moretti’s take on distant reading: <blockquote><p>
+                        If we want to understand the system in its entirety, we
+                            must accept losing something. We always pay a price for theoretical
+                            knowledge: reality is infinitely rich; concepts are abstract, are poor.
+                            But it’s precisely this ‘poverty’ that makes it possible to handle them,
+                            and therefore to know. This is why less is actually more.
+                         [<a class="ref" href="#moretti2000">Moretti 2000</a>, 578–8]
+                    </p></blockquote> My point in this paper has been to embrace distant reading's
+                    variable-driven principle, but to complement it by a paradigm that is
+                    case-driven, looks at smaller samples, and may indulge in open-ended
+                    interpretation about connections between different variables. Both general
+                    approaches have their merit, and tapping into the methodological flexibility
+                    offered by a mixed-methods paradigm will allow for the interaction of different
+                    mindsets in a structured way. </div>
+                <div class="counter"><a href="#p51">51</a></div><div class="ptext" id="p51"> By mutual methods critique, we may more vigorously utilize the meaning potential
+                    of crunched numbers, as well as sharpen hermeneutically obtained insight to a
+                    new degree of precision. Here, the digital turn is possibly what really
+                    accelerates the growth of a third culture in the sense of Snow [<a class="ref" href="#snow2012">Snow 2012</a>] – one that has explanatory as well as exploratory
+                    moments, with "thick"’ understanding as well as the
+                        "poverty" of aggregation mentioned by Moretti. A
+                    mixed-method paradigm includes approaches for ‘opening up the discussion’ as
+                    much as those that ‘settle it’. </div>
+            </div>
+            <div class="div div0">
+                <h1 class="head">Author’s Note</h1>
+                <div class="counter"><a href="#p52">52</a></div><div class="ptext" id="p52">Many thanks to the editorial team, led by Joris van Zundert, for invoking and
+                    guiding the volume, as well as for their feedback at multiple stages of the
+                    publication process. Thanks also to the three anonymous reviewers who provided
+                    me not only with detailed and constructive feedback, but who also were generous
+                    in pointing out the things they valued. A big thank you to Andrea Hense, an ally
+                    from the <cite class="title italic">Sociological Research Institute</cite> Göttingen
+                    (SOFI) and to Steffen Kühnel of the <cite class="title italic">Center of Methods in
+                        Social Sciences</cite> at Göttingen University, both of whom made time for
+                    discussing my research. And finally, many thanks to Camilla di Biase-Dyson, who
+                    proof-read an earlier version of the paper, and to Zsófia Demjen, for
+                    proof-reading the final version. Any remaining errors are my own.</div>
+            </div>
+        
+        
+            
+        
+    </div>
+<div id="notes"><h2>Notes</h2><div class="endnote" id="d21014e421"><span class="noteRef">[1]</span> One should note that
+                        mixed-methods is essentially an empirical research paradigm. This is
+                        compatible with a digital stylistics that understands
+                            "empirical" in the wide sense – as the
+                            "acquisition of knowledge through observation"
+                        (“Wissensgewinn durch Beobachtung”) [<a class="ref" href="#eibl2013">Eibl 2013</a>, 23].</div><div class="endnote" id="d21014e438"><span class="noteRef">[2]</span> This may possibly even entail striving for some unifying
+                        epistemological perspective. Some mixed-methods scholars advocate
+                        pragmatism, such as Creswell who assumes a strong link between
+                            "worldviews" (e.g., postpositivist, social
+                        constructivist, participatory, pragmatic) and research methods [<a class="ref" href="#creswell2014">Creswell 2014</a>]. Others, such as Kelle describe weaker links
+                        between particular world views and methods [<a class="ref" href="#kelle2008">Kelle 2008</a>].</div><div class="endnote" id="d21014e529"><span class="noteRef">[3]</span> Within mixed-method approaches, interpretation is being
+                        recognized as a vital operation, linked to the tradition of hermeneutic
+                        inquiry: "data analysis, including quantitative data
+                                analysis, is a process of interpretation involving basic hermeneutic
+                                principles"
+                             [<a class="ref" href="#ness2011">Ness et al. 2011</a>, 294]. Good mixed-methods research in DH stylistics should fulfill criteria
+                        that allow for complementariness (cf. [<a class="ref" href="#miles2014">Miles et al. 2014</a>, 311–314]) – and methodological awareness. If such criteria are met, subjectivity
+                        and phases of open-ended interpretation are highly justified. These become
+                        problematic only where introspection and impressionistic observations are
+                        used in an opaque way, which however is true for any quantitative-scientific
+                        study as well [<a class="ref" href="#rudman2016">Rudman 2016</a>]. Problematic is also a dogmatic
+                        rejection of (aggregated) "data". Indispensable practical
+                        factors of sound mixed-method research are clear language use and the
+                        definition of concepts and terms.</div><div class="endnote" id="d21014e744"><span class="noteRef">[4]</span> Recently, scholars like
+                            Symonds &amp; Gorard have emphasized that a distinction between
+                                "quantitative" and
+                                "qualitative" research is a stereotypical
+                            idealization [<a class="ref" href="#symonds2010">Symonds and Gorard 2010</a>]. As such, it indeed helps
+                            structuring our understanding of practices. However, it may be
+                            misleading to use a dichotomy as a basis for invoking a mixed-methods
+                            paradigm, since research processes ‘in the wild’ are not necessarily
+                            paradigmatic. Rather, they lie on a continuum between
+                                    <em class="emph">"open-endedness" vs.
+                                    "closed-endedness"</em> (data collection
+                            tools), <em class="emph">"non-numerical" vs.
+                                    "numerical"</em> (data types), and
+                                    <em class="emph">"interpretation of natural occurring
+                                    data" vs.
+                                    "counting/aggregation/statistics"</em>
+                            (analytical techniques). A gradual character of
+                            quantification/qualification is actually evident in digital stylistics:
+                            there are many quantitative studies that aim at exploration, rather than
+                            at explanation through hypothesis testing (e.g., data science in the
+                            sense of [<a class="ref" href="#manovich2015">Manovich 2015</a>]). At the same time, close reading
+                            can be used to test hypotheses derived from statistical quantitative
+                            analyses (e.g., revealing what mode of thought representation is
+                            actually invoked by a certain verb type that contributes significantly
+                            to a factor analysis of genre style). However, I believe that working
+                            with research paradigms has a useful structuring function and therefore
+                            shall be maintained for the time being.</div><div class="endnote" id="d21014e855"><span class="noteRef">[5]</span> For a number of easily accessible text analysis visualization
+                        tools, see the web-based tool Voyant [<a class="ref" href="#sinclair2016">Sinclair and Rockwell 2016</a>].</div><div class="endnote" id="d21014e872"><span class="noteRef">[6]</span> CATMA is a tool for manual
+                        hermeneutic digital text annotation that features a comprehensive
+                        narratological tag set [<a class="ref" href="#gius2015">Gius and Jacke 2015</a>].</div><div class="endnote" id="d21014e985"><span class="noteRef">[7]</span>See [<a class="ref" href="#underwood2017">Underwood 2017</a>], whose article on the
+                        genealogy of distant reading was not yet available at the time of writing
+                        and will thus not be discussed in depth. His key argument is that the basic
+                        distinction of what he calls "distant reading" from other
+                        forms of literary criticism is "the practice of framing historical inquiry
+                            as an experiment, using hypotheses and samples (of texts or other social
+                            evidence) that are defined before the writer settles on a
+                            conclusion." (5). He thus draws a basic distinction between
+                        exploratory ("other forms of literary criticism") and
+                        explanatory ("distant reading") inquiry. Although, as
+                        explained above, I see a great value in mapping the distinction of
+                            "distant vs. other forms of reading" onto the basic
+                            "quantitative vs. qualitative" paradigms, I do not
+                        fully agree with Underwood’s general characterization of “distant reading”
+                        as an "experimental" hypothesis-testing endeavor. There
+                        is, after all, a great number of "distant
+                        reading"-studies that uses data aggregation methods and big data
+                        sets to explore (emerging) patterns. Such studies, which are fully valid, as
+                        I will show below, do not apply hypothesis-testing in the strict
+                        sense.</div><div class="endnote" id="d21014e1032"><span class="noteRef">[8]</span> Retrievable under <a class="ref" href="http://www.aclweb.org/anthology/W/W15/#0700" onclick="window.open('http://www.aclweb.org/anthology/W/W15/#0700'); return false">http://www.aclweb.org/anthology/W/W15/#0700</a></div><div class="endnote" id="d21014e1037"><span class="noteRef">[9]</span> Scholars like
+                        Manovich (2015) and Anderson (2008) take a relatively extreme stance,
+                        proclaiming that with the large available repositories of data, the nature
+                        of numerically transformable data is fundamentally changing: instead of
+                            "long data", which is (traditionally) organized in
+                        few variables with many pertaining cases, the new type is "wide
+                            data", clustered in many variables with a huge amount of
+                        individual cases [<a class="ref" href="#manovich2015">Manovich 2015</a>]. In "data
+                            mining", data exploration techniques incl. dimension reduction
+                        are most important for predictive analysis and machine learning based on
+                        probabilities of correlations. While correlative/association analyses have
+                        long been established in computational and corpus linguistics (as in social
+                        sciences), "big data science" appears in a new quality.
+                        In its most prominent formulation it forsakes the quest for causality (and
+                            "theory") altogether [<a class="ref" href="#anderson2008">Anderson 2008</a>].
+                        Seen from the perspective of mixed-methods, however, there is no reason for
+                        why one should not include stages of zooming in on causal
+                        relationships.</div><div class="endnote" id="d21014e1103"><span class="noteRef">[10]</span> As will be seen below, this is a somewhat loose
+                            understanding of hypothesis testing. Explanatory hypothesis testing in
+                            the strict quantitative sense would have selected a combination of
+                            hypothesis and method that leaves much less room for confounding
+                            variables. The particular analysis is thus a typical example for the
+                            current state of the field, pending more rigorous and wide-spread
+                            applications of hypothesis testing.</div><div class="endnote" id="d21014e1223"><span class="noteRef">[11]</span> It is an open (empirical) question how much of this effect of
+                            Kafka’s prose may in fact be attributed to his ‘style’, and in how much
+                            it is a matter of "plot". Since both dimensions tend
+                            to feed into each other, further research is needed to creatively
+                            establish ways of description and measurement.</div><div class="endnote" id="d21014e1261"><span class="noteRef">[12]</span>
+                            <em class="emph">Z</em>-scores represent the distance between the individual raw
+                            frequencies and an observed group mean, in units of the standard
+                            deviation. </div><div class="endnote" id="d21014e1275"><span class="noteRef">[13]</span> Stylometric measures, first developed
+                            for authorship attribution, and lately adopted by DH for mostly literary
+                            history studies, have in fact been used widely for exploratory purposes
+                                [<a class="ref" href="#jannidis2014">Jannidis and Lauer 2014</a>]. This shows that a
+                            quantitative-explanatory mapping is too facile; the way in which a
+                            measure is applied essentially depends on the research
+                        question.</div><div class="endnote" id="d21014e1299"><span class="noteRef">[14]</span> None of the texts used in the analysis are of
+                                disputed authorship, and the genre signal was kept relatively
+                                constant, with all texts labeled as ‘prose’. The genre signal is a
+                                major confounding factor in authorship attribution [<a class="ref" href="#rudman2016">Rudman 2016</a>, 318].</div><div class="endnote" id="d21014e1335"><span class="noteRef">[15]</span> See <a class="ref" href="https://sites.google.com/site/computationalstylistics/corpora" onclick="window.open('https://sites.google.com/site/computationalstylistics/corpora'); return false">https://sites.google.com/site/computationalstylistics/corpora</a></div><div class="endnote" id="d21014e1341"><span class="noteRef">[16]</span> Texts by
+                            Walser were extracted from Gutenberg.org. Those texts, as well as ones
+                            from many more authors (currently more than 2,000) extracted from
+                            Gutenberg-DE, TextGrid Repository, and the German Text Archive (DTA)
+                            have been compiled to form a unified corpus of narrative modernism
+                            (KOLIMO), together with added metadata and a few style features. Visit
+                            the ongoing project under <a class="ref" href="https://kolimo.uni-goettingen.de/about.html" onclick="window.open('https://kolimo.uni-goettingen.de/about.html'); return false">https://kolimo.uni-goettingen.de/about.html</a>
+                        </div><div class="endnote" id="d21014e1363"><span class="noteRef">[17]</span> The lower margin was set to 800 mfw in
+                            accordance with Jannidis &amp; Lauer, who however set the upper limit to
+                            3,000 mfw [<a class="ref" href="#jannidis2014">Jannidis and Lauer 2014</a>]. I set the upper limit to 1,500
+                            mfw, thus capturing the range of values where Eder’s Delta’s appears to
+                            perform best (between 1,000 and 1,500 mfw; cf. [<a class="ref" href="#jannidis2015">Jannidis et al. 2015</a>]). However, Evert et al. (2015), who
+                            replicated Jannidis et al. (2015) with more feature samples, state that
+                            the number of features (mfw) remains "a critical factor for which no good strategy is
+                                    available"
+                                 [<a class="ref" href="#evert2015">Evert et al. 2015</a>, 87]. The results thus need to be further tested.</div><div class="endnote" id="d21014e1416"><span class="noteRef">[18]</span>
+                            Stylometric methods such as cluster analysis applied to literary data
+                            typically involve a series of tests with different parameter settings,
+                            including varying the distance measure, the number of mfw, the linkage
+                            algorithm, and others (cf. [<a class="ref" href="#eder2017">Eder 2017</a>]
+                            [<a class="ref" href="#evert2015">Evert et al. 2015</a>]
+                            [<a class="ref" href="#jannidis2014">Jannidis and Lauer 2014</a>], for German literature). It has been
+                            pointed out that this kind of scenario is prone to "cherry
+                                picking", i.e. omitting results that do not fit the
+                            expected/desired outcome [<a class="ref" href="#rudman2003">Rudman 2003</a>]. The overall
+                            results, specifically the bootstrap consensus tree, however, give some
+                            reason to assume that Kafka is indeed an author with a distinct – if not
+                            solitary – style. Yet, the single dendrograms vary with regard to Kaka’s
+                            nearest neighbors. Therefore, all obtained results need to be further
+                            evaluated, and possibly sided by experiments with other parameter
+                            settings.</div><div class="endnote" id="d21014e1611"><span class="noteRef">[19]</span> Comparable
+                            to the "oppose-function" of the stylo-package [<a class="ref" href="#eder2016">Eder et al. 2016</a>], which has been further developed since the
+                            time of writing.</div><div class="endnote" id="d21014e1660"><span class="noteRef">[20]</span> Altenberg was newly
+                            introduced for the present analysis. Because of his colloquial style, I
+                            extrapolated that he might use adverbs, negations, and modal particles
+                            in a similar way as Kafka. However, the result is very similar to that
+                            of Schnitzler, and the number of types among the top 100 keywords is
+                            only half of Kafka’s.</div><div class="endnote" id="d21014e1666"><span class="noteRef">[21]</span> The present
+                            analysis has good external validity, as shown by prior analysis [<a class="ref" href="#herrmann2013b">Herrmann 2013b</a>] based on a much larger and more varied
+                            reference corpus (~ 93,000 texts, ~ 600 authors, ~ 134 million words,
+                            diverse genres). Comparison shows very similar results for Kafka (N=24
+                            (big reference corpus) vs. N=27 (present corpus)) and Schnitzler (N=10
+                            (big reference corpus) vs. N=12 (present corpus)), and numerically
+                            identical ones for Meyrink (N=7) and Trakl (N=1). Since the larger
+                            corpus is closer to an assumed "true population" of
+                            newer German literature, there is good reason to assume that the
+                            findings obtained can be generalized by taking as a stylistic
+                                "norm" a larger population (of texts, genres, and
+                            authors across time). </div><div class="endnote" id="d21014e1759"><span class="noteRef">[22]</span> There
+                            are many KWIC tools available online, e.g. in Voyant, AntConc, as well
+                            as functions in R and Python.</div></div><div id="worksCited"><h2>Works Cited</h2><div class="bibl"><span class="ref" id="adorno1981"><!-- close -->Adorno 1981</span> Adorno, T. W. (1981). "Notes on Kafka." In S. Weber &amp; S. Weber (Trans.),
+                        <cite class="title italic">Prisms</cite> (pp. 243–271). Cambridge Mass.: MIT
+                    Press. </div><div class="bibl"><span class="ref" id="algeehewitt2016"><!-- close -->Algee–Hewitt et al. 2016</span> Algee-Hewitt, M.,
+                    Allison, S., Gemma, M., Heuser, R., Moretti, F., &amp; Walser, H. (2016). "Canon/Archive. Large-scale dynamics in the Literary
+                        Field."
+                    <cite class="title italic">Stanford Literary Lab Pamphlet</cite>, 11. Retrieved from
+                        <a class="ref" href="http://litlab.stanford.edu/LiteraryLabPamphlet11.pdf" onclick="window.open('http://litlab.stanford.edu/LiteraryLabPamphlet11.pdf'); return false">http://litlab.stanford.edu/LiteraryLabPamphlet11.pdf</a>.</div><div class="bibl"><span class="ref" id="anderson2008"><!-- close -->Anderson 2008</span> Anderson, C. (2008). "The End of Theory: The Data Deluge Makes the Scientific Method
+                        Obsolete." Retrieved July 24, 2013, from <a class="ref" href="http://www.wired.com/science/discoveries/magazine/16-07/pb_theory" onclick="window.open('http://www.wired.com/science/discoveries/magazine/16-07/pb_theory'); return false">http://www.wired.com/science/discoveries/magazine/16-07/pb_theory</a>
+                </div><div class="bibl"><span class="ref" id="anthony2014"><!-- close -->Anthony2014</span> Anthony, L. (2014). AntConc (Version
+                    3.4.4). Tokyo, Japan: Waseda University. Retrieved from <a class="ref" href="http://www.laurenceanthony.net/" onclick="window.open('http://www.laurenceanthony.net/'); return false">http://www.laurenceanthony.net/</a>
+                </div><div class="bibl"><span class="ref" id="becher2012"><!-- close -->Becher et al. 2012</span> Becher, P., Höhne, S., &amp;
+                    Nekula, M. (Eds.). (2012). <cite class="title italic"><span class="foreign i">Kafka und
+                            Prag: Literatur-, kultur-, sozial- und sprachhistorische
+                            Kontexte.</span></cite>Köln: Böhlau.</div><div class="bibl"><span class="ref" id="biber1988"><!-- close -->Biber 1988</span> Biber, D. (1988). <cite class="title italic">Variation across speech and writing</cite>. Cambridge: Cambridge
+                    University Press.</div><div class="bibl"><span class="ref" id="biber2011"><!-- close -->Biber 2011</span> Biber, D. (2011). "Corpus linguistics and the study of literature: Back to the future?"
+                    <cite class="title italic">Scientific Study of Literature</cite>, 1(1), 15–23. <a class="ref" href="https://benjamins.com/#catalog/journals/ssol.1.1.02bib/details" onclick="window.open('https://benjamins.com/#catalog/journals/ssol.1.1.02bib/details'); return false">10.1075/ssol.1.1.02bib</a>.</div><div class="bibl"><span class="ref" id="biber2015"><!-- close -->Biber and Reppen 2015</span> Biber, D., &amp; Reppen, R.
+                    (2015). <cite class="title italic">The Cambridge Handbook of English Corpus
+                        Linguistics</cite>. Cambridge: Cambridge University Press.</div><div class="bibl"><span class="ref" id="bird2015"><!-- close -->Bird et al. 2015</span> Bird, S., Klein, E., &amp; Loper,
+                    E. (2015). <cite class="title italic">Natural Language Processing with Python –
+                        Analyzing Text with the Natural Language Toolkit</cite>. Retrieved from
+                        <a class="ref" href="http://www.nltk.org/book/" onclick="window.open('http://www.nltk.org/book/'); return false">http://www.nltk.org/book/</a></div><div class="bibl"><span class="ref" id="blank2001"><!-- close -->Blank 2001</span> Blank, H. (2001). <cite class="title italic"><span class="foreign i">In Kafkas Bibliothek : Werke der Weltliteratur
+                            und Geschichte in der Edition,wie sie Kafka besaß oder kannte;
+                            kommentiert mit Zitaten aus seinen Briefen und
+                        Tagebüchern</span></cite>. Stuttgart: Blank.</div><div class="bibl"><span class="ref" id="borgman2015"><!-- close -->Borgman 2015</span> Borgman, C. L. (2015). <cite class="title italic">Big data, little data, no data: scholarship in the networked
+                        world</cite>. Cambridge: MIT Press.</div><div class="bibl"><span class="ref" id="brenner2011"><!-- close -->Brenner 2011</span> Brenner, P. J. (2011). <cite class="title italic">Neue deutsche Literaturgeschichte: vom “Ackermann” zu Günter
+                        Grass</cite> (3., rev. and extended edition). Berlin: de Gruyter.</div><div class="bibl"><span class="ref" id="burrows1987"><!-- close -->Burrows 1987</span> Burrows, J. F. (1987). <cite class="title italic">Computation into criticism. A study of Jane Austen’s novels
+                        and an experiment in method</cite>. Oxford: Clarendon. </div><div class="bibl"><span class="ref" id="burrows2002"><!-- close -->Burrows 2002</span> Burrows, J. (2002). "'Delta': a measure of stylistic difference and a guide to
+                        likely authorship."
+                    <cite class="title italic">Literary and Linguistic Computing</cite>, 17(3), 267 –287.
+                        <a class="ref" href="https://doi.org/10.1093/llc/17.3.267" onclick="window.open('https://doi.org/10.1093/llc/17.3.267'); return false">https://doi.org/10.1093/llc/17.3.267</a>.</div><div class="bibl"><span class="ref" id="craig1999"><!-- close -->Craig 1999</span> Craig, H. (1999). "Authorial attribution and computational stylistics: if you can tell authors
+                        apart, have you learned anything about them?"
+                    <cite class="title italic">Literary and Linguistic Computing</cite>, 14(1), 103–113.
+                        <a class="ref" href="https://doi.org/10.1093/llc/14.1.103" onclick="window.open('https://doi.org/10.1093/llc/14.1.103'); return false">https://doi.org/10.1093/llc/14.1.103</a>.</div><div class="bibl"><span class="ref" id="craig2013"><!-- close -->Craig 2013</span> Craig, H. (2013, September). <cite class="title italic">Middle-distance reading with information-theory
+                        metrics</cite>. (Talk abstract). Retrieved from <a class="ref" href="http://www.gcdh.de/en/events/calendar-view/prof.-hugh-craig-middle-distance-reading-with-information-theory-metrics1/" onclick="window.open('http://www.gcdh.de/en/events/calendar-view/prof.-hugh-craig-middle-distance-reading-with-information-theory-metrics1/'); return false">http://www.gcdh.de/en/events/calendar-view/prof.-hugh-craig-middle-distance-reading-with-information-theory-metrics1/</a></div><div class="bibl"><span class="ref" id="creswell2014"><!-- close -->Creswell 2014</span> Creswell, J. W. (2014). <cite class="title italic">Research design: qualitative, quantitative, and mixed methods
+                        approaches</cite> (4th ed.). Los Angeles: Sage.</div><div class="bibl"><span class="ref" id="creswell2007"><!-- close -->Creswell and Plano Clark 2007</span> Creswell, J. W.,
+                    &amp; Plano Clark, V. L. (2007). <cite class="title italic">Designing and conducting
+                        mixed methods research</cite>. Thousand Oaks: Sage.</div><div class="bibl"><span class="ref" id="dhaen2012"><!-- close -->D'Haen et al. 2012</span> D’haen, T., Damrosch, D., &amp;
+                    Kadir, D. (2012). <cite class="title italic">The Routledge companion to world
+                        literature.</cite> London: Routledge. </div><div class="bibl"><span class="ref" id="dipper2008"><!-- close -->Dipper 2008</span> Dipper, S. (2008). "Theory-driven and Corpus-driven Computational Linguistics, and
+                        the Use of Corpora." In A. Lüdeling &amp; M. Kytö (Eds.), <cite class="title italic">Corpus Linguistics. An International Handbook</cite> (pp.
+                    68–96). Berlin: De Gruyter.</div><div class="bibl"><span class="ref" id="diversy2014"><!-- close -->Diversy et al. 2014</span> Diversy, S., Evert, S., &amp;
+                    Neumann, S. (2014). "A semi-supervised multivariate approach
+                        to the study of language variation." In B. Szmrecsanyi &amp; B.
+                    Wälchli (Eds.), <cite class="title italic">Aggregating Dialectology, Typology, and
+                        Register Analysis : Linguistic Variation in Text and Speech</cite> (pp.
+                    174–204). Berlin: De Gruyter.</div><div class="bibl"><span class="ref" id="eder2017"><!-- close -->Eder 2017</span> Eder, M. (2017). "Visualization in Stylometry: Cluster Analysis Using Networks."
+                    <cite class="title italic">Digital Scholarship in the Humanities</cite>, Volume 32,
+                    Issue 1(1), 50–64. <a class="ref" href="http://doi.org/10.1093/llc/fqv061" onclick="window.open('http://doi.org/10.1093/llc/fqv061'); return false">http://doi.org/10.1093/llc/fqv061</a>
+                </div><div class="bibl"><span class="ref" id="eder2016"><!-- close -->Eder et al. 2016</span> Eder, M., Kestemont, M., &amp;
+                    Rybicki, J. (2016). "Stylometry with R: A package for
+                        computational text analysis."
+                    <cite class="title italic">R Journal</cite>, 16(1). Retrieved from <a class="ref" href="https://journal.r-project.org/archive/accepted/" onclick="window.open('https://journal.r-project.org/archive/accepted/'); return false">https://journal.r-project.org/archive/accepted/</a></div><div class="bibl"><span class="ref" id="eibl2013"><!-- close -->Eibl 2013</span> Eibl, K. (2013). "<span class="foreign i">Ist Literaturwissenschaft als
+                            Erfahrungswissenschaft möglich? Mit einigen Anmerkungen zur
+                            Wissenschaftsphilosophie des Wiener Kreises.</span>" In P.
+                    Ajouri, K. Mellmann, &amp; C. Rauen (Eds.), <cite class="title italic"><span class="foreign i">Empirie in der Literaturwissenschaft</span></cite>
+                    (pp. 19–45). Münster: Mentis.</div><div class="bibl"><span class="ref" id="engel2010"><!-- close -->Engel 2010</span> Engel, M. (2010). "<span class="foreign i">Drei Werkphasen.</span>" In M. Engel
+                    &amp; B. Auerochs (Eds.), <cite class="title italic"><span class="foreign i">Kafka-Handbuch. Leben, Werk, Wirkung</span></cite> (pp. 81–90).
+                    Stuttgart: Metzler.</div><div class="bibl"><span class="ref" id="evert2015"><!-- close -->Evert et al. 2015</span> Evert, S., Proisl, T., Jannidis,
+                    F., Pielström, S., Schöch, C., &amp; Vitt, T. (2015). "Towards a better understanding of Burrows’s Delta in literary authorship
+                        attribution."
+                    <cite class="title italic">Proceedings of NAACL-HLT Fourth Workshop on Computational
+                        Linguistics for Literature</cite>, 79–88.</div><div class="bibl"><span class="ref" id="fish2012"><!-- close -->Fish 2012</span> Fish, S. (2012, January 23). "Mind your p’s and b’s: The digital humanities and
+                        interpretation."
+                    <cite class="title italic">Opinionator, New York Times</cite>. Retrieved from <a class="ref" href="http://opinionator.blogs.nytimes.com/2012/01/23/mind-your-ps-and-bs-the-digital-humanities-and-interpretation/" onclick="window.open('http://opinionator.blogs.nytimes.com/2012/01/23/mind-your-ps-and-bs-the-digital-humanities-and-interpretation/'); return false">http://opinionator.blogs.nytimes.com/2012/01/23/mind-your-ps-and-bs-the-digital-humanities-and-interpretation/</a></div><div class="bibl"><span class="ref" id="frenzel1990"><!-- close -->Frenzel and Frenzel 1990</span> Frenzel, H. A., &amp;
+                    Frenzel, E. (1990). <cite class="title italic">Daten deutscher Dichtung. Band II: Vom
+                        Realismus bis zur Gegenwart.</cite> München: Dt. Taschenbuch-Verl. </div><div class="bibl"><span class="ref" id="gius2015"><!-- close -->Gius and Jacke 2015</span> Gius, E., &amp; Jacke, J.
+                    (2015). "<span class="foreign i">Informatik und Hermeneutik.
+                            Zum Mehrwert interdisziplinärer Textanalyse.</span>" In C.
+                    Baum &amp; T. Stäcker (Eds.), <cite class="title italic"><span class="foreign i">Grenzen und Möglichkeiten der Digital Humanities. Sonderband der
+                            Zeitschrift für digitale Geisteswissenschaften</span></cite> (Vol.
+                    1). Retrieved from <a class="ref" href="http://www.zfdg.de/informatik-und-hermeneutik-zum-mehrwert-interdisziplinärer-textanalyse" onclick="window.open('http://www.zfdg.de/informatik-und-hermeneutik-zum-mehrwert-interdisziplinärer-textanalyse'); return false">http://www.zfdg.de/informatik-und-hermeneutik-zum-mehrwert-interdisziplin%C3%A4rer-textanalyse</a>
+                </div><div class="bibl"><span class="ref" id="gooding2013"><!-- close -->Gooding 2013</span> Gooding, P. (2013). "Mass digitization and the garbage dump: The conflicting needs
+                        of quantitative and qualitative methods."
+                    <cite class="title italic">Literary and Linguistic Computing</cite>, 28(3), 425–431.
+                        <a class="ref" href="http://doi.org/10.1093/llc/fqs054" onclick="window.open('http://doi.org/10.1093/llc/fqs054'); return false">http://doi.org/10.1093/llc/fqs054</a></div><div class="bibl"><span class="ref" id="gries2015"><!-- close -->Gries 2015</span> Gries, S. Th. (2015). "Some Current Quantitative Problems in Corpus Linguistics and a
+                        Sketch of Some Solutions."
+                    <cite class="title italic">Language and Linguistics 16</cite>(1), 93–117. <a class="ref" href="https://doi.org/10.1177/1606822X14556606" onclick="window.open('https://doi.org/10.1177/1606822X14556606'); return false">https://doi.org/10.1177/1606822X14556606</a>.</div><div class="bibl"><span class="ref" id="hayles2012"><!-- close -->Hayles 2012</span> Hayles, N. K. (2012). <cite class="title italic">How we think : digital media and contemporary
+                        technogenesis</cite>. Chicago; London: The University of Chicago
+                    Press.</div><div class="bibl"><span class="ref" id="hentschel1986"><!-- close -->Hentschel 1986</span> Hentschel, E. (1986). <cite class="title italic"><span class="foreign i">Funktion und Geschichte deutscher
+                            Partikeln: Ja, doch, halt und eben</span></cite>. Berlin: De
+                    Gruyter. </div><div class="bibl"><span class="ref" id="herrmann2013a"><!-- close -->Herrmann 2013a</span> Herrmann, J. B. (2013a). <cite class="title italic">Kafka among the authors. Stylometric analyses</cite>.
+                    (Paper). Presented at the Expert Workshop, Stylometry@Kraków. Krakow.</div><div class="bibl"><span class="ref" id="herrmann2013b"><!-- close -->Herrmann 2013b</span> Herrmann, J. B. (2013b). <cite class="title italic">Computing Kafka - How keyness and collocation analysis help
+                        explain paradoxical style</cite>. Talk and poster presented at the
+                    International Herrenhausen Conference "(Digital) Humanities
+                        Revisited – Challenges and Opportunities in the Digital Age."
+                    Herrenhausen.</div><div class="bibl"><span class="ref" id="herrmann2016"><!-- close -->Herrmann 2016</span> Herrmann, J. B. (2016). "<span class="foreign i">'Läuse im Pelz der Sprache?' Zu
+                            Funktionen von Modalpartikeln in narrativen (De-)Motivierungsstrategien
+                            bei Franz Kafka.</span>" In M. Horváth &amp; K. Mellmann
+                    (Eds.), <cite class="title italic"><span class="foreign i">Die biologisch-kognitiven
+                            Grundlagen narrativer Motivierung</span></cite>. Münster:
+                    Mentis.</div><div class="bibl"><span class="ref" id="herrmannlauer2016"><!-- close -->Herrmann and Lauer 2016</span> Herrmann, J. B.,
+                    &amp; Lauer, G. (2016). <cite class="title italic"><span class="foreign i">Aufbau und
+                            Annotation des Kafka/Referenzkorpus</span></cite>. Paper presented
+                    at the Conference Digital Humanities im deutschsprachigen Raum (DhD), Leipzig.
+                        <a class="ref" href="http://www.dhd2016.de/abstracts/vorträge-011.html" onclick="window.open('http://www.dhd2016.de/abstracts/vorträge-011.html'); return false">http://www.dhd2016.de/abstracts/vortr%C3%A4ge-011.html</a>
+                </div><div class="bibl"><span class="ref" id="herrmann2015"><!-- close -->Herrmann et al. 2015</span> Herrmann, J. B., van
+                    Dalen-Oskam, K., &amp; Schöch, C. (2015). "Revisiting style,
+                        a key concept in literary studies."
+                    <cite class="title italic">Journal of Literary Theory</cite>, 9(1), 25-52. <a class="ref" href="https://www.degruyter.com/view/j/jlt.2015.9.issue-1/jlt-2015-0003/jlt-2015-0003.xml" onclick="window.open('https://www.degruyter.com/view/j/jlt.2015.9.issue-1/jlt-2015-0003/jlt-2015-0003.xml'); return false">10.1515/jlt-2015-0003</a>.</div><div class="bibl"><span class="ref" id="herrmann2018"><!-- close -->Herrmann2018</span> Herrmann, J. B. (2018). "Anschaulichkeit messen. Eine quantitative Metaphernanalyse an
+                        deutschsprachigen Erzählanfängen zwischen 1880 und 1926." ["Measuring Stylistic Vividness. A quantitative metaphor
+                        analysis of the beginning sections of German narrative fiction 1880
+                        -1926"]. In T. Köppe &amp; R. Singer (Eds.), <cite class="title italic">Show, don’t tell: Konzepte und Strategien anschaulichen Erzählens.</cite>
+                    Bielefeld: Aisthesis. </div><div class="bibl"><span class="ref" id="heyer2006"><!-- close -->Heyer et al. 2006</span> Heyer, G., Quasthoff, U., &amp;
+                    Wittig, T. (2006). <cite class="title italic">Text Mining: Wissensrohstoff Text:
+                        Konzepte, Algorithmen, Ergebnisse</cite>. Herdecke : W3L-Verl.</div><div class="bibl"><span class="ref" id="holmes1998"><!-- close -->Holmes 1998</span> Holmes, D. I. (1998). "The Evolution of Stylometry in Humanities Scholarship."
+                    <cite class="title italic">Literary and Linguistic Computing</cite>, 13(3), 111–117.
+                        <a class="ref" href="http://doi.org/10.1093/llc/13.3.111" onclick="window.open('http://doi.org/10.1093/llc/13.3.111'); return false">http://doi.org/10.1093/llc/13.3.111</a>
+                </div><div class="bibl"><span class="ref" id="hoover2004"><!-- close -->Hoover 2004</span> Hoover, D. L. (2004). "Testing Burrows’s Delta."
+                    <cite class="title italic">Literary and Linguistic Computing</cite>, 19(4), 453–475.
+                        <a class="ref" href="http://doi.org/10.1093/llc/19.4.453" onclick="window.open('http://doi.org/10.1093/llc/19.4.453'); return false">http://doi.org/10.1093/llc/19.4.453</a>
+                </div><div class="bibl"><span class="ref" id="hoover2013"><!-- close -->Hoover 2013</span> Hoover, D. L. (2013). "Quantitative Analysis and Literary Studies." In R.
+                    Siemens &amp; S. Schreibman (Eds.), <cite class="title italic">A Companion to Digital
+                        Literary Studies</cite> (pp. 517–533). John Wiley &amp; Sons, Ltd.
+                    Retrieved from <a class="ref" href="http://onlinelibrary.wiley.com/doi/10.1002/9781405177504.ch28/summary" onclick="window.open('http://onlinelibrary.wiley.com/doi/10.1002/9781405177504.ch28/summary'); return false">http://onlinelibrary.wiley.com/doi/10.1002/9781405177504.ch28/summary</a>
+                </div><div class="bibl"><span class="ref" id="hoover2014"><!-- close -->Hoover et al. 2014</span> Hoover, D. L., Culpeper, J.,
+                    &amp; O’Halloran, K. (2014). <cite class="title italic">Digital literary studies:
+                        Corpus approaches to poetry, prose, and drama</cite>. New York: Routledge,
+                    Taylor &amp; Francis Group.</div><div class="bibl"><span class="ref" id="jannidis2014"><!-- close -->Jannidis and Lauer 2014</span> Jannidis, F., &amp;
+                    Lauer, G. (2014). "Burrows’s Delta and its use in German
+                        literary history." In M. Erlin &amp; L. Tatlock (Eds.), <cite class="title italic">Distant Readings. Topologies of German Culture in the Long
+                        Nineteenth Century</cite> (pp. 29–54). Rochester, New York: Camden
+                    House.</div><div class="bibl"><span class="ref" id="jannidis2015"><!-- close -->Jannidis et al. 2015</span> Jannidis, F., Steffen
+                    Pielström, Christoph Schöch, and Thorsten Vitt (2015). "Improving Burrows Delta. An empirical evaluation of text distance
+                        measures." In <cite class="title italic">Abstracts for the Digital
+                        Humanities 2015,</cite> Sidney. Retrieved from <a class="ref" href="http://dh2015.org/abstracts/xml/JANNIDIS_Fotis_Improving_Burrows__Delta___An_empi/JANNIDIS_Fotis_Improving_Burrows__Delta___An_empirical_.html" onclick="window.open('http://dh2015.org/abstracts/xml/JANNIDIS_Fotis_Improving_Burrows__Delta___An_empi/JANNIDIS_Fotis_Improving_Burrows__Delta___An_empirical_.html'); return false">http://dh2015.org/abstracts/xml/JANNIDIS_Fotis_Improving_Burrows__Delta___An_empi/JANNIDIS_Fotis_Improving_Burrows__Delta___An_empirical_.html</a>
+                </div><div class="bibl"><span class="ref" id="jockers2013"><!-- close -->Jockers 2013</span> Jockers, M. L. (2013). <cite class="title italic">Macroanalysis: digital methods and literary history</cite>.
+                    Urbana, Ill.: Univ. of Illinois Press.</div><div class="bibl"><span class="ref" id="jockers2014"><!-- close -->Jockers 2014</span> Jockers, M. L. (2014). <cite class="title italic">Text analysis with R for students of literature</cite>. Cham:
+                    Springer.</div><div class="bibl"><span class="ref" id="johnson2004"><!-- close -->Johnson and Onwuegbuzie 2004</span> Johnson, R. B.,
+                    &amp; Onwuegbuzie, A. J. (2004). "Mixed Methods Research: A
+                        Research Paradigm Whose Time Has Come."
+                    <cite class="title italic">Educational Researcher</cite>, 33(7), 14–26. <a class="ref" href="https://doi.org/10.3102/0013189X033007014" onclick="window.open('https://doi.org/10.3102/0013189X033007014'); return false">https://doi.org/10.3102/0013189X033007014</a>.</div><div class="bibl"><span class="ref" id="kelle2008"><!-- close -->Kelle 2008</span> Kelle, U. (2008). <cite class="title italic"><span class="foreign i">Die Integration qualitativer und quantitativer
+                            Methoden in der empirischen Sozialforschung: theoretische Grundlagen und
+                            methodologische Konzepte</span></cite> (2nd Ed.). Wiesbaden: VS,
+                    Verlag für Sozialwissenschaften.</div><div class="bibl"><span class="ref" id="klaussner2015"><!-- close -->Klaussner et al. 2015</span> Klaussner, C., Nerbonne,
+                    J., &amp; Çöltekin, Ç. (2015). Finding Characteristic Features in Stylometric
+                    Analysis. <cite class="title italic">Digital Scholarship in the Humanities</cite>,
+                    30(suppl 1), i114–i129. <a class="ref" href="http://doi.org/10.1093/llc/fqv048" onclick="window.open('http://doi.org/10.1093/llc/fqv048'); return false">http://doi.org/10.1093/llc/fqv048</a>
+                </div><div class="bibl"><span class="ref" id="leech2007"><!-- close -->Leech and Short 2007</span> Leech, G. N., &amp; Short, M.
+                    (2007). <cite class="title italic">Style in fiction. A linguistic introduction to
+                        English fictional prose</cite> (2nd ed). New York: Pearson Longman.</div><div class="bibl"><span class="ref" id="mahlberg2013"><!-- close -->Mahlberg 2013</span> Mahlberg, M. (2013). <cite class="title italic">Corpus Stylistics and Dickens’s Fiction.</cite> London:
+                    Routledge. </div><div class="bibl"><span class="ref" id="mahlberg2015"><!-- close -->Mahlberg 2015</span> Mahlberg, M. (2015). "Literary style and literary texts." In <cite class="title italic">The Cambridge Handbook of English Corpus Linguistics</cite>.
+                    Cambridge University Press. <a class="ref" href="http://dx.doi.org/10.1017/CBO9781139764377.020" onclick="window.open('http://dx.doi.org/10.1017/CBO9781139764377.020'); return false">http://dx.doi.org/10.1017/CBO9781139764377.020</a>
+                </div><div class="bibl"><span class="ref" id="manovich2015"><!-- close -->Manovich 2015</span> Manovich, L. (2015). "Data Science and Digital Art History."
+                    <cite class="title italic">International Journal for Digital Art History</cite>,
+                    0(1). <a class="ref" href="http://dx.doi.org/10.11588/dah.2015.1.21631" onclick="window.open('http://dx.doi.org/10.11588/dah.2015.1.21631'); return false">http://dx.doi.org/10.11588/dah.2015.1.21631</a>. </div><div class="bibl"><span class="ref" id="mccarty2005"><!-- close -->McCarty 2005</span> McCarty, W. (2005). <cite class="title italic">Humanities computing</cite>. Basingstoke &amp; New York:
+                    Palgrave Macmillan. </div><div class="bibl"><span class="ref" id="meindl2011"><!-- close -->Meindl 2011</span> Meindl, C. (2011). <cite class="title italic"><span class="foreign i">Methodik für Linguisten. Eine
+                            Einführung in Statistik und Versuchsplanung</span></cite>. Tübingen:
+                    Narr.</div><div class="bibl"><span class="ref" id="miles2014"><!-- close -->Miles et al. 2014</span> Miles, M. B., Huberman, A. M.,
+                    &amp; Saldaña, J. (2014). <cite class="title italic">Qualitative data analysis: a
+                        methods sourcebook</cite> (3rd ed.). Los Angeles, Calif.: Sage Publ.</div><div class="bibl"><span class="ref" id="moretti2000"><!-- close -->Moretti 2000</span> Moretti, F. (2000). "Conjectures on world literature". <cite class="title italic">New Left Review</cite>, (1). Retrieved from <a class="ref" href="https://newleftreview.org/II/1/franco-moretti-conjectures-on-world-literature" onclick="window.open('https://newleftreview.org/II/1/franco-moretti-conjectures-on-world-literature'); return false">https://newleftreview.org/II/1/franco-moretti-conjectures-on-world-literature</a>.</div><div class="bibl"><span class="ref" id="mueller2012"><!-- close -->Mueller 2012</span> Mueller, M. (2012, May 29). "Scalable Reading." (Blog-entry). Retrieved from <a class="ref" href="https://scalablereading.northwestern.edu/scalable-reading/" onclick="window.open('https://scalablereading.northwestern.edu/scalable-reading/'); return false">https://scalablereading.northwestern.edu/scalable-reading/</a>
+                </div><div class="bibl"><span class="ref" id="müller2013"><!-- close -->Müller 2013</span> Müller, R. (2013). "<span class="foreign i">Parallelstellenmethode – digital. Wie
+                            computer-gestützte Korpus-Analysen die Hermeneutik
+                            empirisieren.</span>" In P. Ajouri, K. Mellmann, &amp; C.
+                    Rauen (Eds.), <cite class="title italic"><span class="foreign i">Empirie in der
+                            Literaturwissenschaft</span></cite>. Mentis: Münster.</div><div class="bibl"><span class="ref" id="nekula2003"><!-- close -->Nekula 2003</span> Nekula, M. (2003). "Franz Kafkas Deutsch."
+                    <cite class="title italic">Linguistik Online</cite>, 13(1). Retrieved from <a class="ref" href="https://bop.unibe.ch/linguistik-online/article/view/879/1533" onclick="window.open('https://bop.unibe.ch/linguistik-online/article/view/879/1533'); return false">https://bop.unibe.ch/linguistik-online/article/view/879/1533</a>
+                </div><div class="bibl"><span class="ref" id="ness2011"><!-- close -->Ness et al. 2011</span> Ness, P. H. V., Fried, T. R., &amp;
+                    Gill, T. M. (2011). "Mixed methods for the interpretation of
+                        longitudinal gerontologic data. Insights from philosophical
+                        hermeneutics."
+                    <cite class="title italic">Journal of Mixed Methods Research</cite>, 5(4), 293–308. </div><div class="bibl"><span class="ref" id="oschmann2010"><!-- close -->Oschmann 2010</span> Oschmann, D. (2010). "Kafka als Erzähler". In M. Engel &amp; B. Auerochs
+                    (Eds.), <cite class="title italic">Kafka-Handbuch</cite> (pp. 438–449). Stuttgart: J.
+                    B. Metzler.</div><div class="bibl"><span class="ref" id="punch2014"><!-- close -->Punch 2014</span> Punch, K. F. (2014). <cite class="title italic">Introduction to social research: Quantitative and qualitative
+                        approaches</cite> (3., [rev.] ed.). Los Angeles: Sage.</div><div class="bibl"><span class="ref" id="ramsay2011"><!-- close -->Ramsay 2011</span> Ramsay, S. (2011). <cite class="title italic">Reading Machines: Toward an Algorithmic Criticism.</cite>
+                    Chicago: University of Illinois Press.</div><div class="bibl"><span class="ref" id="ransom1937"><!-- close -->Ransom 1937</span> Ransom, J. C. (1937). "Criticism, Inc."
+                    <cite class="title italic">VQR Online</cite>, <span class="hi italic">13</span>(4). Retrieved
+                    from <a class="ref" href="http://www.vqronline.org/essay/criticism-inc-0" onclick="window.open('http://www.vqronline.org/essay/criticism-inc-0'); return false">http://www.vqronline.org/essay/criticism-inc-0</a>
+                </div><div class="bibl"><span class="ref" id="rayson2012"><!-- close -->Rayson 2012</span> Rayson, P. (2012). "Corpus analysis of key words." In <cite class="title italic">The Encyclopedia of Applied Linguistics</cite>. Blackwell. Retrieved from
+                        <a class="ref" href="http://dx.doi.org/10.1002/9781405198431.wbeal0247" onclick="window.open('http://dx.doi.org/10.1002/9781405198431.wbeal0247'); return false">http://dx.doi.org/10.1002/9781405198431.wbeal0247</a>
+                </div><div class="bibl"><span class="ref" id="rudman2003"><!-- close -->Rudman 2003</span> Rudman, J. (2003). "Cherry Picking in Nontraditional Authorship Attribution
+                        Studies."
+                    <cite class="title italic">CHANCE</cite>, 16(2), 26–32. <a class="ref" href="https://doi.org/10.1080/09332480.2003.10554845" onclick="window.open('https://doi.org/10.1080/09332480.2003.10554845'); return false">https://doi.org/10.1080/09332480.2003.10554845</a>.</div><div class="bibl"><span class="ref" id="rudman2016"><!-- close -->Rudman 2016</span> Rudman, J. (2016). "Non-Traditional Authorship Attribution Studies of William
+                        Shakespeare’s Canon: Some Caveats."
+                    <cite class="title italic">Journal of Early Modern Studies</cite>, 5(0), 307–328.
+                        <a class="ref" href="https://doi.org/10.13128/JEMS-2279-7149-18094" onclick="window.open('https://doi.org/10.13128/JEMS-2279-7149-18094'); return false">https://doi.org/10.13128/JEMS-2279-7149-18094</a>.</div><div class="bibl"><span class="ref" id="scheffel2002"><!-- close -->Scheffel 2002</span> Scheffel, M. (2002). "<span class="foreign i">'Das Urteil' - Eine Erzählung ohne
+                            'geraden zusammenhängenden, verfolgbaren Sinn'? Strukturalismus mit
+                            strukturaler Erzähltheorie.</span>" In O. Jahraus &amp; S.
+                    Neuhaus (Eds.), <cite class="title italic"><span class="foreign i">Kafkas "Urteil" und
+                            die Literaturtheorie. Zehn Modellanalysen</span></cite> (pp. 59–77).
+                    Stuttgart: Reclam.</div><div class="bibl"><span class="ref" id="scott2006"><!-- close -->Scott and Tribble 2006</span> Scott, M., &amp; Tribble, C.
+                    (2006). <cite class="title italic">Textual patterns: Key words and corpus analysis in
+                        Language Education</cite>. Amsterdam, Philadelphia: John Benjamins. </div><div class="bibl"><span class="ref" id="sculley2008"><!-- close -->Sculley and Pasanek 2008</span> Sculley, D., &amp;
+                    Pasanek, B. M. (2008). "Meaning and mining: the impact of
+                        implicit assumptions in data mining for the humanities."
+                    <cite class="title italic">Literary and Linguistic Computing</cite>, 23(4), 409–424.
+                        <a class="ref" href="http://doi.org/10.1093/llc/fqn019" onclick="window.open('http://doi.org/10.1093/llc/fqn019'); return false">http://doi.org/10.1093/llc/fqn019</a>
+                </div><div class="bibl"><span class="ref" id="semino2004"><!-- close -->Semino and Short 2004</span> Semino, E., &amp; Short, M.
+                    (2004). <cite class="title italic">Corpus stylistics. Speech, writing and thought
+                        presentation in a corpus of English writing</cite>. London: Routledge. </div><div class="bibl"><span class="ref" id="simpson2004"><!-- close -->Simpson 2004</span> Simpson, P. (2004). <cite class="title italic">Stylistics. A resource book for students</cite>. London:
+                    Routledge. </div><div class="bibl"><span class="ref" id="sinclair2016"><!-- close -->Sinclair and Rockwell 2016</span> Sinclair, S., &amp;
+                    Rockwell, G. (2016). <cite class="title italic">Voyant Tools</cite>. Web. Retrieved
+                    from <a class="ref" href="http://voyant-tools.org/" onclick="window.open('http://voyant-tools.org/'); return false">http://voyant-tools.org/</a></div><div class="bibl"><span class="ref" id="snow2012"><!-- close -->Snow 2012</span> Snow, C. P. (2012). <cite class="title italic">The Two Cultures</cite> [1959]. Cambridge: Cambridge University
+                    Press.</div><div class="bibl"><span class="ref" id="spitzer1961"><!-- close -->Spitzer 1961</span> Spitzer, L. (1961). <cite class="title italic">Stilstudien</cite> [1928]. <cite class="title italic">Erster Teil:
+                        Sprachstile</cite>. <span class="hi italic">Zweiter Teil: Stilsprachen</span>,
+                    München: Max Hueber.</div><div class="bibl"><span class="ref" id="stamatatos2009"><!-- close -->Stamatatos 2009</span> Stamatatos, E. (2009). "A Survey of Modern Authorship Attribution Methods."
+                    <cite class="title italic">Journal of the American Society for Information Science and
+                        Technology</cite>, 60(3), 538–556. <a class="ref" href="http://dx.doi.org/10.1002/asi.21001" onclick="window.open('http://dx.doi.org/10.1002/asi.21001'); return false">http://dx.doi.org/10.1002/asi.21001</a>.</div><div class="bibl"><span class="ref" id="steen2010"><!-- close -->Steen et al. 2010</span> Steen, G. J., Dorst, A. G.,
+                    Herrmann, J. B., Kaal, A. A., &amp; Krennmayr, T. (2010). "Metaphor in Usage."
+                    <cite class="title italic">Cognitive Linguistics</cite>, 21(4). <a class="ref" href="https://doi.org/10.1515/cogl.2010.024" onclick="window.open('https://doi.org/10.1515/cogl.2010.024'); return false">https://doi.org/10.1515/cogl.2010.024</a>.</div><div class="bibl"><span class="ref" id="symonds2010"><!-- close -->Symonds and Gorard 2010</span> Symonds, J. E., &amp;
+                    Gorard, S. (2010). "Death of mixed methods? Or the rebirth
+                        of research as a craft."
+                    <cite class="title italic">Evaluation &amp; Research in Education</cite>, 23(2),
+                    121–136. <a class="ref" href="https://doi.org/10.1080/09500790.2010.483514" onclick="window.open('https://doi.org/10.1080/09500790.2010.483514'); return false">https://doi.org/10.1080/09500790.2010.483514</a>.</div><div class="bibl"><span class="ref" id="tashakkori2010"><!-- close -->Tashakkori and Teddlie 2010</span> Tashakkori, A.,
+                    &amp; Teddlie, C. (Eds.). (2010). <cite class="title italic">Sage handbook of mixed
+                        methods in social &amp; behavioral research</cite> (2nd ed.). Los Angeles:
+                    Sage.</div><div class="bibl"><span class="ref" id="trost2008"><!-- close -->Trost 2008</span> Trost, I. (2008). "<span class="foreign i">Erzählen und Besprechen: zum Stil von Franz
+                            Kafkas Erzählung 'Die Verwandlung'.</span>" In: Fritz, Th. A.,
+                    Koch, G. &amp; Trost, I., <cite class="title italic"><span class="foreign i">Literaturstil - sprachwissenschaftlich. Festschrift für Hans-Werner
+                            Eroms zum 70. Geburtstag</span></cite> (pp. 144–168). Heidelberg:
+                    Universitätsverlag.</div><div class="bibl"><span class="ref" id="underwood2017"><!-- close -->Underwood 2017</span> Underwood, T. (2017). "A Genealogy of Distant Reading,"
+                    <cite class="title italic">DH Quarterly</cite>, 11(2). Retrieved from <a class="ref" href="http://www.digitalhumanities.org/dhq/vol/11/2/000317/000317.html" onclick="window.open('http://www.digitalhumanities.org/dhq/vol/11/2/000317/000317.html'); return false">http://www.digitalhumanities.org/dhq/vol/11/2/000317/000317.html</a>.</div><div class="bibl"><span class="ref" id="vanpeer2012"><!-- close -->Van Peer et al. 2012</span> Van Peer, W., Hakemulder,
+                    J., &amp; Zyngier, S. (2012). <cite class="title italic">Scientific methods for the
+                        humanities</cite>. Amsterdam, Philadelphia: John Benjamins.</div><div class="bibl"><span class="ref" id="weiten2017"><!-- close -->Weiten 2017</span> Weitin, T. (2017). "Scalable Reading."
+                    <cite class="title italic">Zeitschrift für Literaturwissenschaft und
+                        Linguistik</cite>, 47(1), 1–6. <a class="ref" href="https://doi.org/10.1007/s41244-017-0048-4" onclick="window.open('https://doi.org/10.1007/s41244-017-0048-4'); return false">https://doi.org/10.1007/s41244-017-0048-4</a>.</div><div class="bibl"><span class="ref" id="kafkaesque"><!-- close -->kafkaesque</span> Macmillan Publishers (Ed.). (2015).
+                    kafkaesque. <cite class="title italic">Macmillan Dictionary and Thesaurus
+                        Online</cite>. Retrieved from <a class="ref" href="http://www.macmillandictionary.com/dictionary/british/kafkaesque" onclick="window.open('http://www.macmillandictionary.com/dictionary/british/kafkaesque'); return false">http://www.macmillandictionary.com/dictionary/british/kafkaesque</a>
+                </div><div class="bibl"><span class="ref" id="vanzundert2015"><!-- close -->van Zundert 2015</span> van Zundert, J.
+                    J. (2015). "Screwmeneutics and Hermenumericals." In
+                    S. Schreibman, R. Siemens, &amp; J. Unsworth (Eds.), <cite class="title italic">A New
+                        Companion to Digital Humanities</cite> (pp. 331–347). Wiley. <a class="ref" href="http://onlinelibrary.wiley.com/doi/10.1002/9781118680605.ch23/summary" onclick="window.open('http://onlinelibrary.wiley.com/doi/10.1002/9781118680605.ch23/summary'); return false">10.1002/9781118680605.ch23</a>.</div></div><div class="toolbar"><a href="/dhq/preview/index.html">Preview</a>
+             | 
+            <a rel="external" href="/dhq/vol/11/4/000341.xml">XML</a>
+            | 
+            <a href="#" onclick="javascript:window.print();" title="Click for print friendly version">Print Article</a></div></div><script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dhquarterly'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script><div id="comments"><div id="disqus_thread"/><script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'dhquarterly'; // required: replace example with your forum shortname
+
+    // The following are highly recommended additional parameters. Remove the slashes in front to use.
+    var disqus_identifier = '000341';
+    var disqus_url = 'http://www.digitalhumanities.org/dhq/vol/11/4/000341/000341.html';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><div id="footer"> 
+            URL: http://www.digitalhumanities.org/dhq/vol/11/4/000341/000341.html<br/>Last updated:
+            <script type="text/javascript">
+                var monthArray = new initArray("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+                var lastModifiedDate = new Date(document.lastModified);
+                var currentDate = new Date();
+                document.write(" ",monthArray[(lastModifiedDate.getMonth()+1)]," ");
+                document.write(lastModifiedDate.getDate(),", ",(lastModifiedDate.getFullYear()));
+            </script><br/> Comments: <a href="mailto:dhqinfo@digitalhumanities.org" class="footer">dhqinfo@digitalhumanities.org</a><br/> Published by:
+            <a href="http://www.digitalhumanities.org" class="footer">The Alliance of Digital Humanities Organizations</a><br/>Affiliated with: <a href="http://llc.oxfordjournals.org/">Literary and Linguistic Computing</a><br/> Copyright 2005 - <script type="text/javascript">
+                document.write(currentDate.getFullYear());</script><br/><a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png"/></a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.
+        </div></div></div></body></html>
