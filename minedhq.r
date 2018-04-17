@@ -11,7 +11,6 @@ found=list()
 for (i in xml_files) 
 { 
   tmp <- read_html(i);
-
   if (grepl("github", tmp, ignore.case = TRUE))
   { 
     found <- c(i,found);
