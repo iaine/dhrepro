@@ -8,7 +8,7 @@ import sys
 from collections import defaultdict, Counter
 
 kwic = defaultdict(int)
-stopwords = set(['and', 'a', 'an','as', 'or', 'with', 'in', 'of', 'be', 'the','by', 'that', 'since', 'are', 'others', 'what', 'to', 'is','for','it','at', 'than', '14', 'while','which'])
+stopwords = set(['and', 'a', 'an','as', 'or', 'with', 'in', 'of', 'be', 'the','by', 'that', 'since', 'are', 'others', 'what', 'to', 'is','for','it','at', 'than', '14', 'while','which', 'if'])
 
 file_path = sys.argv[1]
 
@@ -26,9 +26,13 @@ def getNGrams(words, ngrams, n):
 def findMidPoint(ngrams):
     return len(ngrams[0]) // 2
 
-for raw_file in glob.glob(file_path + "*.txt"):
+
+files = glob.glob(file_path)
+
+for raw_file in files:
+    print(raw_file)
     with open(raw_file, 'rb') as f:
-        data = f.read().split()
+        data = f.read().split()       
         getNGrams(data, ngrams, 5)
 
 midpoint = findMidPoint(ngrams)
