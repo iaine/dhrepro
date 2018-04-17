@@ -13,21 +13,21 @@ from keywords import Keywords
 kwic = defaultdict(int)
 stopwords = set(['and', 'a', 'an','as', 'or', 'with', 'in', 'of', 'be', 'the','by', 'that', 'since', 'are', 'others', 'what', 'to', 'is','for','it','at', 'than', '14', 'while','which', 'if', 'we', 'but','on'])
 
-file_path = sys.argv[1]
-
-file_write = sys.argv[2]
+html_path = sys.argv[1]
+text_path = sys.argv[2]
+html_write = sys.argv[3]
+text_write = sys.argv[4]
 
 ngrams = []
 
 table = str.maketrans('','', string.punctuation)
 
-files = glob.glob(file_path)
+files = glob.glob(html_path)
 
 for raw_file in files:
-    
     with open(raw_file, 'rb') as f:
         data = ParseFile().parseHtml(f.read()) 
-        getNGrams(data, ngrams, 5)
+        Keywords().get_ngrams(data, ngrams, 5)
 
 midpoint = Keywords().find_midpoint(ngrams)
 
@@ -43,8 +43,39 @@ for line in keywords:
 
 s = sorted(kwic.items(), key=lambda v: v[1], reverse=True)
 
-f = open(file_write, 'w')
+f = open(html_write, 'w')
 for term, count in s:
     f.write("{},{}\n".format(term,count))
 
- f.close
+f.close
+
+ngrams = []
+
+table = str.maketrans('','', string.punctuation)
+
+files = glob.glob(text_path)
+
+for raw_file in files:
+    with open(raw_file, 'rb') as f:
+        data = ParseFile().parseHtml(f.read())
+        Keywords().get_ngrams(data, ngrams, 5)
+
+midpoint = Keywords().find_midpoint(ngrams)
+
+keywords = Keywords().filter_ngrams_by_words(ngrams, 'software', midpoint)
+
+#create list of keywords
+for line in keywords:
+    for word in line:
+        _tmp = Keywords().string_to_lower(table)
+        _tmp = _tmp.translate(table)
+        if _tmp not in stopwords:
+            kwic[_tmp] +=1
+
+s = sorted(kwic.items(), key=lambda v: v[1], reverse=True)
+
+f = open(text_write, 'w')
+for term, count in s:
+    f.write("{},{}\n".format(term,count))
+
+f.close
