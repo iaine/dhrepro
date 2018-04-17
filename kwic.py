@@ -7,8 +7,11 @@ import string
 import sys
 from collections import defaultdict, Counter
 
+from parse import ParseFile
+from keywords import Keywords
+
 kwic = defaultdict(int)
-stopwords = set(['and', 'a', 'an','as', 'or', 'with', 'in', 'of', 'be', 'the','by', 'that', 'since', 'are', 'others', 'what', 'to', 'is','for','it','at', 'than', '14', 'while','which', 'if'])
+stopwords = set(['and', 'a', 'an','as', 'or', 'with', 'in', 'of', 'be', 'the','by', 'that', 'since', 'are', 'others', 'what', 'to', 'is','for','it','at', 'than', '14', 'while','which', 'if', 'we', 'but','on'])
 
 file_path = sys.argv[1]
 
@@ -18,37 +21,30 @@ ngrams = []
 
 table = str.maketrans('','', string.punctuation)
 
-def getNGrams(words, ngrams, n):
-    for i in range(len(words)-(n-1)):
-        ngrams.append(words[i:i+n])
-    return ngrams
-
-def findMidPoint(ngrams):
-    return len(ngrams[0]) // 2
-
-
 files = glob.glob(file_path)
 
 for raw_file in files:
-    print(raw_file)
+    
     with open(raw_file, 'rb') as f:
-        data = f.read().split()       
+        data = ParseFile().parseHtml(f.read()) 
         getNGrams(data, ngrams, 5)
 
-midpoint = findMidPoint(ngrams)
+midpoint = Keywords().find_midpoint(ngrams)
 
-keywords = filter(lambda l: l[midpoint].startswith(b'reproducib'), ngrams)
+keywords = Keywords().filter_ngrams_by_words(ngrams, 'software', midpoint)
 
 #create list of keywords
 for line in keywords:
     for word in line:
-        _tmp = word.decode('utf-8').lower()
+        _tmp = Keywords().string_to_lower(table)
         _tmp = _tmp.translate(table)
         if _tmp not in stopwords:
             kwic[_tmp] +=1
+
 s = sorted(kwic.items(), key=lambda v: v[1], reverse=True)
+
 f = open(file_write, 'w')
 for term, count in s:
     f.write("{},{}\n".format(term,count))
 
-f.close
+ f.close
